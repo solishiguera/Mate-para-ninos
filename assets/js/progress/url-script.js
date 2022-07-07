@@ -246,7 +246,7 @@ function getFiles() {
     },
     modulo7: {
       1: "modulo7-1.html",
-
+      2: "modulo7-2.html"
     },
     modulo9: {
       1: "modulo9-1.html",
