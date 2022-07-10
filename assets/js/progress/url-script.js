@@ -246,7 +246,11 @@ function getFiles() {
     },
     modulo7: {
       1: "modulo7-1.html",
-      2: "modulo7-2.html"
+      2: "modulo7-2.html",
+      3: "modulo7-3.html",
+      4: "modulo7-4.html",
+      5: "modulo7-5.html",
+      6: "modulo7-6.html",
     },
     modulo9: {
       1: "modulo9-1.html",
