@@ -6,7 +6,7 @@
       name="viewport"
       content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no"
     />
-    <title>Introducción Módulo 9 | CVA - Centro Virtual de Aprendizaje</title>
+    <title>Exámen del módulo 9 | CVA - Centro Virtual de Aprendizaje</title>
 
     <!-- Favicon -->
     <link rel="shortcut icon" href="../../assets/images/logo/favicon.png" />
@@ -35,6 +35,28 @@
     <link href="../../assets/css/app.css" rel="stylesheet" />
     <link href="../../assets/css/progress.css" rel="stylesheet" />
     <link href="../../assets/css/progress-circle.css" rel="stylesheet" />
+    <link
+      href="../../assets/css/modulos/modulo1/traduccion.css"
+      rel="stylesheet"
+    />
+    <style>
+      .box {
+        border-radius: 22px;
+        border-color: rgba(38, 103, 241, 0.678);
+        border-style: solid;
+        margin: 0.4rem 0.2rem;
+        padding: 0;
+      }
+      .boximg {
+        border-top-left-radius: 19px;
+        border-top-right-radius: 19px;
+      }
+      @media (min-width: 576px) {
+        .card-block {
+          padding: 20px;
+        }
+      }
+    </style>
   </head>
 
   <body class="header-info side-nav-dark">
@@ -54,90 +76,30 @@
           <div class="main-content">
             <div class="container-fluid px-0 px-sm-3">
               <!-- Your content goes here -->
-
-              <div class="flechas mb-">
-                <!-- <div class="flechas"> -->
-                <!-- <div class="flecha-izquierda mb-0">
-                  <a href="../modulo1/modulo1-1.html" class="modulo-anterior">
-                    <i class="ei ei-left-arrow mr-2"></i>
-                    <span> Modulo Anterior</span>
-                  </a>
-                </div> -->
-                <div class="flecha-derecha mb-0">
-                  <a href="../modulo2/modulo2-1.html" class="modulo-siguiente">
-                    <span> Modulo Siguiente</span
-                    ><i class="ei ei-right-arrow ml-2"></i>
-                  </a>
-                </div>
-              </div>
               <div class="card">
-                <div class="card-horizon">
-                  <div class="image-container col-md-4">
-                    <div
-                      class="background-holder has-content"
-                      style="
-                        background-image: url('../../assets/images/course/modulo1/m1-1/shutterstock_400761526_1.jpg');
-                        background-repeat: no-repeat;
-                      "
-                    ></div>
-                  </div>
-                  <div class="col-md-8 ml-auto">
-                    <div class="card-block">
-                      <h1 class="card-title">
-                        Módulo 9 - PERÍMETRO, ÁREA, VOLUMEN
-                      </h1>
-                      <h1 class="card-title">
-                        <span
-                          class="badge badge-light"
-                          style="font-size: 26px"
-                          >Introducción
-                        </span>
-                      </h1>
-                      <p>
-                        Existen varias formas de medir superficies. Ya conocemos 
-                        la básica usando la regla de centímetros, pero a veces
-                        es útil usar objetos en lugar de números.
+                <div class="card-block">
+                  <h1 class="card-title">
+                    <span class="badge badge-light">Exámen</span> Exámen del módulo 9
+                  </h1>
+                  <div class="row mrg-top-10">
+                    <div class="col">
+                      <p style="font-size: 200%;">
+                        ¡Es hora de poner a prueba los conocimientos que aprendiste en este módulo!
                       </p>
                     </div>
                   </div>
                 </div>
               </div>
-
-              <div class="row">
-                <div class="col">
-                  <div class="card">
-                    <div class="card-horizon">
-                      <div class="card-block">
-                        <h3 class="mrg-btm-20 card-title">
-                          Las competencias que adquirirás en este módulo son las
-                          siguientes:
-                        </h3>
-                        <ul class="mb-3">
-                          <li>
-                            Resolver problemas de manera autónoma.
-                          </li>
-                          <li>
-                            Información matemática.
-                          </li>
-                          <li>
-                            Validar procedimientos y resultados.
-                          </li>
-                          <li>
-                            Manejar técnicas eficientemente.
-                          </li>
-                        </ul>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
+            </div>
+              
+              <!--Botones de avance entre páginas-->
               <div class="row mrg-btm-20">
                 <div class="col text-center">
                   <div class="btn-group"></div>
                 </div>
               </div>
 
+              <!--Widgets de avance de módulo y general-->
               <div class="card widget-feed">
                 <div class="row">
                   <div class="col-lg-8">
@@ -147,12 +109,12 @@
                       <div
                         class="progress-bar bg-info"
                         role="progressbar"
-                        aria-valuenow="25"
+                        aria-valuenow="33"
                         aria-valuemin="0"
                         aria-valuemax="100"
-                        style="max-width: 4%"
+                        style="max-width: 33%"
                       >
-                        4%
+                        33%
                       </div>
                     </div>
                   </div>
@@ -188,11 +150,11 @@
     <!-- plugins js -->
     <script src="../../assets/vendors/jquery/dist/jquery.min.js"></script>
     <script src="../../assets/vendors/popper.js/dist/umd/popper.min.js"></script>
-    <script src="../../assets/js/recycled/navigationbar.js"></script>
     <script src="../../assets/vendors/bootstrap/dist/js/bootstrap.js"></script>
     <script src="../../assets/vendors/PACE/pace.min.js"></script>
     <script src="../../assets/vendors/perfect-scrollbar/js/perfect-scrollbar.jquery.js"></script>
 
+    <!-- Progress plugins -->
     <script src="../../assets/js/progressbar.js"></script>
     <script src="../../assets/js/progress-circle.js"></script>
 
@@ -201,15 +163,56 @@
     <!-- build:js assets/js/app.min.js -->
     <!-- core js -->
     <script src="../../assets/js/app.js"></script>
+    <script src="../../assets/js/recycled/navigationbar.js"></script>
     <script src="../../assets/js/progress/url-script.js"></script>
-
-    <!-- Aquí se inserta el porcentage del círculo de progreso como una fracción -->
-    <script type="text/javascript">
-      show(0.02);
-    </script>
 
     <!-- endbuild -->
 
     <!-- Insert your dependencies here -->
+    <script>
+      $(document).ready(function () {
+        $('[data-toggle="tooltip"]').tooltip();
+      });
+      var cont = 1;
+      function showModal() {
+        $("#Q1").modal({ show: true });
+      }
+      function adelante() {
+        cont += 1;
+        if (cont >= 6) {
+          cont = 6;
+        }
+        slide(cont);
+      }
+      function atras() {
+        cont -= 1;
+        if (cont <= 0) {
+          cont = 1;
+        }
+        slide(cont);
+      }
+      function slide(i) {
+        switch (i) {
+          case 1:
+            $('[href="#S-1"]').tab("show");
+            break;
+          case 2:
+            $('[href="#S-2"]').tab("show");
+            break;
+          case 3:
+            $('[href="#S-3"]').tab("show");
+            break;
+          case 4:
+            $('[href="#S-4"]').tab("show");
+            break;
+          case 5:
+            $('[href="#S-5"]').tab("show");
+            break;
+          case 6:
+            $('[href="#S-6"]').tab("show");
+            break;
+        }
+      }
+    </script>
   </body>
 </html>
