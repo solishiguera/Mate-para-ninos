@@ -84,7 +84,7 @@ function generatePage(name, count) {
   var html = "";
   if (name == "temario") {
     html +=
-      '<a class="btn btn-default" role="button" href="../temario/temario.html"';
+      '<a class="btn btn-default" role="button" href="../temario/temarioConInformacion"';
   }
   if (name == "index.html") {
     name = "";
