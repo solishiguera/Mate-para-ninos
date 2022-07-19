@@ -6,7 +6,7 @@
       name="viewport"
       content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no"
     />
-    <title>Tema 5.2 | CVA - Centro Virtual de Aprendizaje</title>
+    <title>Exámen del módulo 5 | CVA - Centro Virtual de Aprendizaje</title>
 
     <!-- Favicon -->
     <link rel="shortcut icon" href="../../assets/images/logo/favicon.png" />
@@ -35,6 +35,28 @@
     <link href="../../assets/css/app.css" rel="stylesheet" />
     <link href="../../assets/css/progress.css" rel="stylesheet" />
     <link href="../../assets/css/progress-circle.css" rel="stylesheet" />
+    <link
+      href="../../assets/css/modulos/modulo1/traduccion.css"
+      rel="stylesheet"
+    />
+    <style>
+      .box {
+        border-radius: 22px;
+        border-color: rgba(38, 103, 241, 0.678);
+        border-style: solid;
+        margin: 0.4rem 0.2rem;
+        padding: 0;
+      }
+      .boximg {
+        border-top-left-radius: 19px;
+        border-top-right-radius: 19px;
+      }
+      @media (min-width: 576px) {
+        .card-block {
+          padding: 20px;
+        }
+      }
+    </style>
   </head>
 
   <body class="header-info side-nav-dark">
@@ -54,85 +76,45 @@
           <div class="main-content">
             <div class="container-fluid px-0 px-sm-3">
               <!-- Your content goes here -->
-
               <div class="card">
                 <div class="card-block">
                   <h1 class="card-title">
-                    <span class="badge badge-light">Tema 1</span> 
-                    Desarrollo de un algoritmo de multiplicación de números hasta de 
-                    tres cifras por números de dos o tres cifras. Vinculación con los 
-                    procedimientos puestos en práctica anteriormente, en particular, 
-                    diversas descomposiciones de uno de los factores.
+                    <span class="badge badge-light">Exámen</span> Exámen del módulo 5
                   </h1>
                   <div class="row mrg-top-10">
                     <div class="col">
-                      <p></p>
-                    
+                      <p style="font-size: 200%;">
+                        ¡Es hora de poner a prueba los conocimientos que aprendiste en este módulo!
+                      </p>
                     </div>
                   </div>
                 </div>
               </div>
-                
-              <div class="row">
-                <div class="col">
-                    <div class="card card-block">
-                        <h2 class="card-title">Explicación (Algoritmos)</h2>
-                        <p>
-                            Todo número multiplicado por 0 da como producto o resultado 0
-                        </p>
-                        <li>4123 x 0 = 0
-                        </li>
-                        <p>
-                            Todo número multiplicado por 1 da como producto o resultado el mismo número
-                        </p>
-                        <li>1920 x 1= 1920
-                        </li>
-                        <p>Al multiplicar por 10, 100 o por 1000, el producto tendrá tantos ceros como dichos números 
-                        </p>
-                        <ul>
-                            <li>8 x 10 = 80           </li>
-                            <li>8 x 100 = 800         </li>
-                            <li>8 x 1000 = 8000       </li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card card-block">
-                        <h2 class="card-title">Tipos de multiplicación</h2>
-                        <p>1.- Algoritmo de la multiplicación por una cifra en el segundo factor
-                        </p>
-                        <p>IMAGEN AQUI</p>
-                        <p>2.- Algoritmo con reagrupación y sin reagrupación.</p>
-                        <p>Recordemos que un algoritmo es un conjunto de pasos u 
-                            operaciones que nos permiten resolver un ejercicio. 
-                        </p>
-                    </div>
-                </div>
-              </div>
-
+            </div>
               
-
+              <!--Botones de avance entre páginas-->
               <div class="row mrg-btm-20">
                 <div class="col text-center">
                   <div class="btn-group"></div>
                 </div>
               </div>
 
+              <!--Widgets de avance de módulo y general-->
               <div class="card widget-feed">
                 <div class="row">
                   <div class="col-lg-8">
-                    <h1 class="feed-title tag tag-info">Módulo 5</h1>
+                    <h1 class="feed-title tag tag-info">Módulo 9</h1>
                     <h3 class="feed-subtitle">Tu Progreso</h3>
                     <div class="progress" style="height: 20px" id="bar">
                       <div
                         class="progress-bar bg-info"
                         role="progressbar"
-                        aria-valuenow="25"
+                        aria-valuenow="33"
                         aria-valuemin="0"
                         aria-valuemax="100"
-                        style="max-width: 4%"
+                        style="max-width: 33%"
                       >
-                        4%
+                        33%
                       </div>
                     </div>
                   </div>
@@ -168,11 +150,11 @@
     <!-- plugins js -->
     <script src="../../assets/vendors/jquery/dist/jquery.min.js"></script>
     <script src="../../assets/vendors/popper.js/dist/umd/popper.min.js"></script>
-    <script src="../../assets/js/recycled/navigationbar.js"></script>
     <script src="../../assets/vendors/bootstrap/dist/js/bootstrap.js"></script>
     <script src="../../assets/vendors/PACE/pace.min.js"></script>
     <script src="../../assets/vendors/perfect-scrollbar/js/perfect-scrollbar.jquery.js"></script>
 
+    <!-- Progress plugins -->
     <script src="../../assets/js/progressbar.js"></script>
     <script src="../../assets/js/progress-circle.js"></script>
 
@@ -181,15 +163,56 @@
     <!-- build:js assets/js/app.min.js -->
     <!-- core js -->
     <script src="../../assets/js/app.js"></script>
+    <script src="../../assets/js/recycled/navigationbar.js"></script>
     <script src="../../assets/js/progress/url-script.js"></script>
-
-    <!-- Aquí se inserta el porcentage del círculo de progreso como una fracción -->
-    <script type="text/javascript">
-      show(0.02);
-    </script>
 
     <!-- endbuild -->
 
     <!-- Insert your dependencies here -->
+    <script>
+      $(document).ready(function () {
+        $('[data-toggle="tooltip"]').tooltip();
+      });
+      var cont = 1;
+      function showModal() {
+        $("#Q1").modal({ show: true });
+      }
+      function adelante() {
+        cont += 1;
+        if (cont >= 6) {
+          cont = 6;
+        }
+        slide(cont);
+      }
+      function atras() {
+        cont -= 1;
+        if (cont <= 0) {
+          cont = 1;
+        }
+        slide(cont);
+      }
+      function slide(i) {
+        switch (i) {
+          case 1:
+            $('[href="#S-1"]').tab("show");
+            break;
+          case 2:
+            $('[href="#S-2"]').tab("show");
+            break;
+          case 3:
+            $('[href="#S-3"]').tab("show");
+            break;
+          case 4:
+            $('[href="#S-4"]').tab("show");
+            break;
+          case 5:
+            $('[href="#S-5"]').tab("show");
+            break;
+          case 6:
+            $('[href="#S-6"]').tab("show");
+            break;
+        }
+      }
+    </script>
   </body>
 </html>
