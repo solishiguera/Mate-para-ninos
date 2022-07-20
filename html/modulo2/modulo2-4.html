@@ -42,6 +42,29 @@
   </head>
 
   <body class="header-info side-nav-dark">
+    <style>
+      button.number { 
+        background-color: transparent;
+	      border: none;
+	      padding: 0;
+        color: black;
+	      cursor: pointer;
+	      outline: inherit;
+        font-size: 40px;
+        font-weight: bold;
+      }
+
+      button.number:hover { 
+        background-color: transparent;
+        color: #800000;
+        padding: 0;
+      }
+
+      button.number:active { 
+        background-color: transparent !important;
+        color: #800000 !important; 
+      }
+    </style>
     <div class="app">
       <div class="layout">
         <!-- Side Nav START -->
@@ -59,178 +82,145 @@
           <div class="main-content">
             <div class="container-fluid px-0 px-sm-3">
               <!-- Your content goes here -->
-              <!-- card QUIZ -->
-              <div class="card">
-                <div class="container-fluid">
-                  <h1 class="m-4 card-title mrg-left-20">
-                    Ejercicio 2 - ¿Quienes pueden hacer ejercicio?
-                  </h1>
-                  <div class="p-3">
-                    <p class="text-left">
-                      Ahora vamos a buscar el nombre de actividades físicas que
-                      le ayuden en el cuidado de la salud. Dentro de esta sopa
-                      de letras encontrará también algunos hábitos malos, ¡Tenga
-                      cuidado! Son 6 BUENAS actividades para su salud. ¡Buena
-                      Suerte!
-                    </p>
-                    <div class="indication mrg-btm-20">
-                      <p class="card-info">
-                        <i class="icon iconin ti-mouse-alt"></i>
-                        <label style="padding: 0.5em"
-                          >Manten presionado sobre las letras y desliza el
-                          cursor presionando sobre toda la
-                          <a
-                            data-toggle="tooltip"
-                            title=""
-                            href="javascript:void(0);"
-                            data-original-title="Actividad saludable."
-                            >palabra</a
-                          >
-                          completa que encuentres.
-                        </label>
-                      </p>
-                    </div>
-                    <hr />
-                  </div>
-
-                  <div
-                    class="pdd-vertical-10 pdd-horizon-10 mrg-btm-20"
-                    id="outer"
-                  >
-                    <div class="row">
-                      <div
-                        class="col-md-4 p-4"
-                        style="display: flex; justify-content: center"
-                      >
-                        <div id="listContainer">
-                          <h2>Pistas</h2>
-                          <ul id="list">
-                            <li>
-                              <img
-                                class="icon1"
-                                src="../../assets/images/course/modulo2/actividades/26.png"
-                                alt=""
-                              /><img
-                                class="icon1"
-                                src="../../assets/images/course/modulo2/actividades/24.png"
-                                alt=""
-                              />
-                            </li>
-                            <li>
-                              <img
-                                class="icon1"
-                                src="../../assets/images/course/modulo2/actividades/27.png"
-                                alt=""
-                              /><img
-                                class="icon1"
-                                src="../../assets/images/course/modulo2/actividades/28.png"
-                                alt=""
-                              />
-                            </li>
-                            <li>
-                              <img
-                                class="icon1"
-                                src="../../assets/images/course/modulo2/actividades/25.png"
-                                alt=""
-                              /><img
-                                class="icon1"
-                                src="../../assets/images/course/modulo2/actividades/soccer-ball-png-24.png"
-                                alt=""
-                              />
-                            </li>
-                          </ul>
+              <div class="row">
+                <div class="col">
+                  <!-- Lectura de números decimales -->
+                  <div class="card">
+                    <div class="card-horizon">
+                      <div class="row">
+                        <div class="image-container col-md-4">
+                          <div
+                            class="background-holder has-content"
+                            style="
+                              background-image: url('../../assets/images/course/modulo2/tema1/ejemploDecimal.png');
+                              object-fit: scale-down;
+                            "
+                          ></div>
                         </div>
-                      </div>
-                      <div class="col-md-8 soup mrg-top-10 mrg-btm-10">
-                        <div id="main">
-                          <div id="x8"></div>
-                          <div id="grid">
-                            <div class="box" data-word="Deporte">D</div>
-                            <div class="box" data-word="Deporte">E</div>
-                            <div class="box" data-word="Deporte">P</div>
-                            <div class="box" data-word="Deporte">O</div>
-                            <div class="box" data-word="Deporte">R</div>
-                            <div class="box" data-word="Deporte">T</div>
-                            <div class="box" data-word="Deporte">E</div>
-                            <div class="box" data-word="Caminar">C</div>
-                            <div class="box">P</div>
-                            <div class="box">C</div>
-                            <div class="box">B</div>
-                            <div class="box">O</div>
-                            <div class="box">T</div>
-                            <div class="box">A</div>
-                            <div class="box">N</div>
-                            <div class="box" data-word="Caminar">A</div>
-                            <div class="box" data-word="Bailar">B</div>
-                            <div class="box" data-word="Bailar">A</div>
-                            <div class="box" data-word="Bailar">I</div>
-                            <div class="box" data-word="Bailar">L</div>
-                            <div class="box" data-word="Bailar">A</div>
-                            <div class="box" data-word="Bailar">R</div>
-                            <div class="box">F</div>
-                            <div class="box" data-word="Caminar">M</div>
-                            <div class="box">W</div>
-                            <div class="box">N</div>
-                            <div class="box">R</div>
-                            <div class="box">O</div>
-                            <div class="box">H</div>
-                            <div class="box">S</div>
-                            <div class="box">L</div>
-                            <div class="box" data-word="Caminar">I</div>
-                            <div class="box" data-word="Correr">C</div>
-                            <div class="box" data-word="Correr">O</div>
-                            <div class="box" data-word="Correr">R</div>
-                            <div class="box" data-word="Correr">R</div>
-                            <div class="box" data-word="Correr">E</div>
-                            <div class="box" data-word="Correr">R</div>
-                            <div class="box">O</div>
-                            <div class="box" data-word="Caminar">N</div>
-                            <div class="box" data-word="Nadar">N</div>
-                            <div class="box" data-word="Nadar">A</div>
-                            <div class="box" data-word="Nadar">D</div>
-                            <div class="box" data-word="Nadar">A</div>
-                            <div class="box" data-word="Nadar">R</div>
-                            <div class="box">X</div>
-                            <div class="box">J</div>
-                            <div class="box" data-word="Caminar">A</div>
-                            <div class="box">M</div>
-                            <div class="box">A</div>
-                            <div class="box">L</div>
-                            <div class="box">C</div>
-                            <div class="box">O</div>
-                            <div class="box">M</div>
-                            <div class="box">E</div>
-                            <div class="box" data-word="Caminar">R</div>
-                            <div class="box" data-word="Pedalear">P</div>
-                            <div class="box" data-word="Pedalear">E</div>
-                            <div class="box" data-word="Pedalear">D</div>
-                            <div class="box" data-word="Pedalear">A</div>
-                            <div class="box" data-word="Pedalear">L</div>
-                            <div class="box" data-word="Pedalear">E</div>
-                            <div class="box" data-word="Pedalear">A</div>
-                            <div class="box" data-word="Pedalear">R</div>
+                        <div class="col-md-8 ml-auto">
+                          <div class="card-block">
+                            <div class="row">
+                              <h1 class="mrg-btm-20 card-title">
+                                Lectura de números decimales
+                              </h1>
+                            </div>
+                            <div class="row">
+                              <p class="card-info mb-1 mt-0">
+                                <i class="icon ti-mouse-alt"></i>
+                                Haz clic en los botones para revisar su descripción.
+                              </p>
+                            </div>
+                            <div class="row">
+                              <p>Se puede leer de diferentes maneras como:</p>
+                            </div>
+                            <div class="row">
+                              <div class="col">
+                                <p id="decimal-lectura">_</p>
+                              </div>
+                            </div>
+                            <div class="row">
+                              <div class="col-md-3">
+                                <button class="btn btn-default w-75" onclick="lecturaDecimal(0)">Opción 1</button>
+                              </div>
+                              <div class="col-md-3">
+                                <button class="btn btn-default w-75" onclick="lecturaDecimal(1)">Opción 2</button>
+                              </div>
+                              <div class="col-md-3">
+                                <button class="btn btn-default w-75-lg" onclick="lecturaDecimal(2)">Opción 3</button>
+                              </div>
+                              <div class="col-md-3">
+                                <button class="btn btn-default w-75" onclick="lecturaDecimal(3)">Opción 4</button>
+                              </div>
+                            </div>
                           </div>
                         </div>
                       </div>
                     </div>
                   </div>
-                  <div
-                    id="success"
-                    class="submitbutton alertCorrect center mb-2"
-                    style="display: none"
-                  >
-                    <br />
-                    <b
-                      class="center alertCorrect pb-3"
-                      style="color: green; margin: 1.5rem 0; font-size: 1.5rem"
-                    >
-                      ¡Muy Bien! Has encontrado todas las buenas actividades.
-                      Puedes continuar.
-                    </b>
+                  <!-- Lectura de números decimales -->
+                </div>
+              </div>
+
+              <div class="row">
+                <!-- Número decimal interactivo -->
+                <div class="col">
+                  <div class="card">
+                    <div class="card-horizon">
+                      <div class="row">
+                        <div class="col text-center m-auto">
+                          <p class="card-info mb-1 mt-0">
+                            <i class="icon ti-mouse-alt"></i>
+                            Haz clic en los números para revisar su descripción.
+                          </p>
+                          <!-- Número decimal -->
+                          <div class="d-flex inline-block flex-row">
+                            <button type="button" class="btn btn-secondary number p-0" data-toggle="tooltip" data-placement="bottom" title="Centenas">
+                              8
+                            </button>
+                            <button type="button" class="btn btn-secondary number" data-toggle="tooltip" data-placement="bottom" title="Decenas">
+                              9
+                            </button>
+                            <button type="button" class="btn btn-secondary number" data-toggle="tooltip" data-placement="bottom" title="Unidades">
+                              1
+                            </button>
+                            <button type="button" class="btn btn-secondary number" data-toggle="tooltip" data-placement="bottom" title="">
+                              .
+                            </button>
+                            <button type="button" class="btn btn-secondary number" data-toggle="tooltip" data-placement="bottom" title="Décima">
+                              2
+                            </button>
+                            <button type="button" class="btn btn-secondary number" data-toggle="tooltip" data-placement="bottom" title="Centésima">
+                              8
+                            </button>
+                            <button type="button" class="btn btn-secondary number" data-toggle="tooltip" data-placement="bottom" title="Milésima">
+                              4
+                            </button>
+                          </div>
+                          <!-- Número decimal -->
+                        </div>
+                        <div class="col">
+                          <div class="card-block">
+                            <h1 class="card-title">Valor posicional</h1>
+                            <p>
+                              A la <b>izquierda del punto</b> encontramos la parte entera, que puede constar de derecha a izquierda de la coma de: unidad, decena y centena. 
+                              <br>
+                              A la <b>derecha del punto</b> encontramos la parte decimal, que puede constar de izquierda a derecha de: décima, centésima y milésima.
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- Número decimal interactivo -->
+              </div>
+
+              <div class="row">
+                <div class="col">
+                  <div class="card">
+                    <div class="card-block">
+                      <h2 class="card-title">Acerca de los números decimales:</h2>
+                      <p>
+                        Te invitamos a el siguiente video sobre números decimales
+                        para enriquecer su aprendizaje.
+                      </p>
+
+                      <!-- Playlist de Youtube -->
+
+                      <div class="centralizer mrg-top-20">
+                        <iframe
+                          width="100%"
+                          height="460px"
+                          src="https://www.youtube.com/embed/e1wrhkZhUcA"
+                          frameborder="0"
+                          allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                          allowfullscreen
+                        ></iframe>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
-              <!-- card QUIZ -->
             </div>
           </div>
           <!--Botones de avance entre páginas-->
@@ -314,6 +304,15 @@
     <!-- endbuild -->
 
     <!-- Insert your dependencies here -->
-    <script></script>
+    <script>
+      function lecturaDecimal(i) {
+        var opciones = ["Cuarenta y siete punto sesenta y dos", 
+        "Cuarenta y siete con sesenta y dos", 
+        "Cuarenta y siete unidades y sesenta y dos centésimas", 
+        "Cuatro decenas y siete unidades con seis décimas y dos centésimas "]
+
+        document.getElementById("decimal-lectura").innerHTML = opciones[i];
+      }
+    </script>
   </body>
 </html>
