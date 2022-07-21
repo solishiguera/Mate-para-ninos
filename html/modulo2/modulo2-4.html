@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html>
   <head>
     <meta charset="utf-8" />
@@ -36,9 +36,42 @@
     <link href="../../assets/css/progress.css" rel="stylesheet" />
     <link href="../../assets/css/progress-circle.css" rel="stylesheet" />
     <link
-      href="../../assets/css/modulos/modulo2/modulo2-3.css"
+      href="../../assets/css/modulos/modulo2/draggable.css"
       rel="stylesheet"
     />
+    <style>
+      .card-info i.icon {
+        font-size: 26px;
+      }
+
+      /* Van a definir las posiciones de las opciones a hacer DRAG */
+      #A4 {
+        left: 75%;
+      }
+      #A2 {
+        left: 2%;
+      }
+      #A3 {
+        left: 26%;
+      }
+      #A1 {
+        left: 50%;
+      }
+      @media (min-width: 992px) {
+        #A2 {
+          left: 22%;
+        }
+        #A3 {
+          left: 42%;
+        }
+        #A1 {
+          left: 62%;
+        }
+        #A4 {
+          left: 82%;
+        }
+      }
+    </style>
   </head>
 
   <body class="header-info side-nav-dark">
@@ -62,212 +95,174 @@
               <!-- card QUIZ -->
               <div class="card">
                 <div class="container-fluid">
-                  <h1 class="m-4 card-title mrg-left-20">
-                    Ejercicio 2 - ¿Quienes pueden hacer ejercicio?
-                  </h1>
-                  <div class="p-3">
-                    <p class="text-left">
-                      Ahora vamos a buscar el nombre de actividades físicas que
-                      le ayuden en el cuidado de la salud. Dentro de esta sopa
-                      de letras encontrará también algunos hábitos malos, ¡Tenga
-                      cuidado! Son 6 BUENAS actividades para su salud. ¡Buena
-                      Suerte!
+                  <h1 class="m-3 mrg-btm-10 card-title">Actividad 1</h1>
+
+                  <div
+                    class="pdd-horizon-10 pdd-vertical-15"
+                    style="position: relative"
+                  >
+                    <p>
+                      <b
+                        >1.Ordena los siguientes números de mayor a menor.</b
+                      >
                     </p>
-                    <div class="indication mrg-btm-20">
-                      <p class="card-info">
-                        <i class="icon iconin ti-mouse-alt"></i>
-                        <label style="padding: 0.5em"
-                          >Manten presionado sobre las letras y desliza el
-                          cursor presionando sobre toda la
-                          <a
-                            data-toggle="tooltip"
-                            title=""
-                            href="javascript:void(0);"
-                            data-original-title="Actividad saludable."
-                            >palabra</a
-                          >
-                          completa que encuentres.
-                        </label>
+                    <div class="indication">
+                      <p class="card-info mrg-btm-15">
+                        <i class="icon ti-hand-drag"></i> Asegúrese de presionar
+                        bien los
+                        <a
+                          data-toggle="tooltip"
+                          title=""
+                          href="javascript:void(0);"
+                          data-original-title="Debajo de la pantalla."
+                          >números </a
+                        >azules para arrastrarlos a su respectivo
+                        <a
+                          data-toggle="tooltip"
+                          title=""
+                          href="javascript:void(0);"
+                          data-original-title="Caja azul "
+                          >campo.</a
+                        >
                       </p>
                     </div>
                     <hr />
-                  </div>
 
-                  <div
-                    class="pdd-vertical-10 pdd-horizon-10 mrg-btm-20"
-                    id="outer"
-                  >
-                    <div class="row">
-                      <div
-                        class="col-md-4 p-4"
-                        style="display: flex; justify-content: center"
-                      >
-                        <div id="listContainer">
-                          <h2>Pistas</h2>
-                          <ul id="list">
-                            <li>
-                              <img
-                                class="icon1"
-                                src="../../assets/images/course/modulo2/actividades/26.png"
-                                alt=""
-                              /><img
-                                class="icon1"
-                                src="../../assets/images/course/modulo2/actividades/24.png"
-                                alt=""
-                              />
-                            </li>
-                            <li>
-                              <img
-                                class="icon1"
-                                src="../../assets/images/course/modulo2/actividades/27.png"
-                                alt=""
-                              /><img
-                                class="icon1"
-                                src="../../assets/images/course/modulo2/actividades/28.png"
-                                alt=""
-                              />
-                            </li>
-                            <li>
-                              <img
-                                class="icon1"
-                                src="../../assets/images/course/modulo2/actividades/25.png"
-                                alt=""
-                              /><img
-                                class="icon1"
-                                src="../../assets/images/course/modulo2/actividades/soccer-ball-png-24.png"
-                                alt=""
-                              />
-                            </li>
-                          </ul>
+                    <div class="row justify-content-center boxes">
+                        <div class="col-md-2 mrg-btm-15 p-1">
+                            <div id="B1" class="border border-secondary rounded">
+                                <div id="R1" class="container container1 container2 bg-blue border border-primary rounded rounded-lg">1</div>
+                                <div id="S1" class="container1">
+                                    <p id="F1" style="display: none; color: orange; margin: 0px">
+                                        Seleccione otra opción.
+                                    </p>
+                                    <p id="C1" style="display: none; color: green; margin: 0px">
+                                        Respuesta correcta.
+                                        <i class="fa fa-thumbs-o-up" aria-hidden="true"></i>
+                                    </p>
+                                </div>
+                            </div>
                         </div>
-                      </div>
-                      <div class="col-md-8 soup mrg-top-10 mrg-btm-10">
-                        <div id="main">
-                          <div id="x8"></div>
-                          <div id="grid">
-                            <div class="box" data-word="Deporte">D</div>
-                            <div class="box" data-word="Deporte">E</div>
-                            <div class="box" data-word="Deporte">P</div>
-                            <div class="box" data-word="Deporte">O</div>
-                            <div class="box" data-word="Deporte">R</div>
-                            <div class="box" data-word="Deporte">T</div>
-                            <div class="box" data-word="Deporte">E</div>
-                            <div class="box" data-word="Caminar">C</div>
-                            <div class="box">P</div>
-                            <div class="box">C</div>
-                            <div class="box">B</div>
-                            <div class="box">O</div>
-                            <div class="box">T</div>
-                            <div class="box">A</div>
-                            <div class="box">N</div>
-                            <div class="box" data-word="Caminar">A</div>
-                            <div class="box" data-word="Bailar">B</div>
-                            <div class="box" data-word="Bailar">A</div>
-                            <div class="box" data-word="Bailar">I</div>
-                            <div class="box" data-word="Bailar">L</div>
-                            <div class="box" data-word="Bailar">A</div>
-                            <div class="box" data-word="Bailar">R</div>
-                            <div class="box">F</div>
-                            <div class="box" data-word="Caminar">M</div>
-                            <div class="box">W</div>
-                            <div class="box">N</div>
-                            <div class="box">R</div>
-                            <div class="box">O</div>
-                            <div class="box">H</div>
-                            <div class="box">S</div>
-                            <div class="box">L</div>
-                            <div class="box" data-word="Caminar">I</div>
-                            <div class="box" data-word="Correr">C</div>
-                            <div class="box" data-word="Correr">O</div>
-                            <div class="box" data-word="Correr">R</div>
-                            <div class="box" data-word="Correr">R</div>
-                            <div class="box" data-word="Correr">E</div>
-                            <div class="box" data-word="Correr">R</div>
-                            <div class="box">O</div>
-                            <div class="box" data-word="Caminar">N</div>
-                            <div class="box" data-word="Nadar">N</div>
-                            <div class="box" data-word="Nadar">A</div>
-                            <div class="box" data-word="Nadar">D</div>
-                            <div class="box" data-word="Nadar">A</div>
-                            <div class="box" data-word="Nadar">R</div>
-                            <div class="box">X</div>
-                            <div class="box">J</div>
-                            <div class="box" data-word="Caminar">A</div>
-                            <div class="box">M</div>
-                            <div class="box">A</div>
-                            <div class="box">L</div>
-                            <div class="box">C</div>
-                            <div class="box">O</div>
-                            <div class="box">M</div>
-                            <div class="box">E</div>
-                            <div class="box" data-word="Caminar">R</div>
-                            <div class="box" data-word="Pedalear">P</div>
-                            <div class="box" data-word="Pedalear">E</div>
-                            <div class="box" data-word="Pedalear">D</div>
-                            <div class="box" data-word="Pedalear">A</div>
-                            <div class="box" data-word="Pedalear">L</div>
-                            <div class="box" data-word="Pedalear">E</div>
-                            <div class="box" data-word="Pedalear">A</div>
-                            <div class="box" data-word="Pedalear">R</div>
-                          </div>
+                        <div class="col-md-2 mrg-btm-15 p-1">
+                            <div id="B2" class="border border-secondary rounded">
+                                <div id="R2" class="container container1 container2 bg-blue border border-primary rounded rounded-lg">2</div>
+                                <div id="S2" class="container1">
+                                    <p id="F2" style="display: none; color: orange; margin: 0px">
+                                        Seleccione otra opción.
+                                    </p>
+                                    <p id="C2" style="display: none; color: green; margin: 0px">
+                                        Respuesta correcta.
+                                        <i class="fa fa-thumbs-o-up" aria-hidden="true"></i>
+                                    </p>
+                                </div>
+                            </div>
                         </div>
-                      </div>
+                        <div class="col-md-2 mrg-btm-15 p-1">
+                            <div id="B3" class="border border-secondary rounded">
+                                <div id="R3" class="container container1 container2 bg-blue border border-primary rounded rounded-lg">3</div>
+                                <div id="S3" class="container1">
+                                    <p id="F3" style="display: none; color: orange; margin: 0px">
+                                    </p>
+                                    <p id="C3" style="display: none; color: green; margin: 0px">
+                                        Respuesta correcta.
+                                        <i class="fa fa-thumbs-o-up" aria-hidden="true"></i>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-2 mrg-btm-15 p-1">
+                            <div id="B4" class="border border-secondary rounded">
+                                <div id="R4" class="container container1 container2 bg-blue border border-primary rounded rounded-lg">4</div>
+                                <div id="S4" class="container1">
+                                    <p id="F4" style="display: none; color: orange; margin: 0px">
+                                        Seleccione otra opción.
+                                    </p>
+                                    <p id="C4" style="display: none; color: green; margin: 0px">
+                                        Respuesta correcta.
+                                        <i class="fa fa-thumbs-o-up" aria-hidden="true"></i>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="inliner">
+                        <div id="A1" class="draggable iconanswer m-1 bg-primary text-white circled text-center" draggable="true">
+                            <p class="h-100 mt-3">2.58</p>
+                        </div>
+                        <div id="A2" class="draggable iconanswer m-1 bg-primary text-white circled text-center" draggable="true">
+                            <p class="h-100 mt-3">3.24</p>
+                        </div>
+                        <div id="A3" class="draggable iconanswer m-1 bg-primary text-white circled text-center" draggable="true">
+                            <p class="h-100 mt-3">2.22</p>
+                        </div>
+                        <div id="A4" class="draggable iconanswer m-1 bg-primary text-white circled text-center" draggable="true">
+                            <p class="h-100 mt-3">1.03</p>
+                        </div>
                     </div>
                   </div>
-                  <div
-                    id="success"
-                    class="submitbutton alertCorrect center mb-2"
-                    style="display: none"
-                  >
-                    <br />
-                    <b
-                      class="center alertCorrect pb-3"
-                      style="color: green; margin: 1.5rem 0; font-size: 1.5rem"
-                    >
-                      ¡Muy Bien! Has encontrado todas las buenas actividades.
-                      Puedes continuar.
-                    </b>
+                  <div class="row centralizer1 mrg-btm-15">
+                    <div class="col-md-6">
+                      <div class="msg">
+                        <span></span>
+                      </div>
+                    </div>
+                    <div class="col-md-5">
+                      <div class="submitbutton">
+                        <button
+                          id="check"
+                          type="button"
+                          class="button check"
+                          onclick="checkAll()"
+                        >
+                          REVISAR
+                        </button>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
               <!-- card QUIZ -->
-            </div>
-          </div>
-          <!--Botones de avance entre páginas-->
-          <div class="row mrg-btm-20">
-            <div class="col text-center">
-              <div class="btn-group"></div>
-            </div>
-          </div>
 
-          <!--Widgets de avance de módulo y general-->
-          <div class="card widget-feed">
-            <div class="row">
-              <div class="col-lg-8">
-                <h1 class="feed-title tag tag-info">Módulo 2</h1>
-                <h3 class="feed-subtitle">Tu Progreso</h3>
-                <div class="progress" style="height: 20px" id="bar">
-                  <div
-                    class="progress-bar bg-info"
-                    role="progressbar"
-                    aria-valuenow="75"
-                    aria-valuemin="0"
-                    aria-valuemax="100"
-                    style="max-width: 75%"
-                  >
-                    75%
-                  </div>
+              <!--Botones de avance entre páginas-->
+              <div class="row mrg-btm-20">
+                <div class="col text-center">
+                  <div class="btn-group"></div>
                 </div>
               </div>
-              <div class="col-lg-4">
+
+              <!--Widgets de avance de módulo y general-->
+              <div class="card widget-feed">
                 <div class="row">
-                  <div class="col">
-                    <div id="circlecontainer"></div>
+                  <div class="col-lg-8">
+                    <h1 class="feed-title tag tag-info">Módulo 2</h1>
+                    <h3 class="feed-subtitle">Tu Progreso</h3>
+                    <div class="progress" style="height: 20px" id="bar">
+                      <div
+                        class="progress-bar bg-info"
+                        role="progressbar"
+                        aria-valuenow="80"
+                        aria-valuemin="0"
+                        aria-valuemax="100"
+                        style="max-width: 80%"
+                      >
+                        80%
+                      </div>
+                    </div>
                   </div>
-                </div>
-                <div class="row">
-                  <div class="col text-center">
-                    <h3 class="feed-subtitle">Progreso General del Curso</h3>
+                  <div class="col-lg-4">
+                    <div class="row">
+                      <div class="col">
+                        <div id="circlecontainer"></div>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col text-center">
+                        <h3 class="feed-subtitle">
+                          Progreso General del Curso
+                        </h3>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -292,13 +287,6 @@
     <script src="../../assets/vendors/bootstrap/dist/js/bootstrap.js"></script>
     <script src="../../assets/vendors/PACE/pace.min.js"></script>
     <script src="../../assets/vendors/perfect-scrollbar/js/perfect-scrollbar.jquery.js"></script>
-    <script src="../../assets/js/scripts/modulo2/modulo2-3.js"></script>
-
-    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/fastclick/1.0.6/fastclick.min.js"></script> -->
-
-    <script>
-      $('[data-toggle="tooltip"]').tooltip();
-    </script>
 
     <!-- Progress plugins -->
     <script src="../../assets/js/progressbar.js"></script>
@@ -310,10 +298,46 @@
     <script src="../../assets/js/app.js"></script>
     <script src="../../assets/js/recycled/navigationbar.js"></script>
     <script src="../../assets/js/progress/url-script.js"></script>
+    <script src="../../assets/js/scripts/modulo2/draggable.js"></script>
 
     <!-- endbuild -->
 
     <!-- Insert your dependencies here -->
-    <script></script>
+
+    <script>
+      $(function () {
+        $('[data-toggle="tooltip"]').tooltip();
+      });
+      $(".custom-control-label").on("click", function () {
+        if ($(this).siblings().is(":checked")) {
+          $(this).siblings().removeAttr("checked");
+        } else {
+          $(this).siblings().prop("checked", true);
+        }
+      });
+
+      function checkAll() {
+        count = 4;
+        if (A1 == true) {
+          correct++;
+        }
+        if (A2 == true) {
+          correct++;
+        }
+        if (A3 == true) {
+          correct++;
+        }
+        if (A4 == true) {
+          correct++;
+        }
+
+        $(".score > span").html(parseInt((correct * 100) / count) + "/100");
+        if (parseInt((correct * 100) / count) > 70) {
+          $(".msg > span").html("¡Muy Bien! Puedes continuar.");
+        } else {
+          $(".msg > span").html("Revise sus respuestas.");
+        }
+      }
+    </script>
   </body>
 </html>
