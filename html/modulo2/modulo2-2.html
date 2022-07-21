@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html>
   <head>
     <meta charset="utf-8" />
@@ -58,38 +58,35 @@
               <div class="row">
                 <div class="col">
                   <div class="card">
-                    <div class="card-horizon">
-                      <div class="image-container col-md-4" >
-                        <div
-                          class="background-holder has-content"
-                          style="
-                            background-image: url('../../assets/images/course/modulo1/m1-2/shutterstock_420500284_1.jpg');
-                            background-position: 40% 15%;
-                          "
-                        ></div>
-                      </div>
-                      <div class="row">
-                        <div class="col-md-8 ml-auto">
-                          <div class="card-block">
-                            <h1 class="mrg-btm-20 card-title">
-                              <span
-                                class="badge badge-light"
-                                style="font-size: 26px"
-                                >Tema 1: Notación desarrollada de números naturales 
-                                y decimales. Valor posicional de las cifras de un número.
-                              </span>
-                            </h1>
-                            <p>
-                              Los números decimales son la división de un numerador y un denominador de los 
-                              números racionales, o el resultado aproximado de encontrar un número irracional.
-                              Estos números se originan en la necesidad de representar cantidades de partes 
-                              o porciones de números repartidos en el sistema decimal.  
-                              <br>
-                              Se caracterizan por utilizar como división de la parte entera 
-                              y la decimal la coma o el punto.  De esta manera la cantidad que se encuentra a  
-                              la izquierda de la coma se llama parte entera y la parte de la derecha, parte 
-                              decimal.
-                            </p>
+                    <div class="row">
+                      <div class="container-fluid">
+                        <div class="row">
+                          <div class="col-md-4 ml-auto">
+                            <div class="pdd-vertical-30 pdd-horizon-25">
+                              <h1 class="mrg-btm-20 card-title">
+                                Parte Entera y decimal
+                              </h1>
+                              <p>
+                                Cada número decimal consta de una parte entera y una 
+                                decimal  van separadas de una coma o punto. La parte 
+                                entera va a la izquierda del punto y puede incluir 
+                                el cero. La parte decimal va a la derecha de la coma.
+                              </p>
+                            </div>
+                          </div>
+                          <div class="col-md-8">
+                            <div class="row">
+                              <div class="col-12 text-center">
+                                <h1 id="1-5" class="font-size-40 p-0"> </h1>
+                              </div>
+                              <div class="col-12 text-center">
+                                <img id="imgChange" class="mw-75-lg m-auto" 
+                                src="../../assets/images/course/modulo2/tema1/SinLlenar.png" 
+                                alt="" 
+                                onclick="changeImage()"
+                              >
+                              </div>
+                            </div>
                           </div>
                         </div>
                       </div>
@@ -97,6 +94,7 @@
                   </div>
                 </div>
               </div>
+              
               <div class="row">
                 <div class="col offset-md-6">
                   <p class="card-info mb-1 mt-0 w-100">
@@ -105,13 +103,14 @@
                   </p>
                 </div>
               </div>
+              
               <div class="row">
                 <div class="col-md-6">
                   <div class="card card-block h-100">
                     <h2 class="card-title">
                       Número decimal
                     </h2>
-
+              
                     <p>
                       Es un número no entero, compuesto por una parte entera y 
                       una parte decimal, y se usan cuando queremos representar 
@@ -144,6 +143,29 @@
                             ya que se cumple que 1 es mayor que 0.5. 
                           </h1>
                         </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="row">
+                <div class="col">
+                  <div class="card">
+                    <div class="row">
+                      <div class="col-md-12 text-center mh-100 h-100" >
+                        <div class="m-auto mw-75-md" style='height: 75vh; background-image: url("../../assets/images/course/modulo2/modulo2-3/pizarron.png"); background-repeat: no-repeat; background-size: cover;'>
+                          <br>
+                          <div class="p-5">
+                            <ul id="list"></ul>
+                            <p id="type-text" class="m-auto mw-75-md font-size-30" ></p>
+                            <br>
+                            <p id="type-text-ex" class="m-auto mw-40-md font-size-30" ></p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-12 text-center">
+                        <button class="button btn mt-1" onclick="typeMyText()">Ejemplos</button>
                       </div>
                     </div>
                   </div>
@@ -205,7 +227,6 @@
     <!-- plugins js -->
     <script src="../../assets/vendors/jquery/dist/jquery.min.js"></script>
     <script src="../../assets/vendors/popper.js/dist/umd/popper.min.js"></script>
-    <script src="https://cdn.rawgit.com/nnattawat/flip/master/dist/jquery.flip.min.js"></script>
     <script src="../../assets/vendors/bootstrap/dist/js/bootstrap.js"></script>
     <script src="../../assets/vendors/PACE/pace.min.js"></script>
     <script src="../../assets/vendors/perfect-scrollbar/js/perfect-scrollbar.jquery.js"></script>
@@ -224,9 +245,69 @@
 
     <!-- endbuild -->
 
-    <!-- Insert your dependencies here -->
-    <script>
-      $("#card").flip();
-    </script>
+   <!-- Insert your dependencies here -->
+ <script src="https://cdn.rawgit.com/nnattawat/flip/master/dist/jquery.flip.min.js"></script>
+
+ <script>
+   function changeImage() {
+     var image = document.getElementById('imgChange');
+         if (image.src.match("SinLlenar.png")) {
+             image.src = "../../assets/images/course/modulo2/tema1/Lleno.png";
+             document.getElementById('1-5').textContent="1.5"
+         }
+   }
+ </script>
+ 
+ <script>
+   $("#card").flip();
+ </script>
+
+ <script>
+   var i = 0;
+   var txt = ['1.7', '1,7', "1'07"]// 'Welcome To Online Web Tutor Programming World.';
+   //var txt = 'Welcome To Online Web Tutor Programming World.';
+   
+
+   /*function helpsos(word) { 
+     var speed = 120;
+     if (i < txt.length) {
+         var ul = document.getElementById("list");
+         var li = document.createElement("li");
+         li.appendChild(document.createTextNode(word));
+         ul.appendChild(li);
+         i++;
+         setTimeout(helpsos(word), speed);
+     }
+     return
+   }
+   function typeMyText() {
+     var speed = 120;
+     for (let i = 0; i < txt.length; i++) {
+       const element = txt[i];
+
+       console.log(element)
+       setTimeout(helpsos(element), speed);
+     }
+       
+   }*/ 
+   var i = 0;
+   var j = 0; 
+   var txt = 'Los números decimales se escriben usando un punto para separar la parte entera de la parte decimal. Lo más común es encontrarlos usando el punto, pero se puede escribir usando una coma o apóstrofe.';
+   var txt2 = "1.7, 1,7, 1'07"
+   var speed = 50;
+   function typeMyText() {
+     if (i < txt.length) {
+       document.getElementById("type-text").innerHTML += txt.charAt(i);
+       i++;
+       setTimeout(typeMyText, speed);
+     }  
+     if (j < txt2.length && i >= txt.length) {
+       document.getElementById("type-text-ex").innerHTML += txt2.charAt(j);
+       j++;
+       setTimeout(typeMyText, speed);
+     }  
+   }
+ </script>
+    
   </body>
 </html>

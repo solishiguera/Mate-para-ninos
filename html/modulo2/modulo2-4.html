@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html>
   <head>
     <meta charset="utf-8" />
@@ -36,35 +36,45 @@
     <link href="../../assets/css/progress.css" rel="stylesheet" />
     <link href="../../assets/css/progress-circle.css" rel="stylesheet" />
     <link
-      href="../../assets/css/modulos/modulo2/modulo2-3.css"
+      href="../../assets/css/modulos/modulo2/draggable.css"
       rel="stylesheet"
     />
+    <style>
+      .card-info i.icon {
+        font-size: 26px;
+      }
+
+      /* Van a definir las posiciones de las opciones a hacer DRAG */
+      #A4 {
+        left: 75%;
+      }
+      #A2 {
+        left: 2%;
+      }
+      #A3 {
+        left: 26%;
+      }
+      #A1 {
+        left: 50%;
+      }
+      @media (min-width: 992px) {
+        #A2 {
+          left: 22%;
+        }
+        #A3 {
+          left: 42%;
+        }
+        #A1 {
+          left: 62%;
+        }
+        #A4 {
+          left: 82%;
+        }
+      }
+    </style>
   </head>
 
   <body class="header-info side-nav-dark">
-    <style>
-      button.number { 
-        background-color: transparent;
-	      border: none;
-	      padding: 0;
-        color: black;
-	      cursor: pointer;
-	      outline: inherit;
-        font-size: 40px;
-        font-weight: bold;
-      }
-
-      button.number:hover { 
-        background-color: transparent;
-        color: #800000;
-        padding: 0;
-      }
-
-      button.number:active { 
-        background-color: transparent !important;
-        color: #800000 !important; 
-      }
-    </style>
     <div class="app">
       <div class="layout">
         <!-- Side Nav START -->
@@ -82,155 +92,177 @@
           <div class="main-content">
             <div class="container-fluid px-0 px-sm-3">
               <!-- Your content goes here -->
-              <div class="row">
-                <div class="col">
-                  <!-- Lectura de números decimales -->
-                  <div class="card">
-                    <div class="card-horizon">
-                      <div class="row">
-                        <div class="image-container col-md-4">
-                          <div
-                            class="background-holder has-content"
-                            style="
-                              background-image: url('../../assets/images/course/modulo2/tema1/ejemploDecimal.png');
-                              object-fit: scale-down;
-                            "
-                          ></div>
-                        </div>
-                        <div class="col-md-8 ml-auto">
-                          <div class="card-block">
-                            <div class="row">
-                              <h1 class="mrg-btm-20 card-title">
-                                Lectura de números decimales
-                              </h1>
-                            </div>
-                            <div class="row">
-                              <p class="card-info mb-1 mt-0">
-                                <i class="icon ti-mouse-alt"></i>
-                                Haz clic en los botones para revisar su descripción.
-                              </p>
-                            </div>
-                            <div class="row">
-                              <p>Se puede leer de diferentes maneras como:</p>
-                            </div>
-                            <div class="row">
-                              <div class="col">
-                                <p id="decimal-lectura">_</p>
-                              </div>
-                            </div>
-                            <div class="row">
-                              <div class="col-md-3">
-                                <button class="btn btn-default w-75" onclick="lecturaDecimal(0)">Opción 1</button>
-                              </div>
-                              <div class="col-md-3">
-                                <button class="btn btn-default w-75" onclick="lecturaDecimal(1)">Opción 2</button>
-                              </div>
-                              <div class="col-md-3">
-                                <button class="btn btn-default w-75-lg" onclick="lecturaDecimal(2)">Opción 3</button>
-                              </div>
-                              <div class="col-md-3">
-                                <button class="btn btn-default w-75" onclick="lecturaDecimal(3)">Opción 4</button>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <!-- Lectura de números decimales -->
-                </div>
-              </div>
+              <!-- card QUIZ -->
+              <div class="card">
+                <div class="container-fluid">
+                  <h1 class="m-3 mrg-btm-10 card-title">Actividad 1</h1>
 
-              <div class="row">
-                <!-- Número decimal interactivo -->
-                <div class="col">
-                  <div class="card">
-                    <div class="card-horizon">
-                      <div class="row">
-                        <div class="col text-center m-auto">
-                          <p class="card-info mb-1 mt-0">
-                            <i class="icon ti-mouse-alt"></i>
-                            Haz clic en los números para revisar su descripción.
-                          </p>
-                          <!-- Número decimal -->
-                          <div class="d-flex inline-block flex-row">
-                            <button type="button" class="btn btn-secondary number p-0" data-toggle="tooltip" data-placement="bottom" title="Centenas">
-                              8
-                            </button>
-                            <button type="button" class="btn btn-secondary number" data-toggle="tooltip" data-placement="bottom" title="Decenas">
-                              9
-                            </button>
-                            <button type="button" class="btn btn-secondary number" data-toggle="tooltip" data-placement="bottom" title="Unidades">
-                              1
-                            </button>
-                            <button type="button" class="btn btn-secondary number" data-toggle="tooltip" data-placement="bottom" title="">
-                              .
-                            </button>
-                            <button type="button" class="btn btn-secondary number" data-toggle="tooltip" data-placement="bottom" title="Décima">
-                              2
-                            </button>
-                            <button type="button" class="btn btn-secondary number" data-toggle="tooltip" data-placement="bottom" title="Centésima">
-                              8
-                            </button>
-                            <button type="button" class="btn btn-secondary number" data-toggle="tooltip" data-placement="bottom" title="Milésima">
-                              4
-                            </button>
-                          </div>
-                          <!-- Número decimal -->
-                        </div>
-                        <div class="col">
-                          <div class="card-block">
-                            <h1 class="card-title">Valor posicional</h1>
-                            <p>
-                              A la <b>izquierda del punto</b> encontramos la parte entera, que puede constar de derecha a izquierda de la coma de: unidad, decena y centena. 
-                              <br>
-                              A la <b>derecha del punto</b> encontramos la parte decimal, que puede constar de izquierda a derecha de: décima, centésima y milésima.
-                            </p>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <!-- Número decimal interactivo -->
-              </div>
-            </div>
-          </div>
-          <!--Botones de avance entre páginas-->
-          <div class="row mrg-btm-20">
-            <div class="col text-center">
-              <div class="btn-group"></div>
-            </div>
-          </div>
-
-          <!--Widgets de avance de módulo y general-->
-          <div class="card widget-feed">
-            <div class="row">
-              <div class="col-lg-8">
-                <h1 class="feed-title tag tag-info">Módulo 2</h1>
-                <h3 class="feed-subtitle">Tu Progreso</h3>
-                <div class="progress" style="height: 20px" id="bar">
                   <div
-                    class="progress-bar bg-info"
-                    role="progressbar"
-                    aria-valuenow="75"
-                    aria-valuemin="0"
-                    aria-valuemax="100"
-                    style="max-width: 75%"
+                    class="pdd-horizon-10 pdd-vertical-15"
+                    style="position: relative"
                   >
-                    75%
+                    <p>
+                      <b
+                        >1.Ordena los siguientes números de mayor a menor.</b
+                      >
+                    </p>
+                    <div class="indication">
+                      <p class="card-info mrg-btm-15">
+                        <i class="icon ti-hand-drag"></i> Asegúrese de presionar
+                        bien los
+                        <a
+                          data-toggle="tooltip"
+                          title=""
+                          href="javascript:void(0);"
+                          data-original-title="Debajo de la pantalla."
+                          >números </a
+                        >azules para arrastrarlos a su respectivo
+                        <a
+                          data-toggle="tooltip"
+                          title=""
+                          href="javascript:void(0);"
+                          data-original-title="Caja azul "
+                          >campo.</a
+                        >
+                      </p>
+                    </div>
+                    <hr />
+
+                    <div class="row justify-content-center boxes">
+                        <div class="col-md-2 mrg-btm-15 p-1">
+                            <div id="B1" class="border border-secondary rounded">
+                                <div id="R1" class="container container1 container2 bg-blue border border-primary rounded rounded-lg">1</div>
+                                <div id="S1" class="container1">
+                                    <p id="F1" style="display: none; color: orange; margin: 0px">
+                                        Seleccione otra opción.
+                                    </p>
+                                    <p id="C1" style="display: none; color: green; margin: 0px">
+                                        Respuesta correcta.
+                                        <i class="fa fa-thumbs-o-up" aria-hidden="true"></i>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-2 mrg-btm-15 p-1">
+                            <div id="B2" class="border border-secondary rounded">
+                                <div id="R2" class="container container1 container2 bg-blue border border-primary rounded rounded-lg">2</div>
+                                <div id="S2" class="container1">
+                                    <p id="F2" style="display: none; color: orange; margin: 0px">
+                                        Seleccione otra opción.
+                                    </p>
+                                    <p id="C2" style="display: none; color: green; margin: 0px">
+                                        Respuesta correcta.
+                                        <i class="fa fa-thumbs-o-up" aria-hidden="true"></i>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-2 mrg-btm-15 p-1">
+                            <div id="B3" class="border border-secondary rounded">
+                                <div id="R3" class="container container1 container2 bg-blue border border-primary rounded rounded-lg">3</div>
+                                <div id="S3" class="container1">
+                                    <p id="F3" style="display: none; color: orange; margin: 0px">
+                                    </p>
+                                    <p id="C3" style="display: none; color: green; margin: 0px">
+                                        Respuesta correcta.
+                                        <i class="fa fa-thumbs-o-up" aria-hidden="true"></i>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-2 mrg-btm-15 p-1">
+                            <div id="B4" class="border border-secondary rounded">
+                                <div id="R4" class="container container1 container2 bg-blue border border-primary rounded rounded-lg">4</div>
+                                <div id="S4" class="container1">
+                                    <p id="F4" style="display: none; color: orange; margin: 0px">
+                                        Seleccione otra opción.
+                                    </p>
+                                    <p id="C4" style="display: none; color: green; margin: 0px">
+                                        Respuesta correcta.
+                                        <i class="fa fa-thumbs-o-up" aria-hidden="true"></i>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="inliner">
+                        <div id="A1" class="draggable iconanswer m-1 bg-primary text-white circled text-center" draggable="true">
+                            <p class="h-100 mt-3">2.58</p>
+                        </div>
+                        <div id="A2" class="draggable iconanswer m-1 bg-primary text-white circled text-center" draggable="true">
+                            <p class="h-100 mt-3">3.24</p>
+                        </div>
+                        <div id="A3" class="draggable iconanswer m-1 bg-primary text-white circled text-center" draggable="true">
+                            <p class="h-100 mt-3">2.22</p>
+                        </div>
+                        <div id="A4" class="draggable iconanswer m-1 bg-primary text-white circled text-center" draggable="true">
+                            <p class="h-100 mt-3">1.03</p>
+                        </div>
+                    </div>
+                  </div>
+                  <div class="row centralizer1 mrg-btm-15">
+                    <div class="col-md-6">
+                      <div class="msg">
+                        <span></span>
+                      </div>
+                    </div>
+                    <div class="col-md-5">
+                      <div class="submitbutton">
+                        <button
+                          id="check"
+                          type="button"
+                          class="button check"
+                          onclick="checkAll()"
+                        >
+                          REVISAR
+                        </button>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
-              <div class="col-lg-4">
-                <div class="row">
-                  <div class="col">
-                    <div id="circlecontainer"></div>
-                  </div>
+              <!-- card QUIZ -->
+
+              <!--Botones de avance entre páginas-->
+              <div class="row mrg-btm-20">
+                <div class="col text-center">
+                  <div class="btn-group"></div>
                 </div>
+              </div>
+
+              <!--Widgets de avance de módulo y general-->
+              <div class="card widget-feed">
                 <div class="row">
-                  <div class="col text-center">
-                    <h3 class="feed-subtitle">Progreso General del Curso</h3>
+                  <div class="col-lg-8">
+                    <h1 class="feed-title tag tag-info">Módulo 2</h1>
+                    <h3 class="feed-subtitle">Tu Progreso</h3>
+                    <div class="progress" style="height: 20px" id="bar">
+                      <div
+                        class="progress-bar bg-info"
+                        role="progressbar"
+                        aria-valuenow="80"
+                        aria-valuemin="0"
+                        aria-valuemax="100"
+                        style="max-width: 80%"
+                      >
+                        80%
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-4">
+                    <div class="row">
+                      <div class="col">
+                        <div id="circlecontainer"></div>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col text-center">
+                        <h3 class="feed-subtitle">
+                          Progreso General del Curso
+                        </h3>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -255,13 +287,6 @@
     <script src="../../assets/vendors/bootstrap/dist/js/bootstrap.js"></script>
     <script src="../../assets/vendors/PACE/pace.min.js"></script>
     <script src="../../assets/vendors/perfect-scrollbar/js/perfect-scrollbar.jquery.js"></script>
-    <script src="../../assets/js/scripts/modulo2/modulo2-3.js"></script>
-
-    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/fastclick/1.0.6/fastclick.min.js"></script> -->
-
-    <script>
-      $('[data-toggle="tooltip"]').tooltip();
-    </script>
 
     <!-- Progress plugins -->
     <script src="../../assets/js/progressbar.js"></script>
@@ -273,18 +298,45 @@
     <script src="../../assets/js/app.js"></script>
     <script src="../../assets/js/recycled/navigationbar.js"></script>
     <script src="../../assets/js/progress/url-script.js"></script>
+    <script src="../../assets/js/scripts/modulo2/draggable.js"></script>
 
     <!-- endbuild -->
 
     <!-- Insert your dependencies here -->
-    <script>
-      function lecturaDecimal(i) {
-        var opciones = ["Cuarenta y siete punto sesenta y dos", 
-        "Cuarenta y siete con sesenta y dos", 
-        "Cuarenta y siete unidades y sesenta y dos centésimas", 
-        "Cuatro decenas y siete unidades con seis décimas y dos centésimas "]
 
-        document.getElementById("decimal-lectura").innerHTML = opciones[i];
+    <script>
+      $(function () {
+        $('[data-toggle="tooltip"]').tooltip();
+      });
+      $(".custom-control-label").on("click", function () {
+        if ($(this).siblings().is(":checked")) {
+          $(this).siblings().removeAttr("checked");
+        } else {
+          $(this).siblings().prop("checked", true);
+        }
+      });
+
+      function checkAll() {
+        count = 4;
+        if (A1 == true) {
+          correct++;
+        }
+        if (A2 == true) {
+          correct++;
+        }
+        if (A3 == true) {
+          correct++;
+        }
+        if (A4 == true) {
+          correct++;
+        }
+
+        $(".score > span").html(parseInt((correct * 100) / count) + "/100");
+        if (parseInt((correct * 100) / count) > 70) {
+          $(".msg > span").html("¡Muy Bien! Puedes continuar.");
+        } else {
+          $(".msg > span").html("Revise sus respuestas.");
+        }
       }
     </script>
   </body>

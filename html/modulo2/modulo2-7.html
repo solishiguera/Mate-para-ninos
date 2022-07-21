@@ -6,7 +6,7 @@
       name="viewport"
       content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no"
     />
-    <title>Introducción Módulo 2 | CVA - Centro Virtual de Aprendizaje</title>
+    <title>Ejercicio 2 | CVA - Centro Virtual de Aprendizaje</title>
 
     <!-- Favicon -->
     <link rel="shortcut icon" href="../../assets/images/logo/favicon.png" />
@@ -38,6 +38,11 @@
   </head>
 
   <body class="header-info side-nav-dark">
+    <style>
+      .remove-deco { 
+        list-style: none;
+      }
+    </style>
     <div class="app">
       <div class="layout">
         <!-- Side Nav START -->
@@ -54,97 +59,274 @@
           <div class="main-content">
             <div class="container-fluid px-0 px-sm-3">
               <!-- Your content goes here -->
+              <div class="row">
+                <div class="col">
+                  <div class="card">
+                    <div class="overlay-dark bg" style="
+                                        background-image: url('../../assets/images/course/modulo1/m1-4/shutterstock_728178127_1.jpg');
+                                        background-position-y: 45%;
+                                        background-repeat: no-repeat;
+                                        background-size: cover;
+                                        object-fit: cover;
+                                      "></div>
+                    <div class="card-block">
+                      <h1 class="card-title">
+                        Descripción
+                      </h1>
+                
+                      <div class="row mrg-top-10">
+                        <div class="col">
+                          <p>
+                            Los números naturales y decimales se pueden expresar
+                            con una descomposición aditiva, multiplicativa o mixta.
+                          </p>
+                        </div>
+                      </div>
+                
+                      <p class="card-info mb-3">
+                        <i class="icon ti-mouse-alt"></i>
+                        Haz clic en las ilustraciones para revisar su descripción.
+                      </p>
+                
+                      <div class="row mrg-top-10 text-center">
+                        <div class="col-4">
+                          <button data-toggle="modal" data-target="#aditiva" class="btn btn-default w-100 p-5">
+                            Expresión aditiva
+                          </button>
+                        </div>
+                        <div class="col-4">
+                          <button data-toggle="modal" data-target="#multiplicativa" class="btn btn-default w-100 p-5">
+                            Expresión multiplicativa
+                          </button>
+                        </div>
+                        <div class="col-4">
+                          <button data-toggle="modal" data-target="#mixta" class="btn btn-default w-100 p-5">
+                            Expresión mixta
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                
+                  <!--Pop ups begin-->
+                  <div class="modal fade" id="aditiva" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+                    aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h5 class="modal-title" id="exampleModalLongTitle">
+                            <b>Expresión aditiva</b>
+                          </h5>
+                          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                          </button>
+                        </div>
+                        <div class="modal-body">
+                          <div class="row">
+                            <div class="col-12 text-center">
+                              <img src="../../assets/images/course/modulo1/m1-5/modal-m1-5-1.png" />
+                            </div>
+                            <div class="col-12 p-3">
+                              <p>
+                                Es cuando descompones una expresión en otra equivalente que está formada 
+                                por varios términos con signo de suma.
+                              </p>
+                              <p>Ejemplo</p>
+                              <p>25 = 10+5+4+3+2+1</p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-secondary" data-dismiss="modal">
+                            Regresar
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                
+                  <div class="modal fade" id="multiplicativa" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+                    aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h5 class="modal-title" id="exampleModalLongTitle">
+                            <b>Expresión multiplicativa</b>
+                          </h5>
+                          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                          </button>
+                        </div>
+                        <div class="modal-body">
+                          <div class="row">
+                            <div class="col-12 text-center">
+                              <img src="../../assets/images/course/modulo1/m1-5/modal-m1-5-2.png" />
+                            </div>
+                            <div class="col-12 p-3">
+                              <p>
+                                Es cuando descompones una expresión en otra equivalente que está formada 
+                                por varios términos que se estén multiplicando.	
+                              </p>
+                              <p>
+                                Ejemplo: 
+                              </p>
+                              <p>
+                                25 = 5x5
+                              </p>
+                            </div>
+                          </div>
+                          <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">
+                              Regresar
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="modal fade" id="mixta" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+                    aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h5 class="modal-title" id="exampleModalLongTitle">
+                            <b>Expresión multiplicativa</b>
+                          </h5>
+                          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                          </button>
+                        </div>
+                        <div class="modal-body">
+                          <div class="row">
+                            <div class="col-12 text-center">
+                              <img src="../../assets/images/course/modulo1/m1-5/modal-m1-5-2.png" />
+                            </div>
+                            <div class="col-12 p-3">
+                              <p>
+                                Es cuando descompones una expresión en otra equivalente que esté formada 
+                                por varios términos que se están sumando y multiplicando a la vez.
+                              </p>
+                              <p>
+                                Ejemplo: 
+                              </p>
+                              <p>
+                                25 = 5x4+5
+                              </p>
+                            </div>
+                          </div>
+                          <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">
+                              Regresar
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!--Pop ups end-->
+
+                </div>
+              </div>
 
               <div class="row">
                 <div class="col">
-                  <div class="flechas">
-                    <div class="flecha-izquierda">
-                      <a
-                        href="../modulo1/modulo1-1.html"
-                        class="modulo-anterior"
-                      >
-                        <i class="ei ei-left-arrow mr-2"></i>
-                        <span> Modulo Anterior</span>
-                      </a>
-                    </div>
-                    <div class="flecha-derecha">
-                      <a
-                        href="../modulo3/modulo3-1.html"
-                        class="modulo-siguiente"
-                      >
-                        <span> Modulo Siguiente</span
-                        ><i class="ei ei-right-arrow ml-2"></i>
-                      </a>
-                    </div>
-                  </div>
                   <div class="card">
                     <div class="card-block">
-                      <h1 class="mrg-btm-20 card-title">
-                        <span
-                          class="badge badge-light"
-                          style="font-size: 26px"
-                          >Tema 2: Descomposición de números naturales 
-                          y decimales en expresiones aditivas, 
-                          multiplicativas o mixtas.
-                        </span>
+                      <h1 class="card-title">
+                        Ejemplos para números naturales
                       </h1>
-                      <h2 class="mrg-btm-20 card-title">
-                        <span class="badge badge-light" style="font-size: 24px"
-                          >Introducción</span
-                        >
-                      </h2>
-                      <p>
-                        Las expresiones aditivas, multiplicativas o mixtas, 
-                        describen básicamente la descomposición de una 
-                        cifra matemática, ya sea en suma, multiplicación 
-                        o usando ambas.
-                      </p>
-                    </div>
-                  </div>
-
-                  <div class="card">
-                    <div class="card-horizon">
-                      <div class="col-md-8 p-0">
-                        <div class="card-block">
-                          <h2 class="mrg-btm-20 card-title">
-                            Las competencias que adquirirás en este módulo son las siguientes:
-                          </h2>
-                          <ul>
-                            <li>
-                              <b>Resolver problemas de manera autónoma:</b> Implica que los 
-                              alumnos sepan identificar, plantear y resolver diferentes
-                               tipos de problemas acerca de las expresiones aditivas, 
-                               multiplicaciones o mixtas.
-                            </li>
-                            <li>
-                              <b>Manejar técnicas eficientemente:</b> Se refiere al uso 
-                              eficiente de procedimientos y formas de representación que 
-                              hacen los alumnos al efectuar cálculos.
-                            </li>
-                            <li>
-                              <b>Identificar expresiones aditivas, multiplicativas o mixtas que 
-                              son equivalentes, y utilizarlas al efectuar cálculos con números 
-                              naturales. </b>
-                            </li>
-                          </ul>
-                          <br>
-
-                          <p class="text-center"><b>¡Iniciemos!</b></p>
+                
+                      <div class="row mrg-top-10">
+                        <div class="col">
+                          <p>
+                            Para la descomposición de los números naturales te mostraré 
+                            varias formas para representar el número 42.
+                          </p>
                         </div>
                       </div>
-                      <div class="image-container col-md-4 offset-md-8">
-                        <div
-                          class="background-holder has-content"
-                          style="
-                            background-image: url('../../assets/images/course/modulo1/m1-1/shutterstock_400761526_1.jpg');
-                            background-repeat: no-repeat;
-                          "
-                        ></div>
+
+          
+                      <div class="row">
+                        <div class="col-md-4">
+                          <h1 class="card-title">Expresión aditiva</h1>
+                          <ul class="remove-deco">
+                            <li>20 + 22</li>
+                            <li>40 + 2</li>
+                            <li>32 + 10</li>
+                            <li>10 + 22 + 10</li>
+                            <li>25 + 10 + 5 + 2</li>
+                          </ul>
+                        </div>
+                        <div class="col-md-4">
+                          <h1 class="card-title">Expresión multiplicativa</h1>
+                          <ul class="remove-deco">
+                            <li>42 x 1</li>
+                            <li>7 x 6</li>
+                            <li>2 x 21</li>
+                            <li>14 x 3</li>
+                          </ul>
+                        </div>
+                        <div class="col-md-4">
+                          <h1 class="card-title">Expresión mixta</h1>
+                          <ul class="remove-deco">
+                            <li>12 x 3 + 6</li>
+                            <li>40 x 1 + 6</li>
+                            <li>3 x 3 x 3 +15</li>
+                            <li>6 x 6 + 4 + 2</li>
+                          </ul>
+                        </div>
                       </div>
                     </div>
+
                   </div>
                 </div>
               </div>
+
+              <div class="row">
+                <div class="col">
+                  <div class="card">
+                    <div class="card-block">
+                      <h1 class="card-title">
+                        Ejemplo para números decimales
+                      </h1>
+                
+                      <div class="row mrg-top-10">
+                        <div class="col">
+                          <p>
+                            Para la descomposición de los números decimales se utiliza de 
+                            la misma forma anterior, ahora representaremos el número 0.75.
+                          </p>
+                        </div>
+                      </div>
+
+          
+                      <div class="row">
+                        <div class="col-md-4">
+                          <h1 class="card-title">Expresión aditiva</h1>
+                          <ul class="remove-deco">
+                            <li>0.50 + 0.35</li>
+                          </ul>
+                        </div>
+                        <div class="col-md-4">
+                          <h1 class="card-title">Expresión multiplicativa</h1>
+                          <ul class="remove-deco">
+                            <li>0.25 x 3</li>
+                          </ul>
+                        </div>
+                        <div class="col-md-4">
+                          <h1 class="card-title">Expresión mixta</h1>
+                          <ul class="remove-deco">
+                            <li>0.25 x 2 + 0.25</li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+
               <div class="row mrg-btm-20">
                 <div class="col text-center">
                   <div class="btn-group"></div>
@@ -154,7 +336,7 @@
               <div class="card widget-feed">
                 <div class="row">
                   <div class="col-lg-8">
-                    <h1 class="feed-title tag tag-info">Módulo 2</h1>
+                    <h1 class="feed-title tag tag-info">Módulo 5</h1>
                     <h3 class="feed-subtitle">Tu Progreso</h3>
                     <div class="progress" style="height: 20px" id="bar">
                       <div
@@ -224,5 +406,65 @@
     <!-- endbuild -->
 
     <!-- Insert your dependencies here -->
+    <!-- Drag and drop mobile dependencies-->
+    <!-- 1. jQuery UI -->
+    <script src="http://code.jquery.com/ui/1.8.17/jquery-ui.min.js"></script>
+      
+    <!-- 2. Incluir touch punch -->
+    <script src="../../assets/js/extras/jquery.ui.touch-punch.min.js"></script>
+    <!-- Drag and drop SCRIPT STARTS -->
+    <script>
+      (function($) {
+        if (!$.curCSS) {
+        $.curCSS = $.css;
+      }})(jQuery);
+      jQuery.browser = {};
+      (function () {
+        jQuery.browser.msie = false;
+        jQuery.browser.version = 0;
+        if (navigator.userAgent.match(/MSIE ([0-9]+)\./)) {
+          jQuery.browser.msie = true;
+          jQuery.browser.version = RegExp.$1;
+        }
+      })();
+    </script>
+    <script type="text/javascript">
+      var idDraggable;
+      var textD;
+      
+      $(".draggable").draggable({
+        cursor: 'move',
+        revert: true,
+        start: function() {
+          idDraggable=this.id;
+        },
+        drag: function(event, ui) {
+          textD=$(this).text();
+        }
+      });
+      $(".droppable").droppable({
+        hoverClass:'droppable-hover',
+        tolerance: "pointer",
+        drop: function(event,ui){
+          var attrDroppable = this.getAttribute("data-draggable-id");
+          if(idDraggable === attrDroppable){
+            this.classList.add("dropped");
+
+            const draggableElement=document.getElementById(idDraggable);
+            const droppableElement=document.getElementsByName(idDraggable);
+
+            //<i  class="draggable widget" draggable="true" id="1">Palabra ejemplo</i>
+            //table-hover-anim
+            console.log(textD);
+            var textInTable='<tr class="droppped table-hover-anim"><td>'+textD+'</td></tr>';
+            console.log(textInTable);
+            $(this).find('tbody').append(textInTable);
+
+            ui.draggable.addClass('dragged');
+            ui.draggable.attr("draggable", "false");
+          }
+        }
+      });
+    </script>
   </body>
 </html>

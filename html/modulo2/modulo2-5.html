@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
   <head>
     <meta charset="utf-8" />
@@ -6,7 +6,7 @@
       name="viewport"
       content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no"
     />
-    <title>Módulo 2: Quiz | CVA - Centro Virtual de Aprendizaje</title>
+    <title>Introducción Módulo 2 | CVA - Centro Virtual de Aprendizaje</title>
 
     <!-- Favicon -->
     <link rel="shortcut icon" href="../../assets/images/logo/favicon.png" />
@@ -35,49 +35,11 @@
     <link href="../../assets/css/app.css" rel="stylesheet" />
     <link href="../../assets/css/progress.css" rel="stylesheet" />
     <link href="../../assets/css/progress-circle.css" rel="stylesheet" />
-    <link
-      href="../../assets/css/modulos/modulo2/draggable.css"
-      rel="stylesheet"
-    />
-    <style>
-      .card-info i.icon {
-        font-size: 26px;
-      }
-
-      /* Van a definir las posiciones de las opciones a hacer DRAG */
-      #A4 {
-        left: 75%;
-      }
-      #A2 {
-        left: 2%;
-      }
-      #A3 {
-        left: 26%;
-      }
-      #A1 {
-        left: 50%;
-      }
-      @media (min-width: 992px) {
-        #A2 {
-          left: 22%;
-        }
-        #A3 {
-          left: 42%;
-        }
-        #A1 {
-          left: 62%;
-        }
-        #A4 {
-          left: 82%;
-        }
-      }
-    </style>
   </head>
 
   <body class="header-info side-nav-dark">
     <div class="app">
       <div class="layout">
-        <!-- Side Nav START -->
         <!-- Side Nav START -->
         <div class="side-nav" id="sideNav"></div>
         <!-- Side Nav END -->
@@ -92,146 +54,73 @@
           <div class="main-content">
             <div class="container-fluid px-0 px-sm-3">
               <!-- Your content goes here -->
-              <!-- card QUIZ -->
-              <div class="card">
-                <div class="container-fluid">
-                  <h1 class="m-3 mrg-btm-10 card-title">Actividad 1</h1>
 
-                  <div
-                    class="pdd-horizon-10 pdd-vertical-15"
-                    style="position: relative"
-                  >
-                    <p>
-                      <b
-                        >1.Ordena los siguientes números de mayor a menor.</b
+              <div class="row">
+                <div class="col">
+                  <div class="flechas">
+                    <div class="flecha-izquierda">
+                      <a
+                        href="../modulo1/modulo1-1.html"
+                        class="modulo-anterior"
                       >
-                    </p>
-                    <div class="indication">
-                      <p class="card-info mrg-btm-15">
-                        <i class="icon ti-hand-drag"></i> Asegúrese de presionar
-                        bien los
-                        <a
-                          data-toggle="tooltip"
-                          title=""
-                          href="javascript:void(0);"
-                          data-original-title="Debajo de la pantalla."
-                          >números </a
-                        >azules para arrastrarlos a su respectivo
-                        <a
-                          data-toggle="tooltip"
-                          title=""
-                          href="javascript:void(0);"
-                          data-original-title="Caja azul "
-                          >campo.</a
-                        >
-                      </p>
+                        <i class="ei ei-left-arrow mr-2"></i>
+                        <span> Modulo Anterior</span>
+                      </a>
                     </div>
-                    <hr />
-
-                    <div class="row justify-content-center boxes">
-                        <div class="col-md-2 mrg-btm-15 p-1">
-                            <div id="B1" class="border border-secondary rounded">
-                                <div id="R1" class="container container1 container2 bg-blue border border-primary rounded rounded-lg">1</div>
-                                <div id="S1" class="container1">
-                                    <p id="F1" style="display: none; color: orange; margin: 0px">
-                                        Seleccione otra opción.
-                                    </p>
-                                    <p id="C1" style="display: none; color: green; margin: 0px">
-                                        Respuesta correcta.
-                                        <i class="fa fa-thumbs-o-up" aria-hidden="true"></i>
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-2 mrg-btm-15 p-1">
-                            <div id="B2" class="border border-secondary rounded">
-                                <div id="R2" class="container container1 container2 bg-blue border border-primary rounded rounded-lg">2</div>
-                                <div id="S2" class="container1">
-                                    <p id="F2" style="display: none; color: orange; margin: 0px">
-                                        Seleccione otra opción.
-                                    </p>
-                                    <p id="C2" style="display: none; color: green; margin: 0px">
-                                        Respuesta correcta.
-                                        <i class="fa fa-thumbs-o-up" aria-hidden="true"></i>
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-2 mrg-btm-15 p-1">
-                            <div id="B3" class="border border-secondary rounded">
-                                <div id="R3" class="container container1 container2 bg-blue border border-primary rounded rounded-lg">3</div>
-                                <div id="S3" class="container1">
-                                    <p id="F3" style="display: none; color: orange; margin: 0px">
-                                    </p>
-                                    <p id="C3" style="display: none; color: green; margin: 0px">
-                                        Respuesta correcta.
-                                        <i class="fa fa-thumbs-o-up" aria-hidden="true"></i>
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-2 mrg-btm-15 p-1">
-                            <div id="B4" class="border border-secondary rounded">
-                                <div id="R4" class="container container1 container2 bg-blue border border-primary rounded rounded-lg">4</div>
-                                <div id="S4" class="container1">
-                                    <p id="F4" style="display: none; color: orange; margin: 0px">
-                                        Seleccione otra opción.
-                                    </p>
-                                    <p id="C4" style="display: none; color: green; margin: 0px">
-                                        Respuesta correcta.
-                                        <i class="fa fa-thumbs-o-up" aria-hidden="true"></i>
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="inliner">
-                        <div id="A1" class="draggable iconanswer m-1 bg-primary text-white circled text-center" draggable="true">
-                            <p class="h-100 mt-3">2.58</p>
-                        </div>
-                        <div id="A2" class="draggable iconanswer m-1 bg-primary text-white circled text-center" draggable="true">
-                            <p class="h-100 mt-3">3.24</p>
-                        </div>
-                        <div id="A3" class="draggable iconanswer m-1 bg-primary text-white circled text-center" draggable="true">
-                            <p class="h-100 mt-3">2.22</p>
-                        </div>
-                        <div id="A4" class="draggable iconanswer m-1 bg-primary text-white circled text-center" draggable="true">
-                            <p class="h-100 mt-3">1.03</p>
-                        </div>
+                    <div class="flecha-derecha">
+                      <a
+                        href="../modulo3/modulo3-1.html"
+                        class="modulo-siguiente"
+                      >
+                        <span> Modulo Siguiente</span
+                        ><i class="ei ei-right-arrow ml-2"></i>
+                      </a>
                     </div>
                   </div>
-                  <div class="row centralizer1 mrg-btm-15">
-                    <div class="col-md-6">
-                      <div class="msg">
-                        <span></span>
+
+                  <div class="card">
+                    <div class="card-horizon">
+                      <div class="col-md-8 p-0">
+                        <div class="card-block">
+                          <h2 class="mrg-btm-20 card-title">
+                            Conclusión
+                          </h2>
+                          <p>
+                            Los números decimales tienen una gran cantidad 
+                            de aplicaciones en la vida cotidiana como en 
+                            otras áreas del conocimiento humano, son útiles 
+                            en contextos de proporcionalidad como los porcentajes, 
+                            conversiones, cálculo de costos, para expresar 
+                            medidas, entre otras.
+                          </p>
+                          <p>
+                            Los decimales nos permiten expresar medidas de 
+                            cantidades menores que la unidad que se ha tomado como 
+                            referencia, en tablas o gráficas, en la resolución de 
+                            problemas químicos o físicos, etcétera.
+                          </p>
+
+                        </div>
                       </div>
-                    </div>
-                    <div class="col-md-5">
-                      <div class="submitbutton">
-                        <button
-                          id="check"
-                          type="button"
-                          class="button check"
-                          onclick="checkAll()"
-                        >
-                          REVISAR
-                        </button>
+                      <div class="image-container col-md-4 offset-md-8">
+                        <div
+                          class="background-holder has-content"
+                          style="
+                            background-image: url('../../assets/images/course/modulo1/m1-1/shutterstock_400761526_1.jpg');
+                            background-repeat: no-repeat;
+                          "
+                        ></div>
                       </div>
                     </div>
                   </div>
                 </div>
               </div>
-              <!-- card QUIZ -->
-
-              <!--Botones de avance entre páginas-->
               <div class="row mrg-btm-20">
                 <div class="col text-center">
                   <div class="btn-group"></div>
                 </div>
               </div>
 
-              <!--Widgets de avance de módulo y general-->
               <div class="card widget-feed">
                 <div class="row">
                   <div class="col-lg-8">
@@ -241,12 +130,12 @@
                       <div
                         class="progress-bar bg-info"
                         role="progressbar"
-                        aria-valuenow="80"
+                        aria-valuenow="25"
                         aria-valuemin="0"
                         aria-valuemax="100"
-                        style="max-width: 80%"
+                        style="max-width: 4%"
                       >
-                        80%
+                        4%
                       </div>
                     </div>
                   </div>
@@ -268,7 +157,6 @@
               </div>
             </div>
           </div>
-
           <!-- Content Wrapper END -->
 
           <!-- Footer START -->
@@ -282,62 +170,29 @@
     <!-- build:js assets/js/vendor.js -->
     <!-- plugins js -->
     <script src="../../assets/vendors/jquery/dist/jquery.min.js"></script>
-    <script src="../../assets/js/recycled/navigationbar.js"></script>
     <script src="../../assets/vendors/popper.js/dist/umd/popper.min.js"></script>
+    <script src="../../assets/js/recycled/navigationbar.js"></script>
     <script src="../../assets/vendors/bootstrap/dist/js/bootstrap.js"></script>
     <script src="../../assets/vendors/PACE/pace.min.js"></script>
     <script src="../../assets/vendors/perfect-scrollbar/js/perfect-scrollbar.jquery.js"></script>
 
-    <!-- Progress plugins -->
     <script src="../../assets/js/progressbar.js"></script>
     <script src="../../assets/js/progress-circle.js"></script>
 
     <!-- endbuild -->
+
     <!-- build:js assets/js/app.min.js -->
     <!-- core js -->
     <script src="../../assets/js/app.js"></script>
-    <script src="../../assets/js/recycled/navigationbar.js"></script>
     <script src="../../assets/js/progress/url-script.js"></script>
-    <script src="../../assets/js/scripts/modulo2/draggable.js"></script>
+
+    <!-- Aquí se inserta el porcentage del círculo de progreso como una fracción -->
+    <script type="text/javascript">
+      show(0.02);
+    </script>
 
     <!-- endbuild -->
 
     <!-- Insert your dependencies here -->
-
-    <script>
-      $(function () {
-        $('[data-toggle="tooltip"]').tooltip();
-      });
-      $(".custom-control-label").on("click", function () {
-        if ($(this).siblings().is(":checked")) {
-          $(this).siblings().removeAttr("checked");
-        } else {
-          $(this).siblings().prop("checked", true);
-        }
-      });
-
-      function checkAll() {
-        count = 4;
-        if (A1 == true) {
-          correct++;
-        }
-        if (A2 == true) {
-          correct++;
-        }
-        if (A3 == true) {
-          correct++;
-        }
-        if (A4 == true) {
-          correct++;
-        }
-
-        $(".score > span").html(parseInt((correct * 100) / count) + "/100");
-        if (parseInt((correct * 100) / count) > 70) {
-          $(".msg > span").html("¡Muy Bien! Puedes continuar.");
-        } else {
-          $(".msg > span").html("Revise sus respuestas.");
-        }
-      }
-    </script>
   </body>
 </html>
