@@ -25,7 +25,7 @@ function getModuloPercentage() {
   url = url.substr(url.indexOf("html/"));
   var url_split = url.split("/");
   url_split.shift(); // aqui solo se tiene modulo1/modulo2-1.html
-  var jsonTmp = files[url_split.shift()]; // se tiene el modulo como objeto
+  var jsonTmp = files[url_split.shift()]; // se tiene elMódulocomo objeto
   let nombrePag = url_split[0]; // se saca el nombre de la pagina que se busca
   var totalLevel = 100;
 

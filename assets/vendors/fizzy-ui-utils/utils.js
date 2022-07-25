@@ -46,7 +46,7 @@ utils.extend = function( a, b ) {
   return a;
 };
 
-// ----- modulo ----- //
+// -----Módulo----- //
 
 utils.modulo = function( num, div ) {
   return ( ( num % div ) + div ) % div;
