@@ -26,6 +26,9 @@
     />
 
     <!-- page plugins css -->
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=Mochiy+Pop+One&display=swap" rel="stylesheet">
 
     <!-- core css -->
     <link href="../../assets/css/ei-icon.css" rel="stylesheet" />
@@ -115,7 +118,7 @@
               
               <div class="row">
                 <div class="col offset-md-6">
-                  <p class="card-info mb-1 mt-0 w-100">
+                  <p class="card-info w-100">
                     <i class="icon ti-mouse-alt"></i>
                     Haz clic en la ilustración para revisar su descripción.
                   </p>
@@ -138,7 +141,7 @@
                   </div>
                 </div>
                 
-                <div class="col h=100">
+                <div class="col">
                   <div class="card bg-info h-100" id="card">
                     <div class="front card-block">
                       <div class="row">
@@ -167,20 +170,15 @@
                 </div>
               </div>
               
-              <div class="row">
+              <div class="row mt-3">
                 <div class="col">
                   <div class="card">
                     <div class="row">
-                      <div class="col-md-12 text-center mh-100 h-100" >
-                        <div class="m-auto mw-75-md" style='height: 75vh; background-image: url("../../assets/images/course/modulo2/modulo2-3/pizarron.png"); background-repeat: no-repeat; background-size: cover;'>
-                          <br>
-                          <div class="p-5">
-                            <ul id="list"></ul>
-                            <p id="type-text" class="m-auto mw-75-md font-size-30" ></p>
-                            <br>
-                            <p id="type-text-ex" class="m-auto mw-40-md font-size-30" ></p>
+                      <div class="card-block col-md-12 text-center mh-100 h-100" >
+                          <div id="pizarron">
+                            <p id="type-text" class="m-auto mw-75-md typing display-2" ></p>
+                            <p id="type-text-ex" class="m-auto mw-40-md typing" ></p>
                           </div>
-                        </div>
                       </div>
                       <div class="col-md-12 text-center">
                         <button class="button btn mt-1" onclick="typeMyText()">Ejemplos</button>
@@ -284,36 +282,10 @@
 
  <script>
    var i = 0;
-   var txt = ['1.7', '1,7', "1'07"]// 'Welcome To Online Web Tutor Programming World.';
-   //var txt = 'Welcome To Online Web Tutor Programming World.';
-   
-
-   /*function helpsos(word) { 
-     var speed = 120;
-     if (i < txt.length) {
-         var ul = document.getElementById("list");
-         var li = document.createElement("li");
-         li.appendChild(document.createTextNode(word));
-         ul.appendChild(li);
-         i++;
-         setTimeout(helpsos(word), speed);
-     }
-     return
-   }
-   function typeMyText() {
-     var speed = 120;
-     for (let i = 0; i < txt.length; i++) {
-       const element = txt[i];
-
-       console.log(element)
-       setTimeout(helpsos(element), speed);
-     }
-       
-   }*/ 
    var i = 0;
    var j = 0; 
    var txt = 'Los números decimales se escriben usando un punto para separar la parte entera de la parte decimal. Lo más común es encontrarlos usando el punto, pero se puede escribir usando una coma o apóstrofe.';
-   var txt2 = "1.7, 1,7, 1'07"
+   var txt2 = "1.7  -  1,7  -  1'07"
    var speed = 50;
    function typeMyText() {
      if (i < txt.length) {
