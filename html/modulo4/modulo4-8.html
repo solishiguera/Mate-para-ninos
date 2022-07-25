@@ -57,24 +57,21 @@
 
               <div class="row">
                 <div class="col">
-
                   <div class="card">
                     <div class="card-horizon">
                       <div class="col-md-8 p-0">
                         <div class="card-block">
                           <h2 class="mrg-btm-20 card-title">
-                            Conclusión
+                            Explicación
                           </h2>
                           <p>
-                            Como los pesos mexicanos y los centavos típicamente se escriben como decimales,
-                            es necesario aprender a manejarlos. Saber cómo sumar y restar números decimales
-                            es esencial cuando realizamos algún movimiento bancario o pago de cualquier 
-                            cosa.
+                            Cuando tienes un decimal en el que las partes decimales 
+                            pueden sumarse fácilmente para formar un entero, puedes 
+                            usar cálculo mental para calcular la suma. Piensa en lo 
+                            siguiente: si tuvieras <b>0.40 + 0.90</b>, ya sabes que <b>4 + 9</b> 
+                            es <b>13</b> y por lo tanto sabes que <b>0.40 + 0.90 es 1.30</b>.
                           </p>
-                          <p>
-                            Cuando sumas o restas decimales, es importante tener el cuenta el valor de 
-                            posición de los dígitos en los números que sumas o restas. 
-                          </p>
+
                         </div>
                       </div>
                       <div class="image-container col-md-4 offset-md-8">
@@ -90,6 +87,82 @@
                   </div>
                 </div>
               </div>
+
+              <div class="row">
+                <div class="col">
+                  <div class="card">
+                    <div class="card-horizon">
+                      <div class="col p-0">
+                        <div class="card-block">
+                          <h2 class="mrg-btm-20 card-title">
+                            Ejercicio
+                          </h2>
+                          <form name="ejercicio">
+                            <ol>
+                              <li>
+                                Estima la suma redondeando cada número hasta las decenas 
+                                más cercanas y luego sumando.
+                              </li>
+                              <p>
+                                29 + 88
+                              </p>
+                              <input type="text" name="p1" id="p1">
+                              <li>
+                                Estima la suma redondeando cada número hasta las unidades 
+                                más cercanas y luego sumando.
+                              </li>
+                              <p>
+                                120.34 + 211.12
+                              </p>
+                              <input type="text" name="p2" id="p2">
+                              <li>
+                                Estima la suma redondeando cada número hasta las décimas más cercanas y luego sumando.
+                              </li>
+                              <p>
+                                1.121 + 2. 038
+                              </p>
+                              <input type="text" name="p3" id="p3">
+                              <li>
+                                Estima la resta redondeando cada número hasta las decenas más cercanas y luego restando.
+                              </li>
+                              <p>
+                                77 - 9
+                              </p>
+                              <input type="text" name="p4" id="p4">
+                              <li>
+                                Estima la resta redondeando cada número hasta las decenas más cercanas y luego restando.
+                              </li>
+                              <p>
+                                28 - 11
+                              </p>
+                              <input type="text" name="p5" id="p5">
+                              <li>
+                                Estima la resta redondeando cada número hasta las décimas 
+                                más cercanas y luego restando.
+                              </li>
+                              <p>
+                                29.34 - 11.17
+                              </p>
+                              <input type="text" name="p6" id="p6">
+                              <li>
+                                Estima la resta redondeando cada número hasta las centésimas 
+                                más cercanas y luego restando.
+                              </li>
+                              <p>
+                                4.356 - 1. 219
+                              </p>
+                              <input type="text" name="p7" id="p7">
+                              <br>
+                              <button type="button" onclick="validateForm()">Validar</button>
+                            </ol>
+                          </form>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
               <div class="row mrg-btm-20">
                 <div class="col text-center">
                   <div class="btn-group"></div>
@@ -169,5 +242,26 @@
     <!-- endbuild -->
 
     <!-- Insert your dependencies here -->
+    <script>
+      function validateForm() {
+        let x = document.forms["ejercicio"]["p1"].value;
+        let values = [
+          document.forms["ejercicio"]["p1"].value,
+          document.forms["ejercicio"]["p2"].value,
+          document.forms["ejercicio"]["p3"].value,
+          document.forms["ejercicio"]["p4"].value,
+          document.forms["ejercicio"]["p5"].value,
+          document.forms["ejercicio"]["p6"].value,
+          document.forms["ejercicio"]["p7"].value ]
+        
+        let ans = [120, 332, 3.16, 70, 10, 18.2, 3.13]
+
+        for(var i = 0; i < values.length; i++) { 
+          let currId = 'p' + (i + 1)
+          document.getElementById(currId).style.backgroundColor = values[i] == ans[i] ? 'green' : 'red';
+          document.getElementById(currId).style.color = 'white';
+        }
+      }
+    </script>
   </body>
 </html>

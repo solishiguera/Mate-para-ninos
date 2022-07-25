@@ -256,6 +256,11 @@ function getFiles() {
       5: "modulo4-5.html",
       6: "modulo4-6.html",
       7: "modulo4-7.html",
+      8: "modulo4-8.html",
+      9: "modulo4-9.html",
+      10: "modulo4-10.html",
+      11: "modulo4-11.html",
+      12: "modulo4-12.html",
     },
 
     modulo5: {
