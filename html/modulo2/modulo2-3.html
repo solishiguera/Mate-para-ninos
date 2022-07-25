@@ -42,29 +42,6 @@
   </head>
 
   <body class="header-info side-nav-dark">
-    <style>
-      button.number { 
-        background-color: transparent;
-	      border: none;
-	      padding: 0;
-        color: black;
-	      cursor: pointer;
-	      outline: inherit;
-        font-size: 40px;
-        font-weight: bold;
-      }
-
-      button.number:hover { 
-        background-color: transparent;
-        color: #800000;
-        padding: 0;
-      }
-
-      button.number:active { 
-        background-color: transparent !important;
-        color: #800000 !important; 
-      }
-    </style>
     <div class="app">
       <div class="layout">
         <!-- Side Nav START -->
@@ -87,12 +64,12 @@
                   <!-- Lectura de números decimales -->
                   <div class="card">
                     <div class="card-horizon">
-                      <div class="row">
+                      <div class="card-block row">
                         <div class="image-container col-md-4">
                           <div
                             class="background-holder has-content"
                             style="
-                              background-image: url('../../assets/images/course/modulo2/tema1/ejemploDecimal.png');
+                              background-image: url('../../assets/images/course/modulo2/modulo2-3/lecturanums.png');
                               object-fit: scale-down;
                             "
                           ></div>
@@ -115,21 +92,21 @@
                             </div>
                             <div class="row">
                               <div class="col">
-                                <p id="decimal-lectura">_</p>
+                                <p id="decimal-lectura" class="font-weight-bold font-size-28" style="color:#800000;">_</p>
                               </div>
                             </div>
                             <div class="row">
-                              <div class="col-md-3">
-                                <button class="btn btn-default w-75" onclick="lecturaDecimal(0)">Opción 1</button>
+                              <div class="col-sm-6 col-lg-3">
+                                <button class="button btn w-75-lg" onclick="lecturaDecimal(0)">Opción 1</button>
                               </div>
-                              <div class="col-md-3">
-                                <button class="btn btn-default w-75" onclick="lecturaDecimal(1)">Opción 2</button>
+                              <div class="col-sm-6 col-lg-3">
+                                <button class="button btn w-75-lg" onclick="lecturaDecimal(1)">Opción 2</button>
                               </div>
-                              <div class="col-md-3">
-                                <button class="btn btn-default w-75-lg" onclick="lecturaDecimal(2)">Opción 3</button>
+                              <div class="col-sm-6 col-lg-3">
+                                <button class="button btn w-75-lg" onclick="lecturaDecimal(2)">Opción 3</button>
                               </div>
-                              <div class="col-md-3">
-                                <button class="btn btn-default w-75" onclick="lecturaDecimal(3)">Opción 4</button>
+                              <div class="col-sm-6 col-lg-3">
+                                <button class="button btn w-75-lg" onclick="lecturaDecimal(3)">Opción 4</button>
                               </div>
                             </div>
                           </div>
@@ -153,7 +130,7 @@
                             Haz clic en los números para revisar su descripción.
                           </p>
                           <!-- Número decimal -->
-                          <div class="d-flex inline-block flex-row">
+                          <div class="d-flex inline-block flex-row mt-4">
                             <button type="button" class="btn btn-secondary number p-0" data-toggle="tooltip" data-placement="bottom" title="Centenas">
                               8
                             </button>

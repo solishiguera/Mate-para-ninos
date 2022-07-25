@@ -1,0 +1,102 @@
+.hover-fill {
+  -webkit-transition: background-color 2s ease-out;
+  -moz-transition: background-color 2s ease-out;
+  -o-transition: background-color 2s ease-out;
+  transition: background-color 2s ease-out;
+  border: 1px dashed red;
+}
+
+.r1 {
+  border-left: 1px dashed red;
+  border-right: 1px dashed red;
+}
+
+.dont {
+  -webkit-transition: background-color 4s ease-out;
+  -moz-transition: background-color 4s ease-out;
+  -o-transition: background-color 4s ease-out;
+  transition: background-color 1s ease-out;
+}
+
+.fig-fill:hover>.hover-fill {
+  background-color: red;
+  border: 1px dashed white;
+}
+
+.fig-fill:hover>.hover-fill .dont {
+  background-color: white;
+}
+
+.r2 {
+  border-left: 1px dashed red;
+  border-right: 1px dashed red;
+}
+
+
+.fig-fill:hover>.hover-fill .r1 {
+  border-left: 1px dashed white;
+  border-right: 1px dashed white;
+}
+
+.figure-fill {
+  margin: auto;
+  width: 100%;
+  height: 60vh !important;
+}
+
+#pizarron { 
+  height: 55vh;
+  width: 75%;
+  margin: auto;
+  padding: 5px 20px;
+  border: 20px solid;
+  border-image: url('../../../images/course/modulo2/modulo2-2/wood-frame.jpg') 100;
+  background: rgb(49,111,54);
+  background: linear-gradient(90deg, rgba(49,111,54,1) 0%, rgba(61,123,71,1) 57%, rgba(62,124,72,1) 75%, rgba(96,151,110,1) 98%);
+}
+
+.typing { 
+  font-family: 'Mochiy Pop One', sans-serif;
+}
+
+@media (max-width: 575px) { 
+  .typing { 
+    font-size: 3.3vh;
+    color: white;
+  } 
+}
+
+@media (min-width: 576px) { 
+  .typing { 
+    font-size: 3.1vh;
+    color: white;
+  } 
+}
+
+@media (min-width: 768px) { 
+  .typing { 
+    font-size: 3.7vh;
+    color: white;
+  }
+ }
+
+@media (min-width: 992px) { 
+  .typing { 
+    font-size: 4.2vh;
+    color: white;
+  }
+ }
+
+@media (min-width: 1200px) { 
+  .typing { 
+    font-size: 5vh;
+    color: white;
+  }
+ }
+
+@media (min-width: 1400px) { 
+  .typing { 
+    font-size: 5.2vh;
+    color: white;
+  }
+ }
