@@ -60,6 +60,9 @@
 }
 
 @media (max-width: 575px) { 
+  #pizarron { 
+    width: 100%;
+  }
   .typing { 
     font-size: 3.1vh;
     color: white;
