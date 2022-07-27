@@ -1,3 +1,12 @@
+.number-decimal {
+  color: black;
+  display: flex;
+  justify-content: center; /* align horizontal */
+  align-items: center; /* align vertical */
+  font-weight: bold;
+  -webkit-text-stroke: 1px rgb(23, 23, 23)
+}
+
 button.number {
   background-color: transparent;
   border: none;
@@ -24,11 +33,17 @@ button.number:active {
   button.number {
     font-size: 45px;
   }
+  .number-decimal {
+    font-size: 115px;
+  }
 }
 
 @media (min-width: 576px) {
   button.number {
     font-size: 50px;
+  }
+  .number-decimal {
+    font-size: 115px;
   }
 }
 
@@ -36,11 +51,18 @@ button.number:active {
   button.number {
     font-size: 70px;
   }
+  .number-decimal {
+    font-size: 100px;
+  }
 }
 
 @media (min-width: 992px) {
   button.number {
     font-size: 70px;
+  }
+
+  .number-decimal {
+    font-size: 115px;
   }
 }
 
@@ -48,10 +70,16 @@ button.number:active {
   button.number {
     font-size: 70px;
   }
+  .number-decimal {
+    font-size: 115px;
+  }
 }
 
 @media (min-width: 1400px) {
   button.number {
     font-size: 70px;
+  }
+  .number-decimal {
+    font-size: 115px;
   }
 }
