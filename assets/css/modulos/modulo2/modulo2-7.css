@@ -48,3 +48,23 @@
 li {
   font-size: 20px;
 }
+
+
+/* Drag & Drop */
+
+.item { 
+  color: black;
+  font-weight: bold;
+  font-size: 25px;
+  padding: 3px;
+  border: 2px solid green;
+  margin: 5px;
+}
+
+.hide {
+  display: none;
+}
+
+.drag-over {
+  border: dashed 3px red !important;
+}
