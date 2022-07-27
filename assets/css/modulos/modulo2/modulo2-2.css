@@ -3,12 +3,12 @@
   -moz-transition: background-color 2s ease-out;
   -o-transition: background-color 2s ease-out;
   transition: background-color 2s ease-out;
-  border: 1px dashed red;
+  border: 1px dashed #db5248;
 }
 
 .r1 {
-  border-left: 1px dashed red;
-  border-right: 1px dashed red;
+  border-left: 1px dashed #db5248;
+  border-right: 1px dashed #db5248ed;
 }
 
 .dont {
@@ -19,7 +19,7 @@
 }
 
 .fig-fill:hover>.hover-fill {
-  background-color: red;
+  background-color: #db5248;
   border: 1px dashed white;
 }
 
@@ -28,8 +28,8 @@
 }
 
 .r2 {
-  border-left: 1px dashed red;
-  border-right: 1px dashed red;
+  border-left: 1px dashed #db5248;
+  border-right: 1px dashed #db5248;
 }
 
 
@@ -60,8 +60,11 @@
 }
 
 @media (max-width: 575px) { 
+  #pizarron { 
+    width: 100%;
+  }
   .typing { 
-    font-size: 3.3vh;
+    font-size: 3.1vh;
     color: white;
   } 
 }
@@ -75,28 +78,28 @@
 
 @media (min-width: 768px) { 
   .typing { 
-    font-size: 3.7vh;
+    font-size: 3.8vh;
     color: white;
   }
  }
 
 @media (min-width: 992px) { 
   .typing { 
-    font-size: 4.2vh;
+    font-size: 4.1vh;
     color: white;
   }
  }
 
 @media (min-width: 1200px) { 
   .typing { 
-    font-size: 5vh;
+    font-size: 4.8vh;
     color: white;
   }
  }
 
 @media (min-width: 1400px) { 
   .typing { 
-    font-size: 5.2vh;
+    font-size: 5vh;
     color: white;
   }
  }

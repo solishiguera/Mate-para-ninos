@@ -235,7 +235,6 @@ function getFiles() {
       8: "modulo2-8.html",
       9: "modulo2-9.html",
       10: "modulo2-10.html",
-      11: "modulo2-11.html",
     },
     modulo3: {
       1: "modulo3-1.html",
@@ -256,6 +255,11 @@ function getFiles() {
       5: "modulo4-5.html",
       6: "modulo4-6.html",
       7: "modulo4-7.html",
+      8: "modulo4-8.html",
+      9: "modulo4-9.html",
+      10: "modulo4-10.html",
+      11: "modulo4-11.html",
+      12: "modulo4-12.html",
     },
 
     modulo5: {
@@ -268,6 +272,13 @@ function getFiles() {
       7: "modulo5-7.html",
       8: "modulo5-final.html",
     },
+
+    modulo6: {
+      1: "modulo6-1.html",
+      2: "modulo6-2.html",
+      3: "modulo6-3.html",
+    },
+
     modulo7: {
       1: "modulo7-1.html",
       2: "modulo7-2.html",
@@ -276,6 +287,11 @@ function getFiles() {
       5: "modulo7-5.html",
       6: "modulo7-6.html",
     },
+
+    modulo8: {
+      1: "modulo8-1.html",
+    },
+
     modulo9: {
       1: "modulo9-1.html",
       2: "modulo9-2.html",
@@ -285,6 +301,10 @@ function getFiles() {
       6: "modulo9-6.html",
       7: "modulo9-final.html"
       
+    },
+
+    modulo10: {
+      1: "modulo10-1.html",
     },
   };
 
