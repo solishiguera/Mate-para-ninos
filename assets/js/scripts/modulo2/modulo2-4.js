@@ -32,7 +32,7 @@ $(".droppable").droppable({
       this.classList.add("dropped");
       const draggableElement = document.getElementById(idDraggable);
       const droppableElement = document.getElementsByName(idDraggable);
-      const txt = droppableElement[0].innerHTML.replace("____", idDraggable);
+      const txt = droppableElement[0].innerHTML.replace("__", idDraggable);
       droppableElement[0].innerHTML = txt;
 
       draggableElement.classList.add("dragged");
