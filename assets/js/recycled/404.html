@@ -1,81 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-</head>
+
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport"
+			content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no" />
+		<title>Ejemplos | CVA - Centro Virtual de Aprendizaje</title>
+	
+		<!-- Favicon -->
+		<link rel="shortcut icon" href="../../assets/images/logo/favicon.png" />
+	
+		<!-- plugins css -->
+		<link rel="stylesheet" href="../../assets/vendors/bootstrap/dist/css/bootstrap.css" />
+		<link rel="stylesheet" href="../../assets/vendors/PACE/themes/blue/pace-theme-minimal.css" />
+		<link rel="stylesheet" href="../../assets/vendors/perfect-scrollbar/css/perfect-scrollbar.min.css" />
+		<link rel="stylesheet" type="text/css" href="/assets/js/recycled/404-cool.css" />
+	
+		<!-- page plugins css -->
+	
+		<!-- core css -->
+		<link href="../../assets/css/ei-icon.css" rel="stylesheet" />
+		<link href="../../assets/css/themify-icons.css" rel="stylesheet" />
+		<link href="../../assets/css/font-awesome.min.css" rel="stylesheet" />
+		<link href="../../assets/css/animate.min.css" rel="stylesheet" />
+		<link href="../../assets/css/app.css" rel="stylesheet" />
+		<link href="../../assets/css/progress.css" rel="stylesheet" />
+		<link href="../../assets/css/progress-circle.css" rel="stylesheet" />
+	</head>
+
 <body>
-  <style>
- body {
-	 display: flex;
-	 align-items: center;
-	 justify-content: center;
-	 height: 100vh;
-	 animation: crunch 4s 1s ease-in-out infinite;
-}
- @keyframes crunch {
-	 50% {
-		 transform: scaleX(0.6);
-	}
-}
- .card {
-	 display: flex;
-	 width: 95vw;
-	 height: 22.5625vw;
-}
- .fold {
-	 flex: 1;
-	 background: url(https://upload.wikimedia.org/wikipedia/commons/thumb/9/9b/Pittsburgh_Panorama_from_the_Duquesne_Incline.jpg/1280px-Pittsburgh_Panorama_from_the_Duquesne_Incline.jpg);
-	 background-size: cover;
-	 animation: 4s 1s ease-in-out infinite;
-}
- .fold:nth-child(1) {
-	 background-position: 0%;
-}
- .fold:nth-child(2) {
-	 background-position: 25%;
-}
- .fold:nth-child(3) {
-	 background-position: 50%;
-}
- .fold:nth-child(4) {
-	 background-position: 75%;
-}
- .fold:nth-child(5) {
-	 background-position: 100%;
-}
- .fold:first-child {
-	 border-radius: 2vw 0 0 2vw;
-}
- .fold:last-child {
-	 border-radius: 0 2vw 2vw 0;
-}
- .fold:nth-child(odd) {
-	 animation-name: odd-fold;
-}
- @keyframes odd-fold {
-	 50% {
-		 transform: skewY(15deg);
-		 filter: brightness(1.25);
-	}
-}
- .fold:nth-child(even) {
-	 animation-name: even-fold;
-}
- @keyframes even-fold {
-	 50% {
-		 transform: skewY(-15deg);
-		 filter: brightness(0.75);
-	}
-}
-  </style>
-  <div class="card">
-    <div class="fold">
+	<div style="background-color: green; height:100vh;"></div>
+  <div id="text" class="text0">Around The World</div>
+    <div id="text" class="text1">Around The World</div>
+    <div id="text" class="text2">Around The World</div>
+    <div id="text" class="text3">Around The World</div>
+  
+  
+  
+  <div id="dummy">
+    <div id="back">BACK TO TOP</div>
   </div>
+	<div style="background-color: yellow; height:100vh;"></div>
+	<!-- build:js assets/js/vendor.js -->
+  <!-- plugins js -->
+  <script src="../../assets/vendors/jquery/dist/jquery.min.js"></script>
+  <script src="../../assets/vendors/popper.js/dist/umd/popper.min.js"></script>
+  <script src="../../assets/js/recycled/navigationbar.js"></script>
+  <script src="../../assets/vendors/bootstrap/dist/js/bootstrap.js"></script>
+  <script src="../../assets/vendors/PACE/pace.min.js"></script>
+  <script src="../../assets/vendors/perfect-scrollbar/js/perfect-scrollbar.jquery.js"></script>
 
-  <h1 class="bg-danger">Error 404</h1>
+  <script src="../../assets/js/progressbar.js"></script>
+  <script src="../../assets/js/progress-circle.js"></script>
 
-</body>
+  <!-- endbuild -->
+
+  <!-- build:js assets/js/app.min.js -->
+  <!-- core js -->
+  <script src="../../assets/js/app.js"></script>
+  <script src="../../assets/js/progress/url-script.js"></script>
+
+  <!-- Aquí se inserta el porcentage del círculo de progreso como una fracción -->
+  <script type="text/javascript">
+    show(0.02);
+  </script>
+  <body>
+    
+
 </html>
