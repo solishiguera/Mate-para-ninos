@@ -1,0 +1,13 @@
+.result { 
+  width: 70px;
+  background-color: #93bed8;
+  color: white;
+  border: solid #6f92a7;
+  border-radius: 5px;
+  margin: 5px;
+  text-align: center;
+}
+
+.solved { 
+  padding: 10px 8px !important;
+}

@@ -86,69 +86,62 @@
 
               <div class="row">
                 <div class="col">
-                  <div class="card" style="padding-bottom: 50px;">
-                    <div>
-                      <div class="m-3 ">
-                        <p>
-                          <b>¡Ha llegado el momento de poner en práctica lo que has aprendido en esta lección!</b>
-                          Aquí encontrarás ejercicios de repaso que contienen un poco de cada una de las secciones anteriores.
-                        </p>
-                        <p>
-                          Lee cuidadosamente y completa las oraciones. Haz clic en las palabras de color azul
-                          y arrastralos a la casilla punteada, si la respuesta es correcta el color de la casilla
-                          cambiará a azul, <b>¡Tú puedes!</b>
-                        </p>
-                        <br>
-                        <p>
-                          <b>Ordena los siguientes números de mayor a menor.</b>
-                        </p>
+                  <div class="card">
+                    <div class="card-horizon">
+                      <div class="card-block">
+                        <form id="basicform" action="" method="post" onsubmit="correct()">
+                          <p>
+                            A)
+                            <label for="p1"> 5 Decenas + 4 Unidades + 8 Décimas + 5 Centésimas + 8 Milésimas = </label>
+                            <input class="result" type="text" id="p1" name="p1" type="text">
+                          </p>
+                          <p>
+                            B)
+                            <label for="p2">9 Centenas + 2 Decenas + 3 Unidades + 8 Décimas + 7 Centésimas = </label>
+                            <input class="result" type="text" id="p2" name="p2">
+                          </p>
+                          <p>
+                            C)
+                            <input class="result" type="text" id="p3" name="p3">
+                            <label for="p3">Decenas</label>
+                            <span> + </span>
+                            <input class="result" type="text" id="p3-1" name="p3-1">
+                            <label for="p3-1">Unidades</label>
+                            <span> + </span>
+                            <input class="result" type="text" id="p3-2" name="p3-2">
+                            <label for="p3-2">Décimas</label>
+                            <span> + </span>
+                            <input class="result" type="text" id="p3-3" name="p3-3">
+                            <label for="p3-3">Centésimas</label>
+                            <span> + </span>
+                            <input class="result" type="text" id="p3-4" name="p3-4">
+                            <label for="p3-4">Milésimas = </label>
+                            <span class="result solved"> 78.739 </span>
+                          </p>
+                          <p>
+                            D)
+                            <input class="result" type="text" id="p4-4" name="p4-4">
+                            <label for="p4-4">Centenas </label>
+                            <span> + </span>
+                            <input class="result" type="text" id="p4" name="p4">
+                            <label for="p4">Decenas</label>
+                            <span> + </span>
+                            <input class="result" type="text" id="p4-1" name="p4-1">
+                            <label for="p4-1">Unidades</label>
+                            <span> + </span>
+                            <input class="result" type="text" id="p4-2" name="p4-2">
+                            <label for="p4-2">Décimas</label>
+                            <span> + </span>
+                            <input class="result" type="text" id="p4-3" name="p4-3">
+                            <label for="p4-3">Centésimas</label>
+                            <span class="result solved"> 297.83 </span>
+                          </p>
+                          <p>
+                            <input class="submit button btn" type="submit" value="Revisar" >
+                          </p>
+                        </form>
                       </div>
-                      <section class="draggable-elements">
-                        <i class="draggable" draggable="true" id="2.58">2.58</i>
-                        <i class="draggable" draggable="true" id="3.24">3.24</i>
-                        <i class="draggable" draggable="true" id="2.22">2.22</i>
-                        <i class="draggable" draggable="true" id="1.03">1.03</i>
-                        <i class="draggable" draggable="true" id="1.48">1.48</i>
-                        <i class="draggable" draggable="true" id="3.42">3.42</i>
-                      </section>
-      
-                      <section class="droppable-elements" style="display: flex; justify-content: center;">
-                        <div class="droppable" data-draggable-id="3.42"><span name="3.42">__</span></div>
-                        <div class="greater-than"> > </div>
-                        <div class="droppable" data-draggable-id="3.24"><span name="3.24">__</span></div>
-                        <div class="greater-than"> > </div>
-                        <div class="droppable" data-draggable-id="2.58"><span name="2.58">__</span></div>
-                        <div class="greater-than"> > </div>
-                        <div class="droppable" data-draggable-id="2.22"><span name="2.22">__</span></div>
-                        <div class="greater-than"> > </div>
-                        <div class="droppable" data-draggable-id="1.48"><span name="1.48">__</span></div>
-                        <div class="greater-than"> > </div>
-                        <div class="droppable" data-draggable-id="1.03"><span name="1.03">__</span></div>
-                      </section>
-
-                      <section class="draggable-elements">
-                        <i class="draggable" draggable="true" id="1.11">1.11</i>
-                        <i class="draggable" draggable="true" id="5.14">5.14</i>
-                        <i class="draggable" draggable="true" id="1.17">1.17</i>
-                        <i class="draggable" draggable="true" id="1.09">1.09</i>
-                        <i class="draggable" draggable="true" id="2.14">2.14</i>
-                        <i class="draggable" draggable="true" id="3.01">3.01</i>
-                      </section>
-
-                      <section class="droppable-elements" style="display: flex; justify-content: center;">
-                        <div class="droppable" data-draggable-id="5.14"><span name="5.14">__</span></div>
-                        <div class="greater-than"> > </div>
-                        <div class="droppable" data-draggable-id="3.01"><span name="3.01">__</span></div>
-                        <div class="greater-than"> > </div>
-                        <div class="droppable" data-draggable-id="2.14"><span name="2.14">__</span></div>
-                        <div class="greater-than"> > </div>
-                        <div class="droppable" data-draggable-id="1.17"><span name="1.17">__</span></div>
-                        <div class="greater-than"> > </div>
-                        <div class="droppable" data-draggable-id="1.11"><span name="1.11">__</span></div>
-                        <div class="greater-than"> > </div>
-                        <div class="droppable" data-draggable-id="1.09"><span name="1.09">__</span></div>
-                      </section>
-                  </div>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -231,6 +224,8 @@
     <!-- endbuild -->
 
     <!-- Insert your dependencies here -->  
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.0/jquery.validate.min.js"></script>
     <script src="../../assets/js/scripts/modulo2/modulo2-5.js"></script>
   </body>
 </html>
