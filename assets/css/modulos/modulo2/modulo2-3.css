@@ -1,10 +1,14 @@
+#nums { 
+  background-color: #800000;
+  border-radius: 20px;
+}
+
 .number-decimal {
   color: black;
   display: flex;
   justify-content: center; /* align horizontal */
   align-items: center; /* align vertical */
   font-weight: bold;
-  -webkit-text-stroke: 1px rgb(23, 23, 23)
 }
 
 button.number {

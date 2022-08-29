@@ -65,57 +65,58 @@
                   <div class="card">
                     <div class="card-horizon">
                       <div class="card-block row">
-                        <div class="col-md-8 ml-auto">
-                          <div class="card-block">
-                            <div class="row">
-                              <h1 class="mrg-btm-20 card-title">
-                                <span class="badge badge-light" style="font-size: 22px">Tema 1</span>
-                                Lectura de números decimales
-                              </h1>
-                            </div>
-                            <div class="row">
-                              <p>Se puede leer de diferentes maneras como:</p>
-                            </div>
-                            <div class="row">
-                              <p class="card-info mb-1 mt-0">
-                                <i class="icon ti-mouse-alt"></i>
-                                Haz clic en los botones para revisar su descripción.
-                              </p>
-                            </div>
-                            <div class="row">
-                              <div class="col">
-                                <div id="decimal-lectura" class="font-weight-bold font-size-28">
-                                  <span id="1-1" style="color: blueviolet">_</span>
-                                  <span id="2-2" style="color: orange">_</span>
-                                  <span id="3-3" style="color: green">_</span>
+                          <div class="col-md-8 ml-auto">
+                            <div class="card-block">
+                              <div class="row">
+                                <h1 class="mrg-btm-20 card-title">
+                                  <span class="badge badge-light" style="font-size: 22px">Tema 1</span>
+                                  Lectura de números decimales
+                                </h1>
+                              </div>
+                              <div class="row">
+                                <p class="card-info mb-1 mt-0">
+                                  <i class="icon ti-mouse-alt"></i>
+                                  Haz clic en los botones y números para revisar su descripción.
+                                </p>
+                              </div>
+                              <div class="row">
+                                <p>Se puede leer de diferentes maneras como:</p>
+                              </div>
+                              <div class="row">
+                                <div class="col">
+                                  <div id="decimal-lectura" class="font-weight-bold font-size-28" style="color: black">
+                                    <span id="1-1" >_</span>
+                                    <span id="2-2" >_</span>
+                                    <span id="3-3" >_</span>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="row">
+                                <div class="col">
+                                  <button class="button btn w-75-lg" onclick="lecturaDecimal(0)">Opción 1</button>
+                                </div>
+                                <div class="col">
+                                  <button class="button btn w-75-lg" onclick="lecturaDecimal(1)">Opción 2</button>
+                                </div>
+                                <div class="col">
+                                  <button class="button btn w-75-lg" onclick="lecturaDecimal(2)">Opción 3</button>
+                                </div>
+                                <div class="col">
+                                  <button class="button btn w-75-lg" onclick="lecturaDecimal(3)">Opción 4</button>
                                 </div>
                               </div>
                             </div>
-                            <div class="row">
-                              <div class="col">
-                                <button class="button btn w-75-lg" onclick="lecturaDecimal(0)">Opción 1</button>
-                              </div>
-                              <div class="col">
-                                <button class="button btn w-75-lg" onclick="lecturaDecimal(1)">Opción 2</button>
-                              </div>
-                              <div class="col">
-                                <button class="button btn w-75-lg" onclick="lecturaDecimal(2)">Opción 3</button>
-                              </div>
-                              <div class="col">
-                                <button class="button btn w-75-lg" onclick="lecturaDecimal(3)">Opción 4</button>
-                              </div>
-                            </div>
                           </div>
-                        </div>
-                        <div class="col-md-4 number-decimal">
-                          <span id="1" style="color: rgb(166, 93, 234);">47</span>
-                          <span id="2" style="color: orange;">.</span>
-                          <span id="3" style="color: green;">62</span>
-                        </div>
+
+                          <div id="nums" class="col-md-4 number-decimal section" style="color: white">
+                            <span id="four-seven" onmouseover="changeColor(id, '1-1')" onmouseout="backColor(id, '1-1')">47</span>
+                            <span id="dot" onmouseover="changeColor(id, '2-2')" onmouseout="backColor(id, '2-2')">.</span>
+                            <span id="six-two" onmouseover="changeColor(id, '3-3')" onmouseout="backColor(id, '3-3')">62</span>
+                          </div>
                       </div>
                     </div>
                   </div>
-                  <!-- Lectura de números decimales -->
+                  <!-- Lectura de números decimales --> 
                 </div>
               </div>
 
@@ -260,19 +261,6 @@
     <!-- endbuild -->
 
     <!-- Insert your dependencies here -->
-    <script>
-      function lecturaDecimal(i) {
-        var fourSevenArr = ["Cuarenta y siete", "Cuarenta y siete", "Cuarenta y siete unidades", "Cuatro decenas y siete unidades"]
-        var dotArtt = ["punto", "con", "y", "con"]
-        var sixTwoArr = ["sesenta y dos", "sesenta y dos", "sesenta y dos centésimas", "seis décimas y dos centésimas"]
-        var fourSeven = document.getElementById("1-1");
-        var dot = document.getElementById("2-2");
-        var sixTwo = document.getElementById("3-3");
-    
-        fourSeven.innerHTML = fourSevenArr[i];
-        dot.innerHTML = dotArtt[i];
-        sixTwo.innerHTML = sixTwoArr[i];
-      }
-    </script>
+    <script src="../../assets/js/scripts/modulo2/modulo2-3.js"></script>
   </body>
 </html>
