@@ -36,10 +36,9 @@
     <link href="../../assets/css/progress.css" rel="stylesheet" />
     <link href="../../assets/css/progress-circle.css" rel="stylesheet" />
     <link
-      href="../../assets/css/modulos/modulo2/draggable.css"
+      href="../../assets/css/modulos/modulo2/modulo2-4.css"
       rel="stylesheet"
     />
-    
   </head>
 
   <body class="header-info side-nav-dark">
@@ -60,17 +59,70 @@
           <div class="main-content">
             <div class="container-fluid px-0 px-sm-3">
               <!-- Your content goes here -->
-              <!-- card QUIZ -->
-              <div class="card">
-                <div class="container-fluid">
-                  <div class="row">
-                    <div class="col card-horizon">
-                      <h1 class="card-block card-title">Ejercicio</h1>
+              <div class="row">
+                <div class="col">
+                  <!-- card QUIZ -->
+                  <div class="card">
+                    <div class="container-fluid">
+                      <div class="row">
+                        <div class="col card-horizon">
+                          <h1 class="card-block card-title">Ejercicio</h1>
+                        </div>
+                      </div>
                     </div>
+                  </div>
+                  <!-- card QUIZ -->
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col">
+                  <div class="card" style="padding-bottom: 50px;">
+                    <div style="margin: 30px 50px;">
+                      <p>
+                        <b>¡Ha llegado el momento de poner en práctica lo que has aprendido en esta lección!</b>
+                        Aquí encontrarás ejercicios de repaso que contienen un poco de cada una de las secciones anteriores.
+                      </p>
+                      <p>
+                        Lee cuidadosamente y completa las oraciones. Haz clic en las palabras de color azul
+                        y arrastralos a la casilla punteada, si la respuesta es correcta el color de la casilla
+                        cambiará a azul, <b>¡Tú puedes!</b>
+                      </p>
+                      <section class="draggable-elements">
+                        <i class="draggable" draggable="true" id="schnell">schnell</i>
+                        <i class="draggable" draggable="true" id="alt">alt</i>
+                        <i class="draggable" draggable="true" id="gefährlich">gefährlich</i>
+                      </section>
+                      <section class="draggable-elements">
+                        <i class="draggable" draggable="true" id="ungesund">ungesund</i>
+                        <i class="draggable" draggable="true" id="jung">jung</i>
+                        <i class="draggable" draggable="true" id="hell">hell</i>
+                      </section>
+                      <section class="draggable-elements">
+                        <i class="draggable" draggable="true" id="gesund">gesund</i>
+                        <i class="draggable" draggable="true" id="dunkel">dunkel</i>
+                        <i class="draggable" draggable="true" id="langsam">langsam</i>
+                      </section>
+      
+                      <section class="droppable-elements" style="display: flex; justify-content: center;">
+                        <div class="droppable" data-draggable-id="alt"><span name="alt">Die Oma ist ____.</span></div>
+                        <div class="droppable" data-draggable-id="jung"><span name="jung">Der Junge ist ____.</span></div>
+                        <div class="droppable" data-draggable-id="gesund"><span name="gesund">Der Apfel ist ____.</span></div>
+                      </section>
+                      <section class="droppable-elements" style="display: flex; justify-content: center;">
+                        <div class="droppable" data-draggable-id="ungesond"><span name="ungesond">Die Süßigkeiten ____.</span></div>
+                        <div class="droppable" data-draggable-id="langsam"><span name="langsam">Die Schnecke kriecht ____.</span></div>
+                        <div class="droppable" data-draggable-id="schnell"><span name="schnell">Die Schnecke kriecht ____.</span></div>
+                      </section>
+                      <section class="droppable-elements" style="display: flex; justify-content: center;">
+                        <div class="droppable" data-draggable-id="hell"><span name="hell">Die Sonne ist ____.</span></div>
+                        <div class="droppable" data-draggable-id="dunkel"><span name="dunkel">Die Nacht ist ____.</span></div>
+                        <div class="droppable" data-draggable-id="gefährlich"><span name="gefährlich">Der Löwe ist ____.</span></div>
+                      </section>
+                  </div>
                   </div>
                 </div>
               </div>
-              <!-- card QUIZ -->
 
               <!--Botones de avance entre páginas-->
               <div class="row mrg-btm-20">
@@ -150,6 +202,8 @@
     <!-- endbuild -->
 
     <!-- Insert your dependencies here -->
-    
+    <script src="https://code.jquery.com/ui/1.8.17/jquery-ui.js" integrity="sha256-XIz1bXt5gQu/CwybHyRVTxWw4RpAqaGVG6lfsIpYQXw=" crossorigin="anonymous"></script>
+    <script src="../../assets/js/scripts/modulo2/modulo2-4.js"></script>
+    <script src="../../assets/js/extras/jquery.ui.touch-punch.min.js"></script>
   </body>
 </html>
