@@ -1,320 +1,230 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no"
+    />
+    <title>Ejercicio 2 | CVA - Centro Virtual de Aprendizaje</title>
 
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport"
-    content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no" />
-  <title>Ejercicio | CVA - Centro Virtual de Aprendizaje</title>
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="../../assets/images/logo/favicon.png" />
 
-  <!-- Favicon -->
-  <link rel="shortcut icon" href="../../assets/images/logo/favicon.png" />
+    <!-- plugins css -->
+    <link
+      rel="stylesheet"
+      href="../../assets/vendors/bootstrap/dist/css/bootstrap.css"
+    />
+    <link
+      rel="stylesheet"
+      href="../../assets/vendors/PACE/themes/blue/pace-theme-minimal.css"
+    />
+    <link
+      rel="stylesheet"
+      href="../../assets/vendors/perfect-scrollbar/css/perfect-scrollbar.min.css"
+    />
 
-  <!-- plugins css -->
-  <link rel="stylesheet" href="../../assets/vendors/bootstrap/dist/css/bootstrap.css" />
-  <link rel="stylesheet" href="../../assets/vendors/PACE/themes/blue/pace-theme-minimal.css" />
-  <link rel="stylesheet" href="../../assets/vendors/perfect-scrollbar/css/perfect-scrollbar.min.css" />
+    <!-- page plugins css -->
+    <link rel="stylesheet" href="../../assets/css/modulos/modulo2/modulo2-7.css">
 
-  <!-- page plugins css -->
+    <!-- core css -->
+    <link href="../../assets/css/ei-icon.css" rel="stylesheet" />
+    <link href="../../assets/css/themify-icons.css" rel="stylesheet" />
+    <link href="../../assets/css/font-awesome.min.css" rel="stylesheet" />
+    <link href="../../assets/css/animate.min.css" rel="stylesheet" />
+    <link href="../../assets/css/app.css" rel="stylesheet" />
+    <link href="../../assets/css/progress.css" rel="stylesheet" />
+    <link href="../../assets/css/progress-circle.css" rel="stylesheet" />
+  </head>
 
-  <!-- core css -->
-  <link href="../../assets/css/ei-icon.css" rel="stylesheet" />
-  <link href="../../assets/css/themify-icons.css" rel="stylesheet" />
-  <link href="../../assets/css/font-awesome.min.css" rel="stylesheet" />
-  <link href="../../assets/css/animate.min.css" rel="stylesheet" />
-  <link href="../../assets/css/app.css" rel="stylesheet" />
-  <link href="../../assets/css/progress.css" rel="stylesheet" />
-  <link href="../../assets/css/progress-circle.css" rel="stylesheet" />
-  <link href="../../assets/css/modulos/modulo2/modulo2-7.css" rel="stylesheet" />
-</head>
+  <body class="header-info side-nav-dark">
+    <div class="app">
+      <div class="layout">
+        <!-- Side Nav START -->
+        <div class="side-nav" id="sideNav"></div>
+        <!-- Side Nav END -->
 
-<body class="header-info side-nav-dark">
-  <div class="app">
-    <div class="layout">
-      <!-- Side Nav START -->
-      <!-- Side Nav START -->
-      <div class="side-nav" id="sideNav"></div>
-      <!-- Side Nav END -->
+        <!-- Page Container START -->
+        <div class="page-container">
+          <!-- Header START -->
+          <div class="header navbar"></div>
+          <!-- Header END -->
 
-      <!-- Page Container START -->
-      <div class="page-container">
-        <!-- Header START -->
-        <div class="header navbar"></div>
-        <!-- Header END -->
-
-        <!-- Content Wrapper START -->
-        <div class="main-content">
-          <div class="container-fluid px-0 px-sm-3">
-            <!-- Your content goes here -->
-            <div class="row">
-              <div class="col">
-                <!-- card QUIZ -->
-                <div class="card">
-                  <div class="container-fluid">
-                    <div class="row">
-                      <div class="card-horizon image-container col-md-4">
-                        <div class="background-holder has-content"
-                          style="background-image: url('../../assets/images/course/modulo2/modulo2-4/Ejercicio1.png');">
-                        </div>
-                      </div>
-                      <div class="col-md-8 card-horizon">
-                        <div class="card-block">
-                          <h1 class="card-title">Ejercicio</h1>
-                          <p>Realiza los siguientes ejercicios para una mayor comprensión del tema.</p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <!-- card QUIZ -->
-              </div>
-            </div>
-
-            <div class="row">
-              <div class="col">
-                <div class="card">
-                  <div class="card-horizon">
-                    <div class="row">
-                      <div class="col">
-                        <div class="card-block">
-                          <p>
-                            <b> Completa la tabla de los decimales. </b>
-                          </p>
-                          <table class="table w-100">
-                            <form id="basicform">
-                              <tr>
-                                <th class="p-1">Número</th>
-                                <th class="p-1">Parte entera</th>
-                                <th class="p-1">Parte decimal</th>
-                                <th class="p-1">Centena</th>
-                                <th class="p-1">Decena</th>
-                                <th class="p-1">Unidad</th>
-                                <th class="p-1">Décima</th>
-                                <th class="p-1">Centésima</th>
-                                <th class="p-1">Milésima</th>
-                              </tr>
-                              <tr>
-                                <td class="default">589.213</td>
-                                <td class="blank row1">
-                                  <input class="result" type="text" id="row1" name="row1" placeholder="__">
-                                </td>
-
-                                <td class="blank row2">
-                                  <input class="result" type="text" id="row2" name="row2" placeholder="__">
-                                </td>
-                                <td class="blank row3">
-                                  <input class="result" type="text" id="row3" name="row3" placeholder="__">
-                                </td>
-                                <td class="blank row4">
-                                  <input class="result" type="text" id="row4" name="row4" placeholder="__">
-                                </td>
-                                <td class="blank row5">
-                                  <input class="result" type="text" id="row5" name="row5" placeholder="__">
-                                </td>
-                                <td class="blank row6">
-                                  <input class="result" type="text" id="row6" name="row6" placeholder="__">
-                                </td>
-                                <td class="blank row7">
-                                  <input class="result" type="text" id="row7" name="row7" placeholder="__">
-                                </td>
-                                <td class="blank row8">
-                                  <input class="result" type="text" id="row8" name="row8" placeholder="__">
-                                </td>
-                              </tr>
-
-                              <tr>
-                                <td class="blank row9">
-                                  <input class="result" type="text" id="row9" name="row9" placeholder="__">
-                                </td>
-                                <td class="default">712</td>
-                                <td class="default">98</td>
-                                <td class="blank row10">
-                                  <input class="result" type="text" id="row10" name="row10" placeholder="__">
-                                </td>
-                                <td class="blank row11">
-                                  <input class="result" type="text" id="row11" name="row11" placeholder="__">
-                                </td>
-                                <td class="blank row12">
-                                  <input class="result" type="text" id="row12" name="row12" placeholder="__">
-                                </td>
-                                <td class="blank row13">
-                                  <input class="result" type="text" id="row13" name="row13" placeholder="__">
-                                </td>
-                                <td class="blank row14">
-                                  <input class="result" type="text" id="row14" name="row14" placeholder="__">
-                                </td>
-                                <td class="blank row15">
-                                  <input class="result" type="text" id="row15" name="row15" placeholder="__">
-                                </td>
-                              </tr>
-                              <tr>
-                                <td class="default">92.182</td>
-                                <td class="blank row16">
-                                  <input class="result" type="text" id="row16" name="row16" placeholder="__">
-                                </td>
-                                <td class="blank row17">
-                                  <input class="result" type="text" id="row17" name="row17" placeholder="__">
-                                </td>
-                                <td class="blank row18">
-                                  <input class="result" type="text" id="row18" name="row18" placeholder="__">
-                                </td>
-                                <td class="blank row19">
-                                  <input class="result" type="text" id="row19" name="row19" placeholder="__">
-                                </td>
-                                <td class="blank row20">
-                                  <input class="result" type="text" id="row20" name="row20" placeholder="__">
-                                </td>
-                                <td class="blank row21">
-                                  <input class="result" type="text" id="row21" name="row21" placeholder="__">
-                                </td>
-                                <td class="blank row22">
-                                  <input class="result" type="text" id="row22" name="row22" placeholder="__">
-                                </td>
-                                <td class="blank row23">
-                                  <input class="result" type="text" id="row23" name="row23" placeholder="__">
-                                </td>
-                              </tr>
-                              <tr>
-                                <td class="blank row24">
-                                  <input class="result" type="text" id="row24" name="row24" placeholder="__">
-                                </td>
-                                <td class="blank row25">
-                                  <input class="result" type="text" id="row25" name="row25" placeholder="__">
-                                </td>
-                                <td class="blank row26">
-                                  <input class="result" type="text" id="row26" name="row26" placeholder="__">
-                                </td>
-                                <td class="default">4</td>
-                                <td class="default">5</td>
-                                <td class="default">1</td>
-                                <td class="default">3</td>
-                                <td class="default">6</td>
-                                <td class="default">2</td>
-                              </tr>
-                            </form>
-                          </table>
-                          <input id="submitBtn" class="submit button btn" type="submit" value="Revisar">
-
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="row">
-              <div class="col">
-                <div class="card">
-                  <div class="card-horizon">
-                    <div class="row">
-                      <div class="col">
-                        <div class="card-block">
-
-                          <div class="row">
-                            <div class="col-md-6 offset-md-3" >
-                              <div class="wrapper">
-                                <div id="quiz">
-                                  <h1 style="color: white;"><b>Realiza las sumas y selecciona la opción correcta.</b></h1>
-                                  <div style="border: 1px solid #FFFFFF; margin-bottom: 5px;"></div>
-                                  <p class="questions"></p>
-                                  <div style="border: 1px solid #FFFFFF; margin: 5px 0px;"></div>
-                                  <div class="answers"></div>         
-                                  
-                                  <div class="checkAnswers">
-                                    <h3>Correcta?</h3>
-                                    <div class="checker">
-
-                                    </div>
-                                  </div>
-                                </div>
-                              </div>  
-                              
-                            </div>
-                          </div>
-                          
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <!--Botones de avance entre páginas-->
-            <div class="row mrg-btm-20">
-              <div class="col text-center">
-                <div class="btn-group"></div>
-              </div>
-            </div>
-
-            <!--Widgets de avance de módulo y general-->
-            <div class="card widget-feed">
+          <!-- Content Wrapper START -->
+          <div class="main-content">
+            <div class="container-fluid px-0 px-sm-3">
+              <!-- Your content goes here -->
               <div class="row">
-                <div class="col-lg-8">
-                  <h1 class="feed-title tag tag-info">Módulo 2</h1>
-                  <h3 class="feed-subtitle">Tu Progreso</h3>
-                  <div class="progress" style="height: 20px" id="bar">
-                    <div class="progress-bar bg-info" role="progressbar" aria-valuenow="80" aria-valuemin="0"
-                      aria-valuemax="100" style="max-width: 80%">
-                      80%
+                <div class="col">
+                  <div class="card">
+                    <div class="card-horizon">
+                      <div class="image-container col-md-5">
+                        <div
+                          class="background-holder has-content"
+                          style="
+                            background-image: url('../../assets/images/course/modulo1/m1-7/shutterstock_769335463.jpg');
+                          "
+                        >
+                          <!-- https://www.shutterstock.com/image-photo/take-exam-write-paper-on-blue-1750211525 -->
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-md-7 ml-auto">
+                          <div class="card-block">
+                            <h1 class="mrg-btm-20 card-title">Ejercicio. Completa</h1>
+                            <p>
+                              Ordenar las palabras en las tres categorías de comida con su artículo
+                            </p>
+                          </div>
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>
-                <div class="col-lg-4">
-                  <div class="row">
-                    <div class="col">
-                      <div id="circlecontainer"></div>
+              </div>
+
+              <div class="card card-block">
+                <div class="pdd-horizon-15 pdd-vertical-20">
+                  <section class="draggable-elements">
+                    <i  class="draggable widget" draggable="true" id="3">die Salami</i>
+                    <i  class="draggable widget" draggable="true" id="1">der Käse</i>
+                    
+                    <i  class="draggable widget" draggable="true" id="2">die Orange</i>
+                    <i  class="draggable widget" draggable="true" id="1">die Butter</i>
+                  </section>
+                  <section class="draggable-elements">
+                    <i  class="draggable widget" draggable="true" id="3">der Schinken</i>
+                    <i  class="draggable widget" draggable="true" id="2">die Tomate</i>
+                    
+                    <i  class="draggable widget" draggable="true" id="2">der Apfel</i>
+                    <i  class="draggable widget" draggable="true" id="1">die Milch</i>
+                  </section>
+                  <section class="draggable-elements">
+                    <i  class="draggable widget" draggable="true" id="2">die Möhre</i>
+                    <i  class="draggable widget" draggable="true" id="2">die Banane</i>
+                    
+                    <i  class="draggable widget" draggable="true" id="1">der Joghurt</i>
+                    <i  class="draggable widget" draggable="true" id="3">der Hähnchen</i>
+                  </section>
+                  <div style="margin:auto; width: fit-content;">
+                    <table class="table table-cell droppable" data-draggable-id="1" style="width: 270px; margin-top: 2%; display: inline-table;">
+                      <thead style="background-color: #23806f;">
+                        <tr>
+                          <th scope="col" style="color: white;" class="text-center">Milchprodukten</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                      </tbody>
+                    </table>
+                    <table class="table table-cell droppable" data-draggable-id="2" style="width: 270px; margin-top: 2%; display: inline-table;">
+                      <thead style="background-color: #23806f;">
+                        <tr>
+                          <th scope="col" style="color: white;" class="text-center">Obst und Gemüse</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                      </tbody>
+                    </table>
+                    <table class="table table-cell droppable" data-draggable-id="3" style="width: 270px; margin-top: 2%;  display: inline-table;">
+                      <thead style="background-color: #23806f;">
+                        <tr>
+                          <th scope="col" style="color: white;" class="text-center">Fleisch und Wurst</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+
+
+              <div class="row mrg-btm-20">
+                <div class="col text-center">
+                  <div class="btn-group"></div>
+                </div>
+              </div>
+
+              <div class="card widget-feed">
+                <div class="row">
+                  <div class="col-lg-8">
+                    <h1 class="feed-title tag tag-info">Módulo 5</h1>
+                    <h3 class="feed-subtitle">Tu Progreso</h3>
+                    <div class="progress" style="height: 20px" id="bar">
+                      <div
+                        class="progress-bar bg-info"
+                        role="progressbar"
+                        aria-valuenow="25"
+                        aria-valuemin="0"
+                        aria-valuemax="100"
+                        style="max-width: 4%"
+                      >
+                        4%
+                      </div>
                     </div>
                   </div>
-                  <div class="row">
-                    <div class="col text-center">
-                      <h3 class="feed-subtitle">
-                        Progreso General del Curso
-                      </h3>
+                  <div class="col-lg-4">
+                    <div class="row">
+                      <div class="col">
+                        <div id="circlecontainer"></div>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col text-center">
+                        <h3 class="feed-subtitle">
+                          Progreso General del Curso
+                        </h3>
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
+          <!-- Content Wrapper END -->
+
+          <!-- Footer START -->
+          <footer class="content-footer"></footer>
+          <!-- Footer END -->
         </div>
-
-        <!-- Content Wrapper END -->
-
-        <!-- Footer START -->
-        <footer class="content-footer"></footer>
-        <!-- Footer END -->
+        <!-- Page Container END -->
       </div>
-      <!-- Page Container END -->
     </div>
-  </div>
 
-  <!-- build:js assets/js/vendor.js -->
-  <!-- plugins js -->
-  <script src="../../assets/vendors/jquery/dist/jquery.min.js"></script>
-  <script src="../../assets/js/recycled/navigationbar.js"></script>
-  <script src="../../assets/vendors/popper.js/dist/umd/popper.min.js"></script>
-  <script src="../../assets/vendors/bootstrap/dist/js/bootstrap.js"></script>
-  <script src="../../assets/vendors/PACE/pace.min.js"></script>
-  <script src="../../assets/vendors/perfect-scrollbar/js/perfect-scrollbar.jquery.js"></script>
+    <!-- build:js assets/js/vendor.js -->
+    <!-- plugins js -->
+    <script src="../../assets/vendors/jquery/dist/jquery.min.js"></script>
+    <script src="../../assets/vendors/popper.js/dist/umd/popper.min.js"></script>
+    <script src="../../assets/js/recycled/navigationbar.js"></script>
+    <script src="../../assets/vendors/bootstrap/dist/js/bootstrap.js"></script>
+    <script src="../../assets/vendors/PACE/pace.min.js"></script>
+    <script src="../../assets/vendors/perfect-scrollbar/js/perfect-scrollbar.jquery.js"></script>
 
-  <!-- Progress plugins -->
-  <script src="../../assets/js/progressbar.js"></script>
-  <script src="../../assets/js/progress-circle.js"></script>
+    <script src="../../assets/js/progressbar.js"></script>
+    <script src="../../assets/js/progress-circle.js"></script>
 
-  <!-- endbuild -->
-  <!-- build:js assets/js/app.min.js -->
-  <!-- core js -->
-  <script src="../../assets/js/app.js"></script>
-  <script src="../../assets/js/recycled/navigationbar.js"></script>
-  <script src="../../assets/js/progress/url-script.js"></script>
+    <!-- endbuild -->
 
-  <!-- endbuild -->
+    <!-- build:js assets/js/app.min.js -->
+    <!-- core js -->
+    <script src="../../assets/js/app.js"></script>
+    <script src="../../assets/js/progress/url-script.js"></script>
 
-  <!-- Insert your dependencies here -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
-  <script src="../../assets/js/scripts/modulo2/modulo2-7.js"></script>
-</body>
+    <!-- Aquí se inserta el porcentage del círculo de progreso como una fracción -->
+    <script type="text/javascript">
+      show(0.02);
+    </script>
 
+    <!-- endbuild -->
+
+    <!-- Insert your dependencies here -->
+    <!-- Drag and drop mobile dependencies--><!-- 1. jQuery UI -->
+    <script src="https://code.jquery.com/ui/1.8.17/jquery-ui.js" integrity="sha256-XIz1bXt5gQu/CwybHyRVTxWw4RpAqaGVG6lfsIpYQXw=" crossorigin="anonymous"></script>
+      
+    <!-- 2. Incluir touch punch -->
+    <script src="../../assets/js/extras/jquery.ui.touch-punch.min.js"></script>
+    <!-- Drag and drop SCRIPT STARTS -->
+    <script src="../../assets/js/scripts/modulo2/modulo2-7.js"></script>
+    </body>
 </html>
