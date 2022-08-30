@@ -156,12 +156,14 @@
   padding: 0.5rem;
   font-size: 20px;
   text-align: center;
-  list-style: none;
 }
 #list li {
   white-space: nowrap;
+  text-align: left;
+  color: white;
 }
 #list li.found {
   color: gray;
   text-decoration: line-through;
 }
+
