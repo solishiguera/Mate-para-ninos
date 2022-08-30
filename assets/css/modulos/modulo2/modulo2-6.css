@@ -1,5 +1,6 @@
 table {
   text-align: center;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
 }
 
 th {
@@ -13,7 +14,7 @@ td {
   color: white;
   vertical-align:middle !important;
   border: solid #6f92a7;
-  
+
   font-size: 20px;
   font-weight: bold;
 
@@ -31,4 +32,93 @@ td input {
   padding: 0;
   margin: 0;
   border: 0;
+}
+
+
+/** PARTE DOS*/
+.wrapper {
+  background-color: #93bed8;
+  width: 95%;
+  margin: 0 auto;
+  height: 100%;
+  border-radius: 15px;
+}
+
+#quiz {
+  border-radius: 15px;
+  width: 100%;
+  color: #fff;
+  text-align: center;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+}
+
+#quiz > h1 {
+  text-align: center;
+  padding: 25px;
+  font-size: 20px;
+}
+
+.questions {
+  font-size: 28px;
+  background-color: white;
+  color: #6f92a7;
+  border-radius: 15px;
+  width: 50%;
+  margin: auto;
+  text-align: center;
+  font-weight: 700;
+  padding: 20px;
+}
+
+.answers div {
+  padding: 10px 0 0 0;
+  font-size: 25px;
+  font-weight: bolder;
+  margin: 0px 5px;
+}
+
+.answers div:hover {
+  cursor: pointer;
+  color: white;
+  background-color: #6f92a7;
+  border-radius: 15px;
+}
+
+.answers {
+  padding: 0px 0 10px 0px;
+}
+
+.answers div {
+  width: 50%;
+  margin: 0 auto;
+  padding-bottom: 15px;
+  border-top: 1px solid white;
+}
+
+.answers div:first-child {
+  border: none;
+}
+
+.checker {
+  display: inline-block;
+  width: 200px;
+  margin: 0 auto;
+}
+
+.correct, .false {
+  background-color: green;
+  width: 60px;
+  height: 40px;
+  padding-top: 5px;
+  float: left;
+  margin: 2px;
+  border-radius: 12px;
+  font-weight: bolder;
+  font-size: large;
+  display:table-cell;
+}
+
+.false {
+  background-color: red;
+  border-radius: 12px;
 }
