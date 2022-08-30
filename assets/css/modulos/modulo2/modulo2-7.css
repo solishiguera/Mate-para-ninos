@@ -1,26 +1,25 @@
-.draggable-elements {
-  display: flex;
-  justify-content: center;
-  margin: 2rem;
+.droppped { 
+  color: #2e3c45;
+  font-size: 25px;
+  font-weight: bold;
 }
 
 .draggable {
   height: 3rem;
-  width: fit-content;
+  width: calc(7.5% + 1vw + .5vh) !important;
   min-width: 50px;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: calc(20% + .75vw + .5vh) !important;
+  font-size: calc(40% + .75vw + 1vh) !important;
   margin: 0rem .5rem;
   cursor: move;
-  color: white;
+  color: #2e3c45  ;
   transition: opacity 0.2s;
-  background-color: var(--theme-color);
-  border-radius: 30px;
-  border: solid #23806f;
+  background-color: #93bed8;
+  border: solid #6f92a7;
+  border-radius: 10px;
   z-index: 100;
-  padding: 0 5%;
 }
 
 .draggable:hover {
@@ -30,18 +29,19 @@
 .droppable {
   margin-left: 10px;
   margin-top: 20px;
-  height: 100%;
-  width: 200px;
-  padding: 0 5%;
+  height: 6rem;
+  width: 12rem;
+  display: inline-flex;
   justify-content: center;
   text-align: center;
-  font-size: calc(20% + .75vw + .5vh) !important;
+  font-size: calc(10% + 0.7vw + 0.5vh) !important;
   font-weight: bold;
   background-color: rgb(238, 237, 237);
-  border: 3px dashed var(--theme-color);
+  color: #6f92a7;
+  border: 3px dashed #93bed8;
   transition: border-width 0.2s, transform 0.2s, background-color 0.4s;
   align-items: center;
-  border-radius: 20px;
+  border-radius: 10px;
 }
 
 .droppable span {

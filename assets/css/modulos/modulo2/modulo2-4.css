@@ -21,7 +21,6 @@
 .draggable {
   height: 3rem;
   width: calc(7.5% + 1vw + .5vh) !important;
-  ;
   min-width: 50px;
   display: flex;
   align-items: center;
