@@ -1,0 +1,59 @@
+.btn-flip {
+  opacity: 1;
+  outline: 0;
+  color: #fff;
+  line-height: 40px;
+  font-size: 20px;
+  padding: 0;
+  position: relative;
+  text-align: center;
+  letter-spacing: 1px;
+  display: inline-block;
+  text-decoration: none !important;
+  font-family: "Open Sans";
+  text-transform: uppercase;
+  border: 0 !important;
+  border-radius: 10px !important;
+  background-color: #fff;
+  font-weight: bold;
+}
+.btn-flip:hover:after {
+  opacity: 1;
+  transform: translateY(0) rotateX(0);
+}
+.btn-flip:hover:before {
+  opacity: 0;
+  transform: translateY(50%) rotateX(90deg);
+}
+.btn-flip:after {
+  top: 0;
+  left: 0;
+  opacity: 0;
+  width: 100%;
+  /* color: #323237; */
+  color: white;
+  display: block;
+  transition: 0.5s;
+  position: absolute;
+  background: #800000;
+  content: attr(data-back);
+  transform: translateY(-50%) rotateX(90deg);
+}
+.btn-flip:before {
+  top: 0;
+  left: 0;
+  opacity: 1;
+  color: black;
+  display: block;
+  padding: 0 30px;
+  line-height: 40px;
+  transition: 0.5s;
+  position: relative;
+  background: white;
+  border: 1px solid #800000;
+  border-radius: 10px !important;
+  content: attr(data-front);
+  transform: translateY(0) rotateX(0);
+}
+
+
