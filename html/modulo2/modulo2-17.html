@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no" />
+  <title>Ejercicio 2 | CVA - Centro Virtual de Aprendizaje</title>
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="../../assets/images/logo/favicon.png" />
+
+  <!-- plugins css -->
+  <link rel="stylesheet" href="../../assets/vendors/bootstrap/dist/css/bootstrap.css" />
+  <link rel="stylesheet" href="../../assets/vendors/PACE/themes/blue/pace-theme-minimal.css" />
+  <link rel="stylesheet" href="../../assets/vendors/perfect-scrollbar/css/perfect-scrollbar.min.css" />
+
+  <!-- page plugins css -->
+  <link rel="stylesheet" href="../../assets/css/modulos/modulo2/modulo2-11.css">
+
+  <!-- core css -->
+  <link href="../../assets/css/ei-icon.css" rel="stylesheet" />
+  <link href="../../assets/css/themify-icons.css" rel="stylesheet" />
+  <link href="../../assets/css/font-awesome.min.css" rel="stylesheet" />
+  <link href="../../assets/css/animate.min.css" rel="stylesheet" />
+  <link href="../../assets/css/app.css" rel="stylesheet" />
+  <link href="../../assets/css/progress.css" rel="stylesheet" />
+  <link href="../../assets/css/progress-circle.css" rel="stylesheet" />
+</head>
+
+<body class="header-info side-nav-dark">
+  <div class="app">
+    <div class="layout">
+      <!-- Side Nav START -->
+      <div class="side-nav" id="sideNav"></div>
+      <!-- Side Nav END -->
+
+      <!-- Page Container START -->
+      <div class="page-container">
+        <!-- Header START -->
+        <div class="header navbar"></div>
+        <!-- Header END -->
+
+        <!-- Content Wrapper START -->
+        <div class="main-content">
+          <div class="container-fluid px-0 px-sm-3">
+            <!-- Your content goes here -->
+            
+            <div class="row">
+              <div class="col">
+                <div class="card">
+                  <div class="card-horizon">
+                    <div class="image-container col-md-5">
+                      <div class="background-holder has-content" style="
+                            background-image: url('../../assets/images/course/modulo1/m1-7/shutterstock_769335463.jpg');
+                          ">
+                        <!-- https://www.shutterstock.com/image-photo/take-exam-write-paper-on-blue-1750211525 -->
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-md-7 ml-auto">
+                        <div class="card-block">
+                          <h1 class="mrg-btm-20 card-title">Ejercicio</h1>
+                          <p>
+                            Lee los siguientes problemas cuidadosamente y selecciona la expresión correcta.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <div class="row" style="height: 60vh !important;">
+              <!-- Question 1 -->
+              <div class="col-md-6 h-100">
+                <div class="card h-100">
+                  <div class="card-horizon h-100">
+                    <div class="card-block h-100 pt-0">
+                      <div class="row h-100 p-0">
+                        <!-- Question -->
+                        <div class="col h-100">
+                          <div class="row" style="height: 11vh;">
+                            <p class="pt-3 px-2" style="font-size: 18px;">1. Carlos tiene 5 bolsas con 6 manzanas en cada una, su hermano le regaló 9 manzanas más ¿Cuántas manzanas en total tiene Carlos?</p>
+                          </div>
+                          <div class="row" style="height: 35vh;">
+                            <img class="m-auto" src="../../assets/images/course/modulo2/modulo2-11/apple.png" alt="" style="height: 100%;">
+                          </div>
+                          <div class="row" style="height: 11vh;">
+                            <div class="col text-center m-auto">
+                              <button id="1" class="cool-btn" onclick="isAnswer(id, 1)">a)5x6+9=39</button>
+                            </div>
+                            <div class="col text-center m-auto">
+                              <button id="2" class="cool-btn" onclick="isAnswer(id, 1)">b)5+6+9=20</button>
+                            </div>
+                            <div class="col text-center m-auto">
+                              <button id="3" class="cool-btn" onclick="isAnswer(id, 1)">c)5x6-9=21</button>
+                            </div>
+                           
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Question 2 -->
+              <div class="col-md-6 h-100">
+                <div class="card h-100">
+                  <div class="card-horizon h-100">
+                    <div class="card-block h-100 pt-0">
+                      <div class="row h-100 p-0">
+                        <!-- Question -->
+                        <div class="col h-100">
+                          <div class="row" style="height: 20vh;">
+                            <p class="pt-3 px-2" style="font-size: 18px;">2. La mamá de misael compra 30 paletas para regalar en el cumpleaños de su hijo, pero al pasar a caja compra 20 chocolates más, durante la fiesta regala 33 dulces ¿Cuántos dulces le quedaron a la mamá de misael después de regalar los dulces?</p>
+                          </div>
+                          <div class="row" style="height: 25vh;">
+                            <img class="m-auto" src="../../assets/images/course/modulo2/modulo2-11/lollipop.png" alt="" style="height: 100%;">
+                          </div>
+                          <div class="row" style="height: 11vh;">
+                            <div class="col text-center m-auto">
+                              <button id="4" class="cool-btn" onclick="isAnswer(id, 6)">a)30x20-33=567</button>
+                            </div>
+                            <div class="col text-center m-auto">
+                              <button id="5" class="cool-btn" onclick="isAnswer(id, 6)">b)30–20+33=43</button>
+                            </div>
+                            <div class="col text-center m-auto">
+                              <button id="6" class="cool-btn" onclick="isAnswer(id, 6)">c)30+20-33=17</button>
+                            </div>
+                           
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+
+            <div class="row mt-2" style="width: 250px; padding: 0 !;">
+              <div class="col">
+                <div class="card p-0 m-0 align-items-center">
+                  <div class="card-horizon p-0 m-0">
+                    <div class="card-block m-auto">
+                      <div class="m-0" style="font-size: 20px; font-weight:bold;"><button
+                        class="button btn" onclick="resetColors()"> Reiniciar </button>
+                    </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="row mrg-btm-20">
+              <div class="col text-center m-auto">
+                <div class="btn-group"></div>
+              </div>
+            </div>
+
+            <div class="card widget-feed">
+              <div class="row">
+                <div class="col-lg-8">
+                  <h1 class="feed-title tag tag-info">Módulo 5</h1>
+                  <h3 class="feed-subtitle">Tu Progreso</h3>
+                  <div class="progress" style="height: 20px" id="bar">
+                    <div class="progress-bar bg-info" role="progressbar" aria-valuenow="25" aria-valuemin="0"
+                      aria-valuemax="100" style="max-width: 4%">
+                      4%
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-4">
+                  <div class="row">
+                    <div class="col">
+                      <div id="circlecontainer"></div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col text-center m-auto">
+                      <h3 class="feed-subtitle">
+                        Progreso General del Curso
+                      </h3>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Content Wrapper END -->
+
+        <!-- Footer START -->
+        <footer class="content-footer"></footer>
+        <!-- Footer END -->
+      </div>
+      <!-- Page Container END -->
+    </div>
+  </div>
+
+  <!-- build:js assets/js/vendor.js -->
+  <!-- plugins js -->
+  <script src="../../assets/vendors/jquery/dist/jquery.min.js"></script>
+  <script src="../../assets/vendors/popper.js/dist/umd/popper.min.js"></script>
+  <script src="../../assets/js/recycled/navigationbar.js"></script>
+  <script src="../../assets/vendors/bootstrap/dist/js/bootstrap.js"></script>
+  <script src="../../assets/vendors/PACE/pace.min.js"></script>
+  <script src="../../assets/vendors/perfect-scrollbar/js/perfect-scrollbar.jquery.js"></script>
+
+  <script src="../../assets/js/progressbar.js"></script>
+  <script src="../../assets/js/progress-circle.js"></script>
+
+  <!-- endbuild -->
+
+  <!-- build:js assets/js/app.min.js -->
+  <!-- core js -->
+  <script src="../../assets/js/app.js"></script>
+  <script src="../../assets/js/progress/url-script.js"></script>
+
+  <!-- Aquí se inserta el porcentage del círculo de progreso como una fracción -->
+  <script type="text/javascript">
+    show(0.02);
+  </script>
+
+  <!-- endbuild -->
+
+  <!-- Insert your dependencies here -->
+  <!-- Drag and drop SCRIPT STARTS -->
+  <script src="../../assets/js/scripts/modulo2/modulo2-11.js"></script>
+</body>
+
+</html>
