@@ -1,169 +1,18 @@
-:root {
-  --orange: #ec8e35;
-  --green: #a1d54f; 
-  --greenTwo: #80c217;
-  --yellow: #fff94f;
-  --yellowTwo: #ffe500;
-  --lightBlue: #71ceef;
-  --lightBlueTwo: #21b4e2;
-  --purple: #c928a9;
-  --purpleTwo: #b5177d;
-
-}
-
-
-.icon1 {
-  margin: 5px;
-  width: 4rem;
-}
-
-#grid,
-.box {
-  -webkit-user-select: none;
-}
-#main {
-  max-width: 800px;
-  font-family: helvetica neue, san-serif;
-}
-
-.soup {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-}
-@media (max-width: 480px) {
-  .soup {
-    padding-left: 10px;
-  }
-  .icon1 {
-    width: 3.5rem;
-  }
-}
-#grid {
-  margin: 0px !important;
-  -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
-  width: 563.75px;
-  height: 563.75px;
-  padding: 0;
-  padding-left: 1px;
-  border-radius: 5px;
-  /* background: #c3e5f1; */
-  background: #e77272;
-  font-size: 20px;
-  cursor: pointer;
-  -ms-touch-action: none;
-  touch-action: none;
-}
-@media (max-width: 480px) {
-  #grid {
-    width: 290px;
-    height: 298px;
-    font-size: 14px;
-    border-radius: 0px;
-  }
-}
-.box {
-  color: rgb(12, 12, 12);
-  margin: 3px;
-  width: 45px;
-  height: 45px;
-  line-height: 45px;
-  text-align: center;
-  background: #fff;
-  -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0);
-  border-radius: 5px;
-  float: left;
-}
-@media (max-width: 480px) {
-  .box {
-    width: 30px;
-    height: 30px;
-    line-height: 30px;
-  }
-}
-.box.highlight {
-  background: #111;
-  color: #fff;
-}
-.box.found-red {
-  background: var(--orange);
-  background: -webkit-linear-gradient(var(--orange) 50%, var(--orange) 51%);
-  background: -moz-linear-gradient(var(--orange) 50%, var(--orange) 51%);
-  background: -o-linear-gradient(var(--orange) 50%, var(--orange) 51%);
-  background: linear-gradient(var(--orange) 50%, var(--orange) 51%);
-  /* filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ea2c2c', endColorstr='#d62222',GradientType=0 ); */
-  color: #fff;
-}
-.box.found-green {
-  background: var(--green);
-  background: -webkit-linear-gradient(var(--green) 50%, var(--greenTwo) 51%);
-  background: -moz-linear-gradient(var(--green) 50%, var(--greenTwo) 51%);
-  background: -o-linear-gradient(var(--green) 50%, var(--greenTwo) 51%);
-  background: linear-gradient(var(--green) 50%, var(--greenTwo) 51%);
-  /* filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='var(--green)', endColorstr='var(--greenTwo)',GradientType=0 ); */
-  color: #fff;
-}
-.box.found-yellow {
-  background: var(--yellow);
-  background: -webkit-linear-gradient(var(--yellow) 50%, var(--yellowTwo) 51%);
-  background: -moz-linear-gradient(var(--yellow) 50%, var(--yellowTwo) 51%);
-  background: -o-linear-gradient(var(--yellow) 50%, var(--yellowTwo) 51%);
-  background: linear-gradient(var(--yellow) 50%, var(--yellowTwo) 51%);
-  /* filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='var(--yellow)', endColorstr='var(--yellowTwo)',GradientType=0 ); */
-  color: #fff;
-}
-.box.found-blue {
-  background: var(--lightBlue);
-  background: -webkit-linear-gradient(var(--lightBlue) 50%, var(--lightBlueTwo) 51%);
-  background: -moz-linear-gradient(var(--lightBlue) 50%, var(--lightBlueTwo) 51%);
-  background: -o-linear-gradient(var(--lightBlue) 50%, var(--lightBlueTwo) 51%);
-  background: linear-gradient(var(--lightBlue) 50%, var(--lightBlueTwo) 51%);
-  /* filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='var(--lightBlue)', endColorstr='var(--lightBlueTwo)',GradientType=0 ); */
-  color: #fff;
-}
-.box.found-purple {
-  background: var(--purple);
-  background: -webkit-linear-gradient(var(--purple) 49%, var(--purpleTwo) 49%);
-  background: -moz-linear-gradient(var(--purple) 49%, var(--purpleTwo) 49%);
-  background: -o-linear-gradient(var(--purple) 49%, var(--purpleTwo) 49%);
-  background: linear-gradient(var(--purple) 49%, var(--purpleTwo) 49%);
-  /* filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='var(--purple)', endColorstr='var(--purpleTwo)',GradientType=0 ); */
-  color: #fff;
-}
-#listContainer {
-  margin: 5px 5px;
-  padding: 1rem;
-  width: 200px;
-  text-align: center;
-  -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
-  background: #e77272;
+.cool-btn { 
+  height: 40px;
+  background-color: #93bed8;
+  border: 0;
   border-radius: 10px;
-}
-@media (max-width: 740px) {
-  #listContainer {
-    margin: 0px;
-    width: 200px;
-    height: auto;
-  }
-}
-#list {
-  padding: 0.5rem;
-  font-size: 20px;
-  text-align: center;
-}
-#list li {
-  white-space: nowrap;
-  text-align: left;
   color: white;
-}
-#list li.found {
-  color: gray;
-  text-decoration: line-through;
+  font-weight: bold;
+  font-size: 22px;
 }
 
+.cool-btn:hover { 
+  background-color: #6f92a7;
+}
+
+.answered { 
+  border: 4px dashed #6f92a7 !important;
+  color: #6f92a7;
+}

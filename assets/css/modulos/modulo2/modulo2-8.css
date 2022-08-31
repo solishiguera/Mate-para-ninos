@@ -69,3 +69,8 @@
 .cool-btn:hover { 
   background-color: #6f92a7;
 }
+
+.answered { 
+  border: 4px dashed #6f92a7 !important;
+  color: #6f92a7;
+}
