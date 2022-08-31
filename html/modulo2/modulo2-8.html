@@ -61,7 +61,7 @@
                         <div class="card-block">
                           <h1 class="mrg-btm-20 card-title">Ejercicio</h1>
                           <p>
-                            Selecciona la descomposición correcta en cada número.
+                            Selecciona la descomposicióna en cada número.
                           </p>
                         </div>
                       </div>
@@ -80,23 +80,49 @@
                       <div class="row">
                         <div class="col">
                           <div class="row w-100 text-center m-auto">
-                            <div class="col w-50 text-right" style="font-size: 20px; font-weight:bold;"><h2>51 = </h2></div>
-                            <div class="col"><button class="btn-flip mt-1" style="width: 230px;" data-back="6 x 6 + 12" data-front="6 x 6 + 12"></button></div>
-                            <div class="col"><button id="1" class="btn-flip mt-1 correct" onclick="isAnswer(true, id)" style="width: 230px;" data-back="9 x 5 + 6" data-front="9 x 5 + 6"></button></div>
-                            <div class="col"><button class="btn-flip mt-1" style="width: 230px;" data-back="25 x 2 + 1" data-front="25 x 2 + 1"></button></div>
+                            <div class="col w-50 text-right" style="font-size: 20px; font-weight:bold;">
+                              <h2>51 = </h2>
+                            </div>
+                            <div class="col"><button id="1" class="cool-btn mt-2" onclick="isAnswer(id,2)"
+                                style="width: 230px;">6 x 6 +
+                                12</button></div>
+                            <div class="col"><button id="2" class="cool-btn mt-2" onclick="isAnswer(id,2)"
+                                style="width: 230px;">9 x 5 +
+                                6</button></div>
+                            <div class="col"><button id="3" class="cool-btn mt-2" onclick="isAnswer(id,2)"
+                                style="width: 230px;">25 x 2 +
+                                1</button></div>
                           </div>
                           <div class="row w-100 text-center m-auto">
-                            <div class="col w-50 text-right" style="font-size: 20px; font-weight:bold;"><h2>1.25 = </h2></div>
-                            <div class="col"><button class="btn-flip mt-1" style="width: 230px;" data-back="1 x 2 + 0.25" data-front="1 x 2 + 0.25"></button></div>
-                            <div class="col"><button id="2" class="btn-flip mt-1 correct" onclick="isAnswer(true, id)" style="width: 230px; font-size: 17px;" data-back="0.80+0.20+0.10+0.15" data-front="0.80+0.20+0.10+0.15"></button></div>
-                            <div class="col"><button class="btn-flip mt-1" style="width: 230px;" data-back="0.90 + 0.40" data-front="0.90 + 0.40"></button></div>
+                            <div class="col w-50 text-right" style="font-size: 20px; font-weight:bold;">
+                              <h2>1.25 = </h2>
+                            </div>
+                            <div class="col"><button id="4" class="cool-btn mt-2" onclick="isAnswer(id,5)"
+                                style="width: 230px;">1 x 2 +
+                                0.25</button></div>
+                            <div class="col"><button id="5" class="cool-btn mt-2" onclick="isAnswer(id,5)"
+                                style="width: 230px; font-size: 17px;">0.80+0.20+0.10+0.15</button></div>
+                            <div class="col"><button id="6" class="cool-btn mt-2" onclick="isAnswer(id,5)"
+                                style="width: 230px;">0.90 +
+                                0.40</button></div>
                           </div>
                           <div class="row w-100 text-center m-auto">
-                            <div class="col w-50 text-right" style="font-size: 20px; font-weight:bold;"><h2>127.5 = </h2></div>
-                            <div class="col"><button id="3" class="btn-flip mt-1 correct" onclick="isAnswer(true, id)" style="width: 230px;" data-back="60 x 2 + 7.5" data-front="60 x 2 + 7.5"></button></div>
-                            <div class="col"><button class="btn-flip mt-1" style="width: 230px;" data-back="27.50 +10 x 8" data-front="27.50 +10 x 8"></button></div>
-                            <div class="col"><button class="btn-flip mt-1" style="width: 230px;" data-back="20 x 5 + 7.5" data-front="20 x 5 + 7.5"></button></div>
+                            <div class="col w-50 text-right" style="font-size: 20px; font-weight:bold;">
+                              <h2>127.5 = </h2>
+                            </div>
+                            <div class="col"><button id="7" class="cool-btn mt-2" onclick="isAnswer(id,7)"
+                                style="width: 230px;">60 x 2 +
+                                7.5</button></div>
+                            <div class="col"><button id="8" class="cool-btn mt-2" onclick="isAnswer(id,7)"
+                                style="width: 230px;">27.50 +10
+                                x 8</button></div>
+                            <div class="col"><button id="9" class="cool-btn mt-2" onclick="isAnswer(id,7)"
+                                style="width: 230px;">20 x 5 +
+                                7.5</button></div>
                           </div>
+                          <div class="row w-25 text-center m-auto"></div>
+                          <div class="col-3 w-50 text-right" style="font-size: 20px; font-weight:bold;"><button
+                              class="button btn" onclick="resetColors()"> Reiniciar </button></div>
                         </div>
                       </div>
                     </div>
