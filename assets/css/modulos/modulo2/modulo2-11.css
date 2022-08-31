@@ -6,7 +6,7 @@
   border-radius: 10px;
   color: white;
   font-weight: bold;
-  font-size: 22px;
+  font-size: 16px;
   padding: 30px;
 }
 
@@ -15,6 +15,7 @@
 }
 
 .answered { 
+  padding: 26px;
   border: 4px dashed #6f92a7 !important;
   color: #6f92a7;
 }
