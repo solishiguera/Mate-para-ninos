@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no" />
+  <title>Ejercicio 2 | CVA - Centro Virtual de Aprendizaje</title>
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="../../assets/images/logo/favicon.png" />
+
+  <!-- plugins css -->
+  <link rel="stylesheet" href="../../assets/vendors/bootstrap/dist/css/bootstrap.css" />
+  <link rel="stylesheet" href="../../assets/vendors/PACE/themes/blue/pace-theme-minimal.css" />
+  <link rel="stylesheet" href="../../assets/vendors/perfect-scrollbar/css/perfect-scrollbar.min.css" />
+
+  <!-- page plugins css -->
+  <link rel="stylesheet" href="../../assets/css/modulos/modulo2/modulo2-13.css">
+
+  <!-- core css -->
+  <link href="../../assets/css/ei-icon.css" rel="stylesheet" />
+  <link href="../../assets/css/themify-icons.css" rel="stylesheet" />
+  <link href="../../assets/css/font-awesome.min.css" rel="stylesheet" />
+  <link href="../../assets/css/animate.min.css" rel="stylesheet" />
+  <link href="../../assets/css/app.css" rel="stylesheet" />
+  <link href="../../assets/css/progress.css" rel="stylesheet" />
+  <link href="../../assets/css/progress-circle.css" rel="stylesheet" />
+</head>
+
+<body class="header-info side-nav-dark">
+  <div class="app">
+    <div class="layout">
+      <!-- Side Nav START -->
+      <div class="side-nav" id="sideNav"></div>
+      <!-- Side Nav END -->
+
+      <!-- Page Container START -->
+      <div class="page-container">
+        <!-- Header START -->
+        <div class="header navbar"></div>
+        <!-- Header END -->
+
+        <!-- Content Wrapper START -->
+        <div class="main-content">
+          <div class="container-fluid px-0 px-sm-3">
+            <!-- Your content goes here -->
+            <div class="row">
+              <div class="col">
+                <div class="card">
+                  <div class="card-horizon">
+                    <div class="image-container col-md-5">
+                      <div class="background-holder has-content" style="
+                            background-image: url('../../assets/images/course/modulo1/m1-7/shutterstock_769335463.jpg');
+                          ">
+                        <!-- https://www.shutterstock.com/image-photo/take-exam-write-paper-on-blue-1750211525 -->
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-md-7 ml-auto">
+                        <div class="card-block">
+                          <h1 class="mrg-btm-20 card-title">Ejercicio</h1>
+                          <p>
+                            Realiza los siguientes ejercicios.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+            <div class="row">
+              <div class="col">
+                <div class="card">
+                  <div class="card-horizon">
+                    <div class="card-block">
+                      <div class="row">
+                        <div class="col">
+                          <p>Selecciona la descomposición correcta en cada número.</p>
+                          <div class="row w-100 text-center m-auto">
+                            <div class="col w-50 text-right" style="font-size: 20px; font-weight:bold;">
+                              <h2>51 = </h2>
+                            </div>
+                            <div class="col"><button id="1" class="cool-btn mt-2" onclick="isAnswer(id,2)"
+                                style="width: 230px;">6 x 6 +
+                                12</button></div>
+                            <div class="col"><button id="2" class="cool-btn mt-2" onclick="isAnswer(id,2)"
+                                style="width: 230px;">9 x 5 +
+                                6</button></div>
+                            <div class="col"><button id="3" class="cool-btn mt-2" onclick="isAnswer(id,2)"
+                                style="width: 230px;">25 x 2 +
+                                1</button></div>
+                          </div>
+                          <div class="row w-100 text-center m-auto">
+                            <div class="col w-50 text-right" style="font-size: 20px; font-weight:bold;">
+                              <h2>1.25 = </h2>
+                            </div>
+                            <div class="col"><button id="4" class="cool-btn mt-2" onclick="isAnswer(id,5)"
+                                style="width: 230px;">1 x 2 +
+                                0.25</button></div>
+                            <div class="col"><button id="5" class="cool-btn mt-2" onclick="isAnswer(id,5)"
+                                style="width: 230px; font-size: 17px;">0.80+0.20+0.10+0.15</button></div>
+                            <div class="col"><button id="6" class="cool-btn mt-2" onclick="isAnswer(id,5)"
+                                style="width: 230px;">0.90 +
+                                0.40</button></div>
+                          </div>
+                          <div class="row w-100 text-center m-auto">
+                            <div class="col w-50 text-right" style="font-size: 20px; font-weight:bold;">
+                              <h2>127.5 = </h2>
+                            </div>
+                            <div class="col"><button id="7" class="cool-btn mt-2" onclick="isAnswer(id,7)"
+                                style="width: 230px;">60 x 2 +
+                                7.5</button></div>
+                            <div class="col"><button id="8" class="cool-btn mt-2" onclick="isAnswer(id,7)"
+                                style="width: 230px;">27.50 +10
+                                x 8</button></div>
+                            <div class="col"><button id="9" class="cool-btn mt-2" onclick="isAnswer(id,7)"
+                                style="width: 230px;">20 x 5 +
+                                7.5</button></div>
+                          </div>
+                          <div class="row w-25 text-center m-auto"></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col">
+                <div class="card">
+                  <div class="card-horizon">
+                    <div class="card-block">
+                      <div class="row">
+                        <div class="col">
+                          <p>Realiza las siguientes expresiones aditivas y escoge las respuestas correctas.</p>
+                          <div class="row w-100 text-center m-auto">
+                            <div class="col w-50 text-right" style="font-size: 20px; font-weight:bold;">
+                              <h2>1.53 + 2.12 + 4.34</h2>
+                            </div>
+                            <div class="col"><button id="10" class="cool-btn mt-2" onclick="isAnswer(id,11)" style="width: 230px;">7.81</button>
+                            </div>
+                            <div class="col"><button id="11" class="cool-btn mt-2" onclick="isAnswer(id,11)" style="width: 230px;">7.99</button>
+                            </div>
+                            <div class="col"><button id="12" class="cool-btn mt-2" onclick="isAnswer(id,11)" style="width: 230px;">7.89</button>
+                            </div>
+                          </div>
+                          <div class="row w-100 text-center m-auto">
+                            <div class="col w-50 text-right" style="font-size: 20px; font-weight:bold;">
+                              <h2>21.245 + 31.121 + 17.223</h2>
+                            </div>
+                            <div class="col"><button id="13" class="cool-btn mt-2" onclick="isAnswer(id,13)"
+                                style="width: 230px;">69.589</button></div>
+                            <div class="col"><button id="14" class="cool-btn mt-2" onclick="isAnswer(id,13)"
+                                style="width: 230px;">70.123</button></div>
+                            <div class="col"><button id="15" class="cool-btn mt-2" onclick="isAnswer(id,13)"
+                                style="width: 230px;">69.478</button></div>
+                          </div>
+                          <div class="row w-100 text-center m-auto">
+                            <div class="col w-50 text-right" style="font-size: 20px; font-weight:bold;">
+                              <h2 style="font-size: 21px;">201.321 + 112.421 + 361.037</h2>
+                            </div>
+                            <div class="col"><button id="16" class="cool-btn mt-2" onclick="isAnswer(id,17)"
+                                style="width: 230px;">679.789</button></div>
+                            <div class="col"><button id="17" class="cool-btn mt-2" onclick="isAnswer(id,17)"
+                                style="width: 230px;">674.779</button></div>
+                            <div class="col"><button id="18" class="cool-btn mt-2" onclick="isAnswer(id,17)"
+                                style="width: 230px;">689.779</button></div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="row" style="width: 250px; padding: 0 !;">
+              <div class="col">
+                <div class="card p-0 m-0 align-items-center">
+                  <div class="card-horizon p-0 m-0">
+                    <div class="card-block m-auto">
+                      <div class="m-0" style="font-size: 20px; font-weight:bold;"><button
+                        class="button btn" onclick="resetColors()"> Reiniciar </button>
+                    </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <div class="row mrg-btm-20">
+              <div class="col text-center">
+                <div class="btn-group"></div>
+              </div>
+            </div>
+
+            <div class="card widget-feed">
+              <div class="row">
+                <div class="col-lg-8">
+                  <h1 class="feed-title tag tag-info">Módulo 5</h1>
+                  <h3 class="feed-subtitle">Tu Progreso</h3>
+                  <div class="progress" style="height: 20px" id="bar">
+                    <div class="progress-bar bg-info" role="progressbar" aria-valuenow="25" aria-valuemin="0"
+                      aria-valuemax="100" style="max-width: 4%">
+                      4%
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-4">
+                  <div class="row">
+                    <div class="col">
+                      <div id="circlecontainer"></div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col text-center">
+                      <h3 class="feed-subtitle">
+                        Progreso General del Curso
+                      </h3>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Content Wrapper END -->
+
+        <!-- Footer START -->
+        <footer class="content-footer"></footer>
+        <!-- Footer END -->
+      </div>
+      <!-- Page Container END -->
+    </div>
+  </div>
+
+  <!-- build:js assets/js/vendor.js -->
+  <!-- plugins js -->
+  <script src="../../assets/vendors/jquery/dist/jquery.min.js"></script>
+  <script src="../../assets/vendors/popper.js/dist/umd/popper.min.js"></script>
+  <script src="../../assets/js/recycled/navigationbar.js"></script>
+  <script src="../../assets/vendors/bootstrap/dist/js/bootstrap.js"></script>
+  <script src="../../assets/vendors/PACE/pace.min.js"></script>
+  <script src="../../assets/vendors/perfect-scrollbar/js/perfect-scrollbar.jquery.js"></script>
+
+  <script src="../../assets/js/progressbar.js"></script>
+  <script src="../../assets/js/progress-circle.js"></script>
+
+  <!-- endbuild -->
+
+  <!-- build:js assets/js/app.min.js -->
+  <!-- core js -->
+  <script src="../../assets/js/app.js"></script>
+  <script src="../../assets/js/progress/url-script.js"></script>
+
+  <!-- Aquí se inserta el porcentage del círculo de progreso como una fracción -->
+  <script type="text/javascript">
+    show(0.02);
+  </script>
+
+  <!-- endbuild -->
+
+  <!-- Insert your dependencies here -->
+  <!-- Drag and drop SCRIPT STARTS -->
+  <script src="../../assets/js/scripts/modulo2/modulo2-13.js"></script>
+  <link rel="stylesheet/less" type="text/css" href="styles.less" />
+  <script src="../../assets/css/modulos/modulo2/modulo2-8.scss" type="text/javascript"></script>
+
+</body>
+
+</html>

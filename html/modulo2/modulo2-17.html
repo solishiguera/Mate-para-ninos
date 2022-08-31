@@ -16,7 +16,7 @@
   <link rel="stylesheet" href="../../assets/vendors/perfect-scrollbar/css/perfect-scrollbar.min.css" />
 
   <!-- page plugins css -->
-  <!-- <link rel="stylesheet" href="../../assets/css/modulos/modulo2/modulo2-12.css"> -->
+  <link rel="stylesheet" href="../../assets/css/modulos/modulo2/modulo2-17.css">
 
   <!-- core css -->
   <link href="../../assets/css/ei-icon.css" rel="stylesheet" />
@@ -45,6 +45,7 @@
         <div class="main-content">
           <div class="container-fluid px-0 px-sm-3">
             <!-- Your content goes here -->
+            
             <div class="row">
               <div class="col">
                 <div class="card">
@@ -61,7 +62,7 @@
                         <div class="card-block">
                           <h1 class="mrg-btm-20 card-title">Ejercicio</h1>
                           <p>
-                            Ahora vamos a buscar las siguientes palabras que aparecen a continuación de los valores posicionales.
+                            Lee los siguientes problemas cuidadosamente y selecciona la expresión correcta.
                           </p>
                         </div>
                       </div>
@@ -70,10 +71,92 @@
                 </div>
               </div>
             </div>
-
             
+            <div class="row" style="height: 60vh !important;">
+              <!-- Question 1 -->
+              <div class="col-md-6 h-100">
+                <div class="card h-100">
+                  <div class="card-horizon h-100">
+                    <div class="card-block h-100 pt-0">
+                      <div class="row h-100 p-0">
+                        <!-- Question -->
+                        <div class="col h-100">
+                          <div class="row" style="height: 11vh;">
+                            <p class="pt-3 px-2" style="font-size: 18px;">1. Carlos tiene 5 bolsas con 6 manzanas en cada una, su hermano le regaló 9 manzanas más ¿Cuántas manzanas en total tiene Carlos?</p>
+                          </div>
+                          <div class="row" style="height: 35vh;">
+                            <img class="m-auto" src="../../assets/images/course/modulo2/modulo2-11/apple.png" alt="" style="height: 100%;">
+                          </div>
+                          <div class="row" style="height: 11vh;">
+                            <div class="col text-center m-auto">
+                              <button id="1" class="cool-btn" onclick="isAnswer(id, 1)">a)5x6+9=39</button>
+                            </div>
+                            <div class="col text-center m-auto">
+                              <button id="2" class="cool-btn" onclick="isAnswer(id, 1)">b)5+6+9=20</button>
+                            </div>
+                            <div class="col text-center m-auto">
+                              <button id="3" class="cool-btn" onclick="isAnswer(id, 1)">c)5x6-9=21</button>
+                            </div>
+                           
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Question 2 -->
+              <div class="col-md-6 h-100">
+                <div class="card h-100">
+                  <div class="card-horizon h-100">
+                    <div class="card-block h-100 pt-0">
+                      <div class="row h-100 p-0">
+                        <!-- Question -->
+                        <div class="col h-100">
+                          <div class="row" style="height: 20vh;">
+                            <p class="pt-3 px-2" style="font-size: 18px;">2. La mamá de misael compra 30 paletas para regalar en el cumpleaños de su hijo, pero al pasar a caja compra 20 chocolates más, durante la fiesta regala 33 dulces ¿Cuántos dulces le quedaron a la mamá de misael después de regalar los dulces?</p>
+                          </div>
+                          <div class="row" style="height: 25vh;">
+                            <img class="m-auto" src="../../assets/images/course/modulo2/modulo2-11/lollipop.png" alt="" style="height: 100%;">
+                          </div>
+                          <div class="row" style="height: 11vh;">
+                            <div class="col text-center m-auto">
+                              <button id="4" class="cool-btn" onclick="isAnswer(id, 6)">a)30x20-33=567</button>
+                            </div>
+                            <div class="col text-center m-auto">
+                              <button id="5" class="cool-btn" onclick="isAnswer(id, 6)">b)30–20+33=43</button>
+                            </div>
+                            <div class="col text-center m-auto">
+                              <button id="6" class="cool-btn" onclick="isAnswer(id, 6)">c)30+20-33=17</button>
+                            </div>
+                           
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+
+            <div class="row mt-2" style="width: 250px; padding: 0 !;">
+              <div class="col">
+                <div class="card p-0 m-0 align-items-center">
+                  <div class="card-horizon p-0 m-0">
+                    <div class="card-block m-auto">
+                      <div class="m-0" style="font-size: 20px; font-weight:bold;"><button
+                        class="button btn" onclick="resetColors()"> Reiniciar </button>
+                    </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
             <div class="row mrg-btm-20">
-              <div class="col text-center">
+              <div class="col text-center m-auto">
                 <div class="btn-group"></div>
               </div>
             </div>
@@ -97,7 +180,7 @@
                     </div>
                   </div>
                   <div class="row">
-                    <div class="col text-center">
+                    <div class="col text-center m-auto">
                       <h3 class="feed-subtitle">
                         Progreso General del Curso
                       </h3>
@@ -146,7 +229,7 @@
 
   <!-- Insert your dependencies here -->
   <!-- Drag and drop SCRIPT STARTS -->
-  <!-- <script src="../../assets/js/scripts/modulo2/modulo2-12.js"></script> -->
+  <script src="../../assets/js/scripts/modulo2/modulo2-17.js"></script>
 </body>
 
 </html>
