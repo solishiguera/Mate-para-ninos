@@ -1,295 +1,350 @@
 ﻿<!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no"
-    />
-    <title>Entero y deccimal | CVA - Centro Virtual de Aprendizaje</title>
 
-    <!-- Favicon -->
-    <link rel="shortcut icon" href="../../assets/images/logo/favicon.png" />
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no" />
+  <title>Entero y deccimal | CVA - Centro Virtual de Aprendizaje</title>
 
-    <!-- plugins css -->
-    <link
-      rel="stylesheet"
-      href="../../assets/vendors/bootstrap/dist/css/bootstrap.css"
-    />
-    <link
-      rel="stylesheet"
-      href="../../assets/vendors/PACE/themes/blue/pace-theme-minimal.css"
-    />
-    <link
-      rel="stylesheet"
-      href="../../assets/vendors/perfect-scrollbar/css/perfect-scrollbar.min.css"
-    />
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="../../assets/images/logo/favicon.png" />
 
-    <!-- page plugins css -->
-    <link rel="preconnect" href="https://fonts.googleapis.com"> 
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
-    <link href="https://fonts.googleapis.com/css2?family=Mochiy+Pop+One&display=swap" rel="stylesheet">
+  <!-- plugins css -->
+  <link rel="stylesheet" href="../../assets/vendors/bootstrap/dist/css/bootstrap.css" />
+  <link rel="stylesheet" href="../../assets/vendors/PACE/themes/blue/pace-theme-minimal.css" />
+  <link rel="stylesheet" href="../../assets/vendors/perfect-scrollbar/css/perfect-scrollbar.min.css" />
 
-    <!-- core css -->
-    <link href="../../assets/css/ei-icon.css" rel="stylesheet" />
-    <link href="../../assets/css/themify-icons.css" rel="stylesheet" />
-    <link href="../../assets/css/font-awesome.min.css" rel="stylesheet" />
-    <link href="../../assets/css/animate.min.css" rel="stylesheet" />
-    <link href="../../assets/css/app.css" rel="stylesheet" />
-    <link href="../../assets/css/progress.css" rel="stylesheet" />
-    <link href="../../assets/css/progress-circle.css" rel="stylesheet" />
-    <link href="../../assets/css/modulos/modulo2/modulo2-2.css" rel="stylesheet" />
-    
-  </head>
+  <!-- page plugins css -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Mochiy+Pop+One&display=swap" rel="stylesheet">
 
-  <body class="header-info side-nav-dark">
-    <div class="app">
-      <div class="layout">
-        <!-- Side Nav START -->
-        <div class="side-nav" id="sideNav"></div>
-        <!-- Side Nav END -->
+  <!-- core css -->
+  <link href="../../assets/css/ei-icon.css" rel="stylesheet" />
+  <link href="../../assets/css/themify-icons.css" rel="stylesheet" />
+  <link href="../../assets/css/font-awesome.min.css" rel="stylesheet" />
+  <link href="../../assets/css/animate.min.css" rel="stylesheet" />
+  <link href="../../assets/css/app.css" rel="stylesheet" />
+  <link href="../../assets/css/progress.css" rel="stylesheet" />
+  <link href="../../assets/css/progress-circle.css" rel="stylesheet" />
+  <link href="../../assets/css/modulos/modulo2/modulo2-2.css" rel="stylesheet" />
 
-        <!-- Page Container START -->
-        <div class="page-container">
-          <!-- Header START -->
-          <div class="header navbar"></div>
-          <!-- Header END -->
+</head>
 
-          <!-- Content Wrapper START -->
-          <div class="main-content">
-            <div class="container-fluid px-0 px-sm-3">
-              <!-- Your content goes here -->
-              <div class="row">
-                <div class="col">
-                  <div class="card">
-                    <div class="card-horizon">
-                      <div class="row p-3">
-                        <div class="col">
-                          <p class="card-info mb-1 mt-0 ml-4">
-                            <i class="icon ti-mouse-alt"></i>
-                            Haz clic en la ilustración para revisar su descripción.
-                          </p>
-                        </div>
-                      </div>
-                      <div class="row">
-                        <div id="folder" class="text-center align-items-center m-auto">
-                          <input type="checkbox" onclick="checkPic()" id="toggle" unchecked/> <label for="toggle" id="toggle-label">fold/unfold</label>
-                            <br>
-                            <br>
-                            <div class="fold">
-                              <p>
-                                Cada número decimal consta de una parte entera y una decimal van 
-                                separadas de una coma o punto. La parte entera va a la izquierda 
-                                del punto y puede incluir el cero. La parte decimal va a la derecha 
-                                de la coma.
-                              </p>
-                            </div>
-                            <div id="fold-fotito" class="fold">
-                              <img id="fotito"  src="../../assets/images/course/modulo2/modulo2-2/folded.png" alt="" srcset="">
-                            </div>
-                        </div>
-                      </div>
-                      <!-- <div class="row">
-                        <div id="personaje"></div>
-                        <div id="fig" class="col">
-                            <div class="card-block h-100 figure-fill">
-                              <div id="myFigrue" class="row h-100 fig-fill">
-                                <div class="col-md-6 hover-fill">
-                                </div>
-                                <div class="col-md-6 hover-fill">
-                                  <div class="row h-50">
-                                    <div class="col h-100 r1"></div>
-                                    <div class="col h-100 r1"></div>
-                                    <div class="col h-100 r1"></div>
-                                    <div class="col h-100 r1"></div>
-                                    <div class="col h-100 r1"></div>
-                                  </div>
-                                  <div class="row h-50 dont">
-                                    <div class="col h-100 r2"></div>
-                                    <div class="col h-100 r2"></div>
-                                    <div class="col h-100 r2"></div>
-                                    <div class="col h-100 r2"></div>
-                                    <div class="col h-100 r2"></div>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                        </div>
-                      </div> -->
-                    </div>
-                  </div>
-                </div>
-              </div>
-              
-              <div class="row">
-                <div class="col offset-md-6">
-                  <p class="card-info w-100">
-                    <i class="icon ti-mouse-alt"></i>
-                    Haz clic en la ilustración para revisar su descripción.
-                  </p>
-                </div>
-              </div>
-              
-              <div class="row">
-                <div class="col-md-6">
-                  <div class="card card-block h-100">
-                    <h1 class="card-title">
-                        Número decimal 
-                    </h1>
-              
-                    <p>
-                      Es un número no entero, compuesto por una parte entera y 
-                      una parte decimal, y se usan cuando queremos representar 
-                      números que son más pequeños que la unidad.
-                    </p>
-                     
-                  </div>
-                </div>
-                
-                <div class="col">
-                  <div class="card bg-info h-100" id="card">
-                    <div class="front card-block">
-                      <div class="row">
-                        <div class="col text-center">
-                          <p class="text-uppercase font-size-13">
-                            <b>Ejemplo</b>
-                          </p>
-                          <h1 class="no-mrg-top font-size-60 pb-md-5 pt-md-0"> 1 > 0.5 <br><br><br> </h1>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="back card-block">
-                      <div class="row">
-                        <div class="col text-center">
-                          <p class="text-uppercase font-size-13">
-                            <b>Ejemplo</b>
-                          </p>
-                          <h1 class="no-mrg-top font-size-20">
-                            0.5 es un número decimal, y es más pequeño que la unidad, 
-                            ya que se cumple que 1 es mayor que 0.5. 
-                          </h1>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              
-              <div class="row mt-3">
-                <div class="col">
-                  <div class="card">
-                    <div class="row">
-                      <div class="card-block col-md-12 text-center mh-100 h-100" >
-                          <div id="pizarron">
-                            <p id="type-text" class="m-auto mw-75-md typing display-2" >
-                            </p>
-                            <p id="type-text-ex" class="m-auto mw-40-md typing" >
-                            </p>
-                          </div>
-                      </div>
-                      <div class="col-md-12 text-center">
-                        <button class="button btn mt-1" onclick="typeMyText()">Ejemplos</button>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
+<body class="header-info side-nav-dark">
+  <div class="app">
+    <div class="layout">
+      <!-- Side Nav START -->
+      <div class="side-nav" id="sideNav"></div>
+      <!-- Side Nav END -->
 
-              <div class="row mrg-btm-20 mt-4">
-                <div class="col text-center">
-                  <div class="btn-group"></div>
-                </div>
-              </div>
+      <!-- Page Container START -->
+      <div class="page-container">
+        <!-- Header START -->
+        <div class="header navbar"></div>
+        <!-- Header END -->
 
-              <div class="card widget-feed">
-                <div class="row">
-                  <div class="col-lg-8">
-                    <h1 class="feed-title tag tag-info">Módulo 1</h1>
-                    <h3 class="feed-subtitle">Tu Progreso</h3>
-                    <div class="progress" style="height: 20px" id="bar">
-                      <div
-                        class="progress-bar bg-info"
-                        role="progressbar"
-                        aria-valuenow="25"
-                        aria-valuemin="0"
-                        aria-valuemax="100"
-                        style="max-width: 8%"
-                      >
-                        8%
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-lg-4">
-                    <div class="row">
+        <!-- Content Wrapper START -->
+        <div class="main-content">
+          <div class="container-fluid px-0 px-sm-3">
+            <!-- Your content goes here -->
+            <div class="row">
+              <div class="col">
+                <div class="card">
+                  <div class="card-horizon">
+                    <div class="row p-3">
                       <div class="col">
-                        <div id="circlecontainer"></div>
+                        <h1 class="mrg-btm-20 card-title">
+                          <span class="badge badge-light" style="font-size: 22px">Tema 1</span>
+                          Número decimal
+                        </h1>
+                        <p>
+                          Cada número decimal consta de una parte entera y una decimal van separadas de una coma o
+                          punto. La parte entera va a la izquierda del punto y puede incluir el cero. La parte decimal
+                          va a la derecha de la coma.
+                        </p>
+                        <p class="card-info mb-1 mt-0 ml-4">
+                          <i class="icon ti-mouse-alt"></i>
+                          Arrastra el mouse en la ilustración para interactuar con imagen.
+                        </p>
                       </div>
                     </div>
-                    <div class="row">
-                      <div class="col text-center">
-                        <h3 class="feed-subtitle">
-                          Progreso General del Curso
-                        </h3>
+                    <div class="row text-center align-text-center">
+
+                      <div class="reflection-container p-5 w-100">
+                        <a class='reflection-grid-cell reflection-grid-cell-1' href='#'></a>
+                        <a class='reflection-grid-cell reflection-grid-cell-2' href='#'></a>
+                        <a class='reflection-grid-cell reflection-grid-cell-3' href='#'></a>
+                        <a class='reflection-grid-cell reflection-grid-cell-4' href='#'></a>
+                        <a class='reflection-grid-cell reflection-grid-cell-5' href='#'></a>
+                        <a class='reflection-grid-cell reflection-grid-cell-6' href='#'></a>
+                        <a class='reflection-grid-cell reflection-grid-cell-7' href='#'></a>
+                        <a class='reflection-grid-cell reflection-grid-cell-8' href='#'></a>
+                        <a class='reflection-grid-cell reflection-grid-cell-9' href='#'></a>
+                        <a class='reflection-grid-cell reflection-grid-cell-10' href='#'></a>
+                        <a class='reflection-grid-cell reflection-grid-cell-11' href='#'></a>
+                        <a class='reflection-grid-cell reflection-grid-cell-12' href='#'></a>
+                        <a class='reflection-grid-cell reflection-grid-cell-13' href='#'></a>
+                        <a class='reflection-grid-cell reflection-grid-cell-14' href='#'></a>
+                        <a class='reflection-grid-cell reflection-grid-cell-15' href='#'></a>
+                        <a class='reflection-grid-cell reflection-grid-cell-16' href='#'></a>
+                        <a class='reflection-grid-cell reflection-grid-cell-17' href='#'></a>
+                        <a class='reflection-grid-cell reflection-grid-cell-18' href='#'></a>
+                        <a class='reflection-grid-cell reflection-grid-cell-19' href='#'></a>
+                        <a class='reflection-grid-cell reflection-grid-cell-20' href='#'></a>
+                        <a class='reflection-grid-cell reflection-grid-cell-21' href='#'></a>
+                        <a class='reflection-grid-cell reflection-grid-cell-22' href='#'></a>
+                        <a class='reflection-grid-cell reflection-grid-cell-23' href='#'></a>
+                        <a class='reflection-grid-cell reflection-grid-cell-24' href='#'></a>
+                        <a class='reflection-grid-cell reflection-grid-cell-25' href='#'></a>
+                        <a class='reflection-grid-cell reflection-grid-cell-26' href='#'></a>
+                        <a class='reflection-grid-cell reflection-grid-cell-27' href='#'></a>
+                        <a class='reflection-grid-cell reflection-grid-cell-28' href='#'></a>
+                        <a class='reflection-grid-cell reflection-grid-cell-29' href='#'></a>
+                        <a class='reflection-grid-cell reflection-grid-cell-30' href='#'></a>
+                        <a class='reflection-grid-cell reflection-grid-cell-31' href='#'></a>
+                        <a class='reflection-grid-cell reflection-grid-cell-32' href='#'></a>
+                        <a class='reflection-grid-cell reflection-grid-cell-33' href='#'></a>
+                        <a class='reflection-grid-cell reflection-grid-cell-34' href='#'></a>
+                        <a class='reflection-grid-cell reflection-grid-cell-35' href='#'></a>
+                        <a class='reflection-grid-cell reflection-grid-cell-36' href='#'></a>
+                        <a class='reflection-grid-cell reflection-grid-cell-37' href='#'></a>
+                        <a class='reflection-grid-cell reflection-grid-cell-38' href='#'></a>
+                        <a class='reflection-grid-cell reflection-grid-cell-39' href='#'></a>
+                        <a class='reflection-grid-cell reflection-grid-cell-40' href='#'></a>
+                        <a class='reflection-grid-cell reflection-grid-cell-41' href='#'></a>
+                        <a class='reflection-grid-cell reflection-grid-cell-42' href='#'></a>
+                        <a class='reflection-grid-cell reflection-grid-cell-43' href='#'></a>
+                        <a class='reflection-grid-cell reflection-grid-cell-44' href='#'></a>
+                        <a class='reflection-grid-cell reflection-grid-cell-45' href='#'></a>
+                        <a class='reflection-grid-cell reflection-grid-cell-46' href='#'></a>
+                        <a class='reflection-grid-cell reflection-grid-cell-47' href='#'></a>
+                        <a class='reflection-grid-cell reflection-grid-cell-48' href='#'></a>
+                        <a class='reflection-grid-cell reflection-grid-cell-49' href='#'></a>
+                        <a class='reflection-grid-cell reflection-grid-cell-50' href='#'></a>
+                        <a class='reflection-grid-cell reflection-grid-cell-51' href='#'></a>
+                        <a class='reflection-grid-cell reflection-grid-cell-52' href='#'></a>
+                        <a class='reflection-grid-cell reflection-grid-cell-53' href='#'></a>
+                        <a class='reflection-grid-cell reflection-grid-cell-54' href='#'></a>
+                        <a class='reflection-grid-cell reflection-grid-cell-55' href='#'></a>
+                        <a class='reflection-grid-cell reflection-grid-cell-56' href='#'></a>
+                        <a class='reflection-grid-cell reflection-grid-cell-57' href='#'></a>
+                        <a class='reflection-grid-cell reflection-grid-cell-58' href='#'></a>
+                        <a class='reflection-grid-cell reflection-grid-cell-59' href='#'></a>
+                        <a class='reflection-grid-cell reflection-grid-cell-60' href='#'></a>
+                        <a class='reflection-grid-cell reflection-grid-cell-61' href='#'></a>
+                        <a class='reflection-grid-cell reflection-grid-cell-62' href='#'></a>
+                        <a class='reflection-grid-cell reflection-grid-cell-63' href='#'></a>
+                        <a class='reflection-grid-cell reflection-grid-cell-64' href='#'></a>
+                        <a class='reflection-grid-cell reflection-grid-cell-65' href='#'></a>
+                        <a class='reflection-grid-cell reflection-grid-cell-66' href='#'></a>
+                        <a class='reflection-grid-cell reflection-grid-cell-67' href='#'></a>
+                        <a class='reflection-grid-cell reflection-grid-cell-68' href='#'></a>
+                        <a class='reflection-grid-cell reflection-grid-cell-69' href='#'></a>
+                        <a class='reflection-grid-cell reflection-grid-cell-70' href='#'></a>
+                        <a class='reflection-grid-cell reflection-grid-cell-71' href='#'></a>
+                        <a class='reflection-grid-cell reflection-grid-cell-72' href='#'></a>
+                        <a class='reflection-grid-cell reflection-grid-cell-73' href='#'></a>
+                        <a class='reflection-grid-cell reflection-grid-cell-74' href='#'></a>
+                        <a class='reflection-grid-cell reflection-grid-cell-75' href='#'></a>
+                        <a class='reflection-grid-cell reflection-grid-cell-76' href='#'></a>
+                        <a class='reflection-grid-cell reflection-grid-cell-77' href='#'></a>
+                        <a class='reflection-grid-cell reflection-grid-cell-78' href='#'></a>
+                        <a class='reflection-grid-cell reflection-grid-cell-79' href='#'></a>
+                        <a class='reflection-grid-cell reflection-grid-cell-80' href='#'></a>
+                        <a class='reflection-grid-cell reflection-grid-cell-81' href='#'></a>
+                        <a class='reflection-grid-cell reflection-grid-cell-82' href='#'></a>
+                        <a class='reflection-grid-cell reflection-grid-cell-83' href='#'></a>
+                        <a class='reflection-grid-cell reflection-grid-cell-84' href='#'></a>
+                        <a class='reflection-grid-cell reflection-grid-cell-85' href='#'></a>
+                        <a class='reflection-grid-cell reflection-grid-cell-86' href='#'></a>
+                        <a class='reflection-grid-cell reflection-grid-cell-87' href='#'></a>
+                        <a class='reflection-grid-cell reflection-grid-cell-88' href='#'></a>
+                        <a class='reflection-grid-cell reflection-grid-cell-89' href='#'></a>
+                        <a class='reflection-grid-cell reflection-grid-cell-90' href='#'></a>
+                        <a class='reflection-grid-cell reflection-grid-cell-91' href='#'></a>
+                        <a class='reflection-grid-cell reflection-grid-cell-92' href='#'></a>
+                        <a class='reflection-grid-cell reflection-grid-cell-93' href='#'></a>
+                        <a class='reflection-grid-cell reflection-grid-cell-94' href='#'></a>
+                        <a class='reflection-grid-cell reflection-grid-cell-95' href='#'></a>
+                        <a class='reflection-grid-cell reflection-grid-cell-96' href='#'></a>
+                        <a class='reflection-grid-cell reflection-grid-cell-97' href='#'></a>
+                        <a class='reflection-grid-cell reflection-grid-cell-98' href='#'></a>
+                        <a class='reflection-grid-cell reflection-grid-cell-99' href='#'></a>
+                        <a class='reflection-grid-cell reflection-grid-cell-100' href='#'></a>
+                        <div class='reflection-content'></div>
                       </div>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
+
+            <div class="row">
+              <div class="col offset-md-6">
+                <p class="card-info w-100">
+                  <i class="icon ti-mouse-alt"></i>
+                  Haz clic en la ilustración para revisar su descripción.
+                </p>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-md-6">
+                <div class="card card-block h-100">
+                  <h1 class="card-title">
+                    Número decimal
+                  </h1>
+
+                  <p>
+                    Es un número no entero, compuesto por una parte entera y
+                    una parte decimal, y se usan cuando queremos representar
+                    números que son más pequeños que la unidad.
+                  </p>
+
+                </div>
+              </div>
+
+              <div class="col">
+                <div class="card bg-info h-100" id="card">
+                  <div class="front card-block">
+                    <div class="row">
+                      <div class="col text-center">
+                        <p class="text-uppercase font-size-13">
+                          <b>Ejemplo</b>
+                        </p>
+                        <h1 class="no-mrg-top font-size-60 pb-md-5 pt-md-0"> 1 > 0.5 <br><br><br> </h1>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="back card-block">
+                    <div class="row">
+                      <div class="col text-center">
+                        <p class="text-uppercase font-size-13">
+                          <b>Ejemplo</b>
+                        </p>
+                        <h1 class="no-mrg-top font-size-20">
+                          0.5 es un número decimal, y es más pequeño que la unidad,
+                          ya que se cumple que 1 es mayor que 0.5.
+                        </h1>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="row mt-3">
+              <div class="col">
+                <div class="card">
+                  <div class="row">
+                    <div class="card-block col-md-12 text-center mh-100 h-100">
+                      <div id="pizarron">
+                        <p id="type-text" class="m-auto mw-75-md typing display-2">
+                        </p>
+                        <p id="type-text-ex" class="m-auto mw-40-md typing">
+                        </p>
+                      </div>
+                    </div>
+                    <div class="col-md-12 text-center">
+                      <button class="button btn mt-1" onclick="typeMyText()">Ejemplos</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="row mrg-btm-20 mt-4">
+              <div class="col text-center">
+                <div class="btn-group"></div>
+              </div>
+            </div>
+
+            <div class="card widget-feed">
+              <div class="row">
+                <div class="col-lg-8">
+                  <h1 class="feed-title tag tag-info">Módulo 1</h1>
+                  <h3 class="feed-subtitle">Tu Progreso</h3>
+                  <div class="progress" style="height: 20px" id="bar">
+                    <div class="progress-bar bg-info" role="progressbar" aria-valuenow="25" aria-valuemin="0"
+                      aria-valuemax="100" style="max-width: 8%">
+                      8%
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-4">
+                  <div class="row">
+                    <div class="col">
+                      <div id="circlecontainer"></div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col text-center">
+                      <h3 class="feed-subtitle">
+                        Progreso General del Curso
+                      </h3>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
-          <!-- Content Wrapper END -->
-
-          <!-- Footer START -->
-          <footer class="content-footer"></footer>
-          <!-- Footer END -->
         </div>
-        <!-- Page Container END -->
+        <!-- Content Wrapper END -->
+
+        <!-- Footer START -->
+        <footer class="content-footer"></footer>
+        <!-- Footer END -->
       </div>
+      <!-- Page Container END -->
     </div>
-    <!-- build:js assets/js/vendor.js -->
-    <!-- plugins js -->
-    <script src="../../assets/vendors/jquery/dist/jquery.min.js"></script>
-    <script src="../../assets/vendors/popper.js/dist/umd/popper.min.js"></script>
-    <script src="../../assets/vendors/bootstrap/dist/js/bootstrap.js"></script>
-    <script src="../../assets/vendors/PACE/pace.min.js"></script>
-    <script src="../../assets/vendors/perfect-scrollbar/js/perfect-scrollbar.jquery.js"></script>
+  </div>
+  <!-- build:js assets/js/vendor.js -->
+  <!-- plugins js -->
+  <script src="../../assets/vendors/jquery/dist/jquery.min.js"></script>
+  <script src="../../assets/vendors/popper.js/dist/umd/popper.min.js"></script>
+  <script src="../../assets/vendors/bootstrap/dist/js/bootstrap.js"></script>
+  <script src="../../assets/vendors/PACE/pace.min.js"></script>
+  <script src="../../assets/vendors/perfect-scrollbar/js/perfect-scrollbar.jquery.js"></script>
 
-    <!-- Progress plugins -->
-    <script src="../../assets/js/progressbar.js"></script>
-    <script src="../../assets/js/progress-circle.js"></script>
+  <!-- Progress plugins -->
+  <script src="../../assets/js/progressbar.js"></script>
+  <script src="../../assets/js/progress-circle.js"></script>
 
-    <!-- endbuild -->
+  <!-- endbuild -->
 
-    <!-- build:js assets/js/app.min.js -->
-    <!-- core js -->
-    <script src="../../assets/js/app.js"></script>
-    <script src="../../assets/js/recycled/navigationbar.js"></script>
-    <script src="../../assets/js/progress/url-script.js"></script>
+  <!-- build:js assets/js/app.min.js -->
+  <!-- core js -->
+  <script src="../../assets/js/app.js"></script>
+  <script src="../../assets/js/recycled/navigationbar.js"></script>
+  <script src="../../assets/js/progress/url-script.js"></script>
 
-    <!-- endbuild -->
+  <!-- endbuild -->
 
-   <!-- Insert your dependencies here -->
+  <!-- Insert your dependencies here -->
   <script src="https://cdn.rawgit.com/nnattawat/flip/master/dist/jquery.flip.min.js"></script>
 
- <script>
-  var myFigrue = document.getElementById('myFigrue');
-  var dontColor = document.getElementsByClassName('dont')
+  <script>
+    var myFigrue = document.getElementById('myFigrue');
+    var dontColor = document.getElementsByClassName('dont')
 
 
-  myFigrue.style.cursor = 'pointer';
-  myFigrue.onclick = function() {
-    const personaje = document.getElementById('personaje');
-    personaje.classList.add("col-md-6");
-    personaje.innerHTML = `<div class="card-block text-center"> <img src="../../assets/images/course/modulo2/modulo2-2/popup.png" alt="" style="width: 100%;"> </div>`;
-  };
+    myFigrue.style.cursor = 'pointer';
+    myFigrue.onclick = function () {
+      const personaje = document.getElementById('personaje');
+      personaje.classList.add("col-md-6");
+      personaje.innerHTML = `<div class="card-block text-center"> <img src="../../assets/images/course/modulo2/modulo2-2/popup.png" alt="" style="width: 100%;"> </div>`;
+    };
 
- </script>
+  </script>
 
- <script>
-   $("#card").flip();
- </script>
+  <script>
+    $("#card").flip();
+  </script>
 
-<script src="../../assets/js/scripts/modulo2/modulo2-2.js"></script>
-    
-  </body>
+  <script src="../../assets/js/scripts/modulo2/modulo2-2.js"></script>
+
+</body>
+
 </html>
