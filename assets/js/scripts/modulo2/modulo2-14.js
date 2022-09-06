@@ -11,7 +11,7 @@ function isAnswer(curr, correct) {
 function resetColors() { 
   var btns = document.getElementsByClassName('cool-btn')
   for(let i = 0; i < btns.length; i++) {
-    btns[i].style.backgroundColor = '#93bed8'
+    btns[i].style.backgroundColor = '#cd764d'
     btns[i].classList.remove("answered")
   }
 }

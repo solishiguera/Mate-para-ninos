@@ -30,8 +30,8 @@
   cursor: move;
   color: #2e3c45  ;
   transition: opacity 0.2s;
-  background-color: #93bed8;
-  border: solid #6f92a7;
+  background-color: #cd764d;
+  border: solid #8c4827;
   border-radius: 10px;
   z-index: 100;
 }
@@ -51,8 +51,8 @@
   font-size: calc(60% + 1vw + 1vh) !important;
   font-weight: bold;
   background-color: rgb(238, 237, 237);
-  color: #6f92a7;
-  border: 3px dashed #93bed8;
+  color: #8c4827;
+  border: 3px dashed #cd764d;
   transition: border-width 0.2s, transform 0.2s, background-color 0.4s;
   align-items: center;
   border-radius: 10px;

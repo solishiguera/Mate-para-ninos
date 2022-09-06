@@ -26,8 +26,8 @@ function changeColor(num, word) {
   var number = document.getElementById(num)
   var myWord = document.getElementById(word)
 
-  number.style.color ='#008080'
-  myWord.style.color = '#008080'
+  number.style.color ='#2da08c'
+  myWord.style.color = '#2da08c'
 }
 
 function backColor(num, word) {

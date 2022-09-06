@@ -1,6 +1,6 @@
 .cool-btn { 
   height: 40px;
-  background-color: #93bed8;
+  background-color: #cd764d;
   border: 0;
   border-radius: 10px;
   color: white;
@@ -9,10 +9,10 @@
 }
 
 .cool-btn:hover { 
-  background-color: #6f92a7;
+  background-color: #8c4827;
 }
 
 .answered { 
-  border: 4px dashed #6f92a7 !important;
-  color: #6f92a7;
+  border: 4px dashed #8c4827 !important;
+  color: #8c4827;
 }

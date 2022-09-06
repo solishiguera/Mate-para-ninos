@@ -4,16 +4,16 @@ table {
 }
 
 th {
-  background-color: #6f92a7;
+  background-color: #8c4827;
   color: white;
 }
 td { 
   padding: 0 !important;
   height: 30px;
-  background-color: #93bed8;
+  background-color: #cd764d;
   color: white;
   vertical-align:middle !important;
-  border: solid #6f92a7;
+  border: solid #8c4827;
 
   font-size: 20px;
   font-weight: bold;
@@ -37,7 +37,7 @@ td input {
 
 /** PARTE DOS*/
 .wrapper {
-  background-color: #93bed8;
+  background-color: #cd764d;
   width: 95%;
   margin: 0 auto;
   height: 100%;
@@ -61,7 +61,7 @@ td input {
 .questions {
   font-size: 28px;
   background-color: white;
-  color: #6f92a7;
+  color: #8c4827;
   border-radius: 15px;
   width: 50%;
   margin: auto;
@@ -80,7 +80,7 @@ td input {
 .answers div:hover {
   cursor: pointer;
   color: white;
-  background-color: #6f92a7;
+  background-color: #8c4827;
   border-radius: 15px;
 }
 
