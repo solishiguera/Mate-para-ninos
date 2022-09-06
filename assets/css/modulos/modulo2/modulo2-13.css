@@ -35,7 +35,7 @@
   display: block;
   transition: 0.5s;
   position: absolute;
-  background: #800000;
+  background: #a0522d;
   content: attr(data-back);
   transform: translateY(-50%) rotateX(90deg);
 }
@@ -50,7 +50,7 @@
   transition: 0.5s;
   position: relative;
   background: white;
-  border: 1px solid #800000;
+  border: 1px solid #a0522d;
   border-radius: 10px !important;
   content: attr(data-front);
   transform: translateY(0) rotateX(0);
