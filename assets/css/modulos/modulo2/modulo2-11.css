@@ -95,13 +95,16 @@ li {
     height: 45vh;
 }
 .a1 {
-    background-image: url("../../../images/course/modulo2/modulo2-7/suma.png");
+  background-color: #7d4848;
+    /* background-image: url('../../assets/images/course/modulo2/modulo2-11/DemoTwo.jpg') !important; */
 }
 .a2 {
-    background-image: url("../../../images/course/modulo2/modulo2-7/multiplicacion.png");
+  background-color: #8c2828;
+    /* background-image: url('../../assets/images/course/modulo2/modulo2-11/DemoTwo.jpg'); */
 }
 .a3 {
-    background-image: url("../../../images/course/modulo2/modulo2-7/mixtas.png");
+  background-color: #a12e2e;
+    background-image: url('../../assets/images/course/modulo2/modulo2-11/DemoTwo.jpg');
 }
 .text {
     position: absolute;
@@ -110,7 +113,7 @@ li {
     padding: 10px;
 }
 .a1:hover { 
-    background-image: url("../../../images/course/modulo2/modulo2-7/Suma_ej.png");
+    background-image: url('../../assets/images/course/modulo2/modulo2-11/DemoTwo.jpg');
     background-position: center; 
     background-color: yellow;
 }

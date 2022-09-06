@@ -63,20 +63,7 @@
                 <div class="col">
                   <div class="card">
                     <div class="card-horizon">
-                      <div class="row">
-                        <div class="col">
-                          <div class="card-block">
-                            <h1 class="card-title"> <span class="badge badge-light" style="font-size: 22px">Tema 1</span> Parte entera y decimal</h1>
-                            <p>
-                              Cada número decimal consta de una parte entera y una decimal van 
-                              separadas de una coma o punto. La parte entera va a la izquierda 
-                              del punto y puede incluir el cero. La parte decimal va a la derecha 
-                              de la coma.
-                            </p>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="row">
+                      <div class="row p-3">
                         <div class="col">
                           <p class="card-info mb-1 mt-0 ml-4">
                             <i class="icon ti-mouse-alt"></i>
@@ -85,6 +72,24 @@
                         </div>
                       </div>
                       <div class="row">
+                        <div id="folder" class="text-center align-items-center m-auto">
+                          <input type="checkbox" onclick="checkPic()" id="toggle" unchecked/> <label for="toggle" id="toggle-label">fold/unfold</label>
+                            <br>
+                            <br>
+                            <div class="fold">
+                              <p>
+                                Cada número decimal consta de una parte entera y una decimal van 
+                                separadas de una coma o punto. La parte entera va a la izquierda 
+                                del punto y puede incluir el cero. La parte decimal va a la derecha 
+                                de la coma.
+                              </p>
+                            </div>
+                            <div id="fold-fotito" class="fold">
+                              <img id="fotito"  src="../../assets/images/course/modulo2/modulo2-2/folded.png" alt="" srcset="">
+                            </div>
+                        </div>
+                      </div>
+                      <!-- <div class="row">
                         <div id="personaje"></div>
                         <div id="fig" class="col">
                             <div class="card-block h-100 figure-fill">
@@ -110,7 +115,7 @@
                               </div>
                             </div>
                         </div>
-                      </div>
+                      </div> -->
                     </div>
                   </div>
                 </div>
@@ -284,26 +289,7 @@
    $("#card").flip();
  </script>
 
- <script>
-   var i = 0;
-   var i = 0;
-   var j = 0; 
-   var txt = 'Los números decimales se escriben usando un punto para separar la parte entera de la parte decimal. Lo más común es encontrarlos usando el punto, pero se puede escribir usando una coma o apóstrofe.';
-   var txt2 = "1.7  -  1,7  -  1'07"
-   var speed = 50;
-   function typeMyText() {
-     if (i < txt.length) {
-       document.getElementById("type-text").innerHTML += txt.charAt(i);
-       i++;
-       setTimeout(typeMyText, speed);
-     }  
-     if (j < txt2.length && i >= txt.length) {
-       document.getElementById("type-text-ex").innerHTML += txt2.charAt(j);
-       j++;
-       setTimeout(typeMyText, speed);
-     }  
-   }
- </script>
+<script src="../../assets/js/scripts/modulo2/modulo2-2.js"></script>
     
   </body>
 </html>
