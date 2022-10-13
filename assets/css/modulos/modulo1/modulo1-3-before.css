@@ -1,0 +1,53 @@
+.subtitle-accent {
+  font-weight: 700 !important;
+  margin-top: 1px;
+  color: #55a2fe !important;
+  font-size: 15px !important;
+}
+
+svg.fa-play-circle {
+  width: 4rem;
+  height: 4rem;
+  fill: var(--accent-color);
+}
+
+.box {
+  max-height: 180px;
+  height: auto;
+  width: auto;
+}
+
+.corral {
+  max-width: 350px;
+  height: auto;
+  width: -webkit-fill-available;
+}
+
+.clickable {
+  cursor: pointer;
+}
+
+.hidden-element {
+  position: absolute;
+  opacity: 0;
+}
+
+.shown-element {
+  position: inherit;
+  opacity: 1;
+  transition: opacity 0.8s linear;
+}
+
+.result {
+  width: 70px;
+  background-color: #cd764d;
+  color: white;
+  border: solid #8c4827;
+  border-radius: 5px;
+  margin: 5px;
+  text-align: center;
+}
+
+.solved {
+  padding: 10px 8px !important;
+}

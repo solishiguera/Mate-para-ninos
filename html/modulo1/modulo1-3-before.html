@@ -1,353 +1,381 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no"
-    />
-    <title>Tema 1.2 | CVA - Centro Virtual de Aprendizaje</title>
 
-    <!-- Favicon -->
-    <link rel="shortcut icon" href="../../assets/images/logo/favicon.png" />
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no" />
+  <title>Tema 1.2 | CVA - Centro Virtual de Aprendizaje</title>
 
-    <!-- plugins css -->
-    <link
-      rel="stylesheet"
-      href="../../assets/vendors/bootstrap/dist/css/bootstrap.css"
-    />
-    <link
-      rel="stylesheet"
-      href="../../assets/vendors/PACE/themes/blue/pace-theme-minimal.css"
-    />
-    <link
-      rel="stylesheet"
-      href="../../assets/vendors/perfect-scrollbar/css/perfect-scrollbar.min.css"
-    />
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="../../assets/images/logo/favicon.png" />
 
-    <!-- page plugins css -->
-    <link href="../../assets/css/hover-buttons.css" rel="stylesheet" />
-    <link href="../../assets/css/vocabulary.css" rel="stylesheet" />
-    <style rel="stylesheet" type="text/css">
+  <!-- plugins css -->
+  <link rel="stylesheet" href="../../assets/vendors/bootstrap/dist/css/bootstrap.css" />
+  <link rel="stylesheet" href="../../assets/vendors/PACE/themes/blue/pace-theme-minimal.css" />
+  <link rel="stylesheet" href="../../assets/vendors/perfect-scrollbar/css/perfect-scrollbar.min.css" />
 
-      .subtitle-accent {
-          font-weight: 700 !important;
-          margin-top: 1px;
-          color: #55a2fe !important;
-          font-size: 15px !important;
-      }
+  <!-- page plugins css -->
+  <link rel="stylesheet" href="../../assets/css/modulos/modulo1/modulo1-3-before.css">
+  <link href="../../assets/css/hover-buttons.css" rel="stylesheet" />
+  <link href="../../assets/css/vocabulary.css" rel="stylesheet" />
 
-      svg.fa-play-circle {
-          width: 4rem;
-          height: 4rem;
-          fill: var(--accent-color);
-      }
+  <!-- core css -->
+  <link href="../../assets/css/ei-icon.css" rel="stylesheet" />
+  <link href="../../assets/css/themify-icons.css" rel="stylesheet" />
+  <link href="../../assets/css/font-awesome.min.css" rel="stylesheet" />
+  <link href="../../assets/css/animate.min.css" rel="stylesheet" />
+  <link href="../../assets/css/app.css" rel="stylesheet" />
+  <link href="../../assets/css/progress.css" rel="stylesheet" />
+  <link href="../../assets/css/progress-circle.css" rel="stylesheet" />
+</head>
 
-      .box {
-          max-height: 180px;
-          height: auto;
-          width: auto;
-      }
+<body class="header-info side-nav-dark">
+  <div class="app">
+    <div class="layout">
+      <!-- Side Nav START -->
+      <div class="side-nav" id="sideNav"></div>
+      <!-- Side Nav END -->
 
-      .corral {
-          max-width: 350px;
-          height: auto;
-          width: -webkit-fill-available;
-      }
+      <!-- Page Container START -->
+      <div class="page-container">
+        <!-- Header START -->
+        <div class="header navbar"></div>
+        <!-- Header END -->
 
-      .clickable {
-          cursor: pointer;
-      }
-
-      .hidden-element {
-          position: absolute;
-          opacity: 0;
-      }
-
-      .shown-element {
-          position: inherit;
-          opacity: 1;
-          transition: opacity 0.8s linear;
-      }
-    </style>
-
-    <!-- core css -->
-    <link href="../../assets/css/ei-icon.css" rel="stylesheet" />
-    <link href="../../assets/css/themify-icons.css" rel="stylesheet" />
-    <link href="../../assets/css/font-awesome.min.css" rel="stylesheet" />
-    <link href="../../assets/css/animate.min.css" rel="stylesheet" />
-    <link href="../../assets/css/app.css" rel="stylesheet" />
-    <link href="../../assets/css/progress.css" rel="stylesheet" />
-    <link href="../../assets/css/progress-circle.css" rel="stylesheet" />
-  </head>
-
-  <body class="header-info side-nav-dark">
-    <div class="app">
-      <div class="layout">
-        <!-- Side Nav START -->
-        <div class="side-nav" id="sideNav"></div>
-        <!-- Side Nav END -->
-
-        <!-- Page Container START -->
-        <div class="page-container">
-          <!-- Header START -->
-          <div class="header navbar"></div>
-          <!-- Header END -->
-
-          <!-- Content Wrapper START -->
-          <div class="main-content">
-            <div class="container-fluid px-0 px-sm-3">
-              <!-- Your content goes here --> 
-
-              <div class="flechas">
-                    
-                <div class="flecha-derecha">
-                  <a
-                    href="../modulo2/modulo2-1.html"
-                    class="modulo-siguiente"
-                  >
-                    <span> Módulo Siguiente</span
-                    ><i class="ei ei-right-arrow ml-2"></i>
-                  </a>
-                </div>
-              </div>
-              <div class="row">
-                <div class = "col">
-                  <div class = "card">
-                    <div class = "card-horizon">
-                      <div class = "image-container col-md-4 round">
-                        <div
-                        class = "background-holder has-content"
-                        style="
-                            background-image: url('../../assets/images/course/modulo1/m1-2/shutterstock_420500284_1.jpg');
-                            background-position: 40% 15%;
-                          ">
-                        </div>  
-                      </div>
-                      <div class = "row">
-                        <div class = "col-md-8 ml-auto">
-                          <div class = "card-block">
-                            <h1 class="mrg-btm-20 card-title">
-                              <span
-                                class="badge badge-light"
-                                style="font-size: 26px"
-                                >Tema 2: 
-                              </span>
-                            </h1>
-                            <p>
-                              <b style = "color: #a0522d" > UBICACIÓN DE NÚMEROS NATURALES EN 
-                                LA RECTA NUMÉRICA A PARTIR DE LA POSICIÓN DE OTROS DOS.</b>
-                            </p>
-                            
-                            
-                            <p  >
-                              La <b>recta numérica</b> es un gráfico unidimensional o línea recta la cual contiene todos los números reales.
-                             Sirve de referencia para ubicar números dentro de la misma recta, se pueden utilizar fracciones, números decimales y números naturales, qué son los números que nos sirven para contar y son enteros. 
-                            La escala de una recta numérica es la distancia que existe entre dos números.
-                            </p>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div class="row ">
-                <div class = "col-sm-12 col-lg-12 col-md-12 col-xl-6">
-                  <div class = "card card-block">
-                      <h2 class="card-title" >
-                        ¿Qué es la recta numérica?
-                      </h2>
-                      <div class="row">
-                        <div  class = "col-lg-6 col-sm-12 col-md-12 col-xl-6 order-1">
-                          <p >
-                            Una recta es una alineación infinita de puntos en la misma dirección. 
-                            Así bien, la recta numérica es una recta en la que cada uno de sus puntos 
-                            le Podemos asignar el valor de un número real.
-                          </p>
-                        </div>
-                        
-                        <div  class="col-lg-6 col-sm-12 col-md-12 col-xl-6 p-0 order-2 text-right" >
-                          <div class="card card-block" >
-                            <img src="../../assets/images/course/modulo1/m1-2/shutterstock_420500284_1.jpg" alt="" >
-                          </div>
-                          
-                        </div>
-                      </div>
-                  </div>
-                </div>
-                <div class = "col-sm-12 col-lg-12 col-md-12 col-xl-6">
-                  <div class = "card card-block">
-                    <h2 class="card-title" >
-                        <i>Para localizar números en una recta dada, se debe identificar  cómo se dividió.</i> 
-                    </h2>
-                    <div class="row">
-                      <div  class = "col-lg-6 col-sm-12 col-md-12 col-xl-6 order-2">
-                        <p >
-                          Entre el 17 y 25 hay ocho unidades, 
-                          la mitad de 8 es 4; Por tanto, el 
-                          número que está entre 17 y 25 es: 17+4 = 21
-                        </p>
-                        <p >
-                          Lo que acabamos de aprender lo podemos comprobar en la siguiente recta numérica.
-                        </p>
-                      </div>
-                      <div  class="col-lg-6 col-sm-12 col-md-12 col-xl-6 p-0 order-1 text-left" >
-                        <div class="card card-block" >
-                          <img src="../../assets/images/course/modulo1/m1-2/shutterstock_420500284_1.jpg" alt="" >
-                        </div>
-                        
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div class="row">
-                <div class="col">
-                  <div class="card card-block">
-                    <h2 class="card-title" > Ejercicio</h2>
-                  </div>
-                </div>
-              </div>
-
-              <!-- Conclusión-->
-              <div class="row">
-                <div class = "col">
-                  <div class = "card card-block">
-                      <h2 class="card-title" > <b>Conclusión</b> </h2>
-                    
-                      <p >
-                        Es importante la función de la recta numérica debido a que es una representación 
-                        geométrica del conjunto de los números reales. Donde tiene su origen en el cero, 
-                        y se extiende en ambas direcciones, donde los positivos se dirigen hacia la 
-                        derecha y los negativos hacia la izquierda.
-                      </p>
-                  </div>
-                </div>
-              </div>
-
-              <div class="row mrg-btm-20">
-                <div class="col text-center">
-                  <div class="btn-group"></div>
-                </div>
-              </div>
-
-              <div class="card widget-feed">
+        <!-- Content Wrapper START -->
+        <div class="main-content">
+          <div class="container-fluid px-0 px-sm-3">
+            <!-- Your content goes here -->
+            <!-- card QUIZ -->
+            <div class="card">
+              <div class="container-fluid">
                 <div class="row">
-                  <div class="col-lg-8">
-                    <h1 class="feed-title tag tag-info">Módulo 1</h1>
-                    <h3 class="feed-subtitle">Tu Progreso</h3>
-                    <div class="progress" style="height: 20px" id="bar">
-                      <div
-                        class="progress-bar bg-info"
-                        role="progressbar"
-                        aria-valuenow="25"
-                        aria-valuemin="0"
-                        aria-valuemax="100"
-                        style="max-width: 17%"
-                      >
-                        17%
-                      </div>
+                  <div class="card-horizon image-container col-md-4">
+                    <div class="background-holder has-content"
+                      style="background-image: url('../../assets/images/course/modulo2/modulo2-4/Ejercicio1.png');">
                     </div>
                   </div>
-                  <div class="col-lg-4">
-                    <div class="row">
-                      <div class="col">
-                        <div id="circlecontainer"></div>
-                      </div>
+                  <div class="col-md-8 card-horizon">
+                    <div class="card-block">
+                      <h1 class="card-title">Ejercicio</h1>
+                      <p>Realiza los siguientes ejercicios para una mayor comprensión del tema.</p>
                     </div>
-                    <div class="row">
-                      <div class="col text-center">
-                        <h3 class="feed-subtitle">
-                          Progreso General del Curso
-                        </h3>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- card QUIZ -->
+
+            <div class="row">
+              <div class="col">
+                <div class="card">
+                  <div class="card-block">
+                    <div class="card-horizon">
+                      <div class="row">
+                        <div class="col-md-6">
+                          <p>Identifica los patrones de las sucesiones: </p>
+                          <p class="text-bold"><i>Nota: </i> Recuerda incluir el signo (+ o -) en tu respuesta</p>
+                          <form id="basicform">
+                            <h2 class="card-title">50 , 20 , 55 , 18 , 60 , 16 , 65 , 14</h2>
+                            <p>Primer patrón sumar: <input id="p1" name="p1" class="result" type="text"> Segundo patrón
+                              restar: <input id="p2" name="p2" class="result" type="text"></input></p>
+                            <h2 class="card-title">98 , 120 , 100 , 123 , 102 , 126 , 104</h2>
+                            <p>Primer patrón sumar: <input id="p3" name="p3" class="result" type="text"> Segundo patrón
+                              sumar: <input id="p4" name="p4" class="result" type="text"></input></p>
+                            <h2 class="card-title">14, 60 , 21 ,51 , 28 , 42 , 42, 33 , 49</h2>
+                            <p>Primer patrón sumar: <input id="p5" name="p5" class="result" type="text"> Segundo patrón
+                              restar: <input id="p6" name="p6" class="result" type="text"></input></p>
+                            <p>
+                              <input id="submitBtn" class="submit button btn" type="submit" value="Revisar">
+                            </p>
+                          </form>
+
+                        </div>
+                        <div class="col-md-6 image-container offset-md-6">
+                          <div class="background-holder has-content"
+                            style="background-image: url('../../assets/images/course/modulo1/m1-1/shutterstock_400761526_1.jpg');">
+                          </div>
+                        </div>
                       </div>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
+
+            <div class="row">
+              <div class="col">
+                <div class="card card-block">
+                  <h2 class="card-title"> <b>Conclusión</b> </h2>
+
+                  <p>
+                    Las diversas operaciones que se realizan a través del uso de los números naturales son muy
+                    importantes porque son números que siempre utilizamos ante cualquier circunstancia en la vida
+                    cotidiana.
+                    Los números naturales son utilizados para describir la posición de un elemento en una secuencia
+                    ordenada
+                    y para especificar el tamaño de un conjunto infinito.
+
+                  </p>
+
+                </div>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col">
+                <div class="card">
+                  <div class="card-block">
+                    <h2 class="card-title"><b> Sitio de interés</b></h2>
+                    <p>
+                      Te invitamos a ver un video sobre <b> sucesiones </b>, para tener un mejor entendimiento.
+                    </p>
+
+                    <!-- Video individual -->
+                    <div class="centralizer mrg-top-20">
+                      <iframe width="100%" height="460px" src="https://www.youtube.com/embed/FGoSqeFl5zg"
+                        frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col">
+                <div class="card">
+                  <div class="card-horizon">
+                    <div class="image-container col-md-4 round">
+                      <div class="background-holder has-content" style="
+                            background-image: url('../../assets/images/course/modulo1/m1-2/shutterstock_420500284_1.jpg');
+                            background-position: 40% 15%;
+                          ">
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-md-8 ml-auto">
+                        <div class="card-block">
+                          <h1 class="mrg-btm-20 card-title">
+                            <span class="badge badge-light" style="font-size: 26px">Tema 2:
+                            </span>
+                          </h1>
+                          <p>
+                            <b style="color: #a0522d"> UBICACIÓN DE NÚMEROS NATURALES EN
+                              LA RECTA NUMÉRICA A PARTIR DE LA POSICIÓN DE OTROS DOS.</b>
+                          </p>
+
+
+                          <p>
+                            La <b>recta numérica</b> es un gráfico unidimensional o línea recta la cual contiene todos
+                            los números reales.
+                            Sirve de referencia para ubicar números dentro de la misma recta, se pueden utilizar
+                            fracciones, números decimales y números naturales, qué son los números que nos sirven para
+                            contar y son enteros.
+                            La escala de una recta numérica es la distancia que existe entre dos números.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="row ">
+              <div class="col-sm-12 col-lg-12 col-md-12 col-xl-6">
+                <div class="card card-block">
+                  <h2 class="card-title">
+                    ¿Qué es la recta numérica?
+                  </h2>
+                  <div class="row">
+                    <div class="col-lg-6 col-sm-12 col-md-12 col-xl-6 order-1">
+                      <p>
+                        Una recta es una alineación infinita de puntos en la misma dirección.
+                        Así bien, la recta numérica es una recta en la que cada uno de sus puntos
+                        le Podemos asignar el valor de un número real.
+                      </p>
+                    </div>
+
+                    <div class="col-lg-6 col-sm-12 col-md-12 col-xl-6 p-0 order-2 text-right">
+                      <div class="card card-block">
+                        <img src="../../assets/images/course/modulo1/m1-2/shutterstock_420500284_1.jpg" alt="">
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-12 col-lg-12 col-md-12 col-xl-6">
+                <div class="card card-block">
+                  <h2 class="card-title">
+                    <i>Para localizar números en una recta dada, se debe identificar cómo se dividió.</i>
+                  </h2>
+                  <div class="row">
+                    <div class="col-lg-6 col-sm-12 col-md-12 col-xl-6 order-2">
+                      <p>
+                        Entre el 17 y 25 hay ocho unidades,
+                        la mitad de 8 es 4; Por tanto, el
+                        número que está entre 17 y 25 es: 17+4 = 21
+                      </p>
+                      <p>
+                        Lo que acabamos de aprender lo podemos comprobar en la siguiente recta numérica.
+                      </p>
+                    </div>
+                    <div class="col-lg-6 col-sm-12 col-md-12 col-xl-6 p-0 order-1 text-left">
+                      <div class="card card-block">
+                        <img src="../../assets/images/course/modulo1/m1-2/shutterstock_420500284_1.jpg" alt="">
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col">
+                <div class="card card-block">
+                  <h2 class="card-title"> Ejercicio</h2>
+                </div>
+              </div>
+            </div>
+
+            <!-- Conclusión-->
+            <div class="row">
+              <div class="col">
+                <div class="card card-block">
+                  <h2 class="card-title"> <b>Conclusión</b> </h2>
+
+                  <p>
+                    Es importante la función de la recta numérica debido a que es una representación
+                    geométrica del conjunto de los números reales. Donde tiene su origen en el cero,
+                    y se extiende en ambas direcciones, donde los positivos se dirigen hacia la
+                    derecha y los negativos hacia la izquierda.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="row mrg-btm-20">
+              <div class="col text-center">
+                <div class="btn-group"></div>
+              </div>
+            </div>
+
+            <div class="card widget-feed">
+              <div class="row">
+                <div class="col-lg-8">
+                  <h1 class="feed-title tag tag-info">Módulo 1</h1>
+                  <h3 class="feed-subtitle">Tu Progreso</h3>
+                  <div class="progress" style="height: 20px" id="bar">
+                    <div class="progress-bar bg-info" role="progressbar" aria-valuenow="25" aria-valuemin="0"
+                      aria-valuemax="100" style="max-width: 17%">
+                      17%
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-4">
+                  <div class="row">
+                    <div class="col">
+                      <div id="circlecontainer"></div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col text-center">
+                      <h3 class="feed-subtitle">
+                        Progreso General del Curso
+                      </h3>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
-          <!-- Content Wrapper END -->
-
-          <!-- Footer START -->
-          <footer class="content-footer"></footer>
-          <!-- Footer END -->
         </div>
-        <!-- Page Container END -->
+        <!-- Content Wrapper END -->
+
+        <!-- Footer START -->
+        <footer class="content-footer"></footer>
+        <!-- Footer END -->
       </div>
+      <!-- Page Container END -->
     </div>
+  </div>
 
-    <!-- build:js assets/js/vendor.js -->
-    <!-- plugins js -->
-    <script src="../../assets/vendors/jquery/dist/jquery.min.js"></script>
-    <script src="../../assets/vendors/popper.js/dist/umd/popper.min.js"></script>
-    <script src="../../assets/js/recycled/navigationbar.js"></script>
-    <script src="../../assets/vendors/bootstrap/dist/js/bootstrap.js"></script>
-    <script src="../../assets/vendors/PACE/pace.min.js"></script>
-    <script src="../../assets/vendors/perfect-scrollbar/js/perfect-scrollbar.jquery.js"></script>
+  <!-- build:js assets/js/vendor.js -->
+  <!-- plugins js -->
+  <script src="../../assets/vendors/jquery/dist/jquery.min.js"></script>
+  <script src="../../assets/vendors/popper.js/dist/umd/popper.min.js"></script>
+  <script src="../../assets/js/recycled/navigationbar.js"></script>
+  <script src="../../assets/vendors/bootstrap/dist/js/bootstrap.js"></script>
+  <script src="../../assets/vendors/PACE/pace.min.js"></script>
+  <script src="../../assets/vendors/perfect-scrollbar/js/perfect-scrollbar.jquery.js"></script>
 
-    <script src="../../assets/js/progressbar.js"></script>
-    <script src="../../assets/js/progress-circle.js"></script>
+  <script src="../../assets/js/progressbar.js"></script>
+  <script src="../../assets/js/progress-circle.js"></script>
 
-    <!-- endbuild -->
+  <!-- endbuild -->
 
-    <!-- build:js assets/js/app.min.js -->
-    <!-- core js -->
-    <script src="../../assets/js/app.js"></script>
-    <script src="../../assets/js/progress/url-script.js"></script>
+  <!-- build:js assets/js/app.min.js -->
+  <!-- core js -->
+  <script src="../../assets/js/app.js"></script>
+  <script src="../../assets/js/progress/url-script.js"></script>
 
-    <!-- Aquí se inserta el porcentage del círculo de progreso como una fracción -->
-    <script type="text/javascript">
-      show(0.07);
-    </script>
+  <!-- Aquí se inserta el porcentage del círculo de progreso como una fracción -->
+  <script type="text/javascript">
+    show(0.07);
+  </script>
 
-    <!-- endbuild -->
+  <!-- endbuild -->
 
-    <!-- Insert your dependencies here -->
-    <!-- Es posible hacer un archivo exclusivo de JS, aunque también lo es colocarlo aquí, es tu elección -->
-    <script src="../../assets/js/scripts/audio_player_basic.js"></script>
+  <!-- Insert your dependencies here -->
+  <!-- Es posible hacer un archivo exclusivo de JS, aunque también lo es colocarlo aquí, es tu elección -->
+  <script src="../../assets/js/scripts/audio_player_basic.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.0/jquery.validate.min.js"></script>
+  <script src="../../assets/js/scripts/modulo1/modulo1-3-before.js"></script>
 
-    <!-- Necesario para el Ejemplo 3 -->
-    <script>
-      const build1 = "../../assets/images/course/modulo1/actividades/build_1.png"
-      const build2 = "../../assets/images/course/modulo1/actividades/build_2.png"
-      const build3 = "../../assets/images/course/modulo1/actividades/build_3.png"
-      const build4 = "../../assets/images/course/modulo1/actividades/build_4.png"
-      const builds = [build1, build2, build3, build4]
-          
-      function build(buildId){
-          const build = builds[buildId - 1]
-          const boxTextId = "text-" + buildId.toString()
-          const boxImageId = "build-" + buildId.toString()
-          let boxImage = document.getElementById(boxImageId)
-          let boxText = document.getElementById(boxTextId)
-      
-          boxImage.src = build
-          boxImage.classList.remove("clickable")
-      
-          boxText.classList.remove("hidden-text")
-          boxText.classList.add("shown-text")
-      }
-      
-      function openBox(id){
-          const boxId = "box-" + id.toString()
-          const buildId = "build-" + id.toString()
-          const textId = "text-" + id.toString()
-          const box = document.getElementById(boxId)
-          const build = document.getElementById(buildId)
-          const text = document.getElementById(textId)
-      
-          box.classList.add("hidden-element")
-      
-          build.classList.remove("hidden-element")
-          build.classList.add("shown-element")
-      
-          text.classList.remove("hidden-element")
-          text.classList.add("shown-element")
-      }
-    </script>
-  </body>
+  <!-- Necesario para el Ejemplo 3 -->
+  <script>
+    const build1 = "../../assets/images/course/modulo1/actividades/build_1.png"
+    const build2 = "../../assets/images/course/modulo1/actividades/build_2.png"
+    const build3 = "../../assets/images/course/modulo1/actividades/build_3.png"
+    const build4 = "../../assets/images/course/modulo1/actividades/build_4.png"
+    const builds = [build1, build2, build3, build4]
+
+    function build(buildId) {
+      const build = builds[buildId - 1]
+      const boxTextId = "text-" + buildId.toString()
+      const boxImageId = "build-" + buildId.toString()
+      let boxImage = document.getElementById(boxImageId)
+      let boxText = document.getElementById(boxTextId)
+
+      boxImage.src = build
+      boxImage.classList.remove("clickable")
+
+      boxText.classList.remove("hidden-text")
+      boxText.classList.add("shown-text")
+    }
+
+    function openBox(id) {
+      const boxId = "box-" + id.toString()
+      const buildId = "build-" + id.toString()
+      const textId = "text-" + id.toString()
+      const box = document.getElementById(boxId)
+      const build = document.getElementById(buildId)
+      const text = document.getElementById(textId)
+
+      box.classList.add("hidden-element")
+
+      build.classList.remove("hidden-element")
+      build.classList.add("shown-element")
+
+      text.classList.remove("hidden-element")
+      text.classList.add("shown-element")
+    }
+  </script>
+</body>
+
 </html>
