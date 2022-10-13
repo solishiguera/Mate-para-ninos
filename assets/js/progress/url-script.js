@@ -215,14 +215,14 @@ function getMovementBar() {
 function getFiles() {
   var files = {
     modulo1: {
-      1: "modulo1-1.html",
-      2: "modulo1-2.html",
-      3: "modulo1-3.html",
-      4: "modulo1-4.html",
-      5: "modulo1-5.html",
-      6: "modulo1-6.html",
-      7: "modulo1-7.html",
-      8: "modulo1-8.html",
+      1: "modulo1-1-before.html",
+      2: "modulo1-2-before.html",
+      3: "modulo1-3-before.html",
+      4: "modulo1-4-before.html",
+      5: "modulo1-5-before.html",
+      6: "modulo1-6-before.html",
+      7: "modulo1-7-before.html",
+      8: "modulo1-8-before.html",
     },
     modulo2: {
       1: "modulo2-1.html",
@@ -301,6 +301,15 @@ function getFiles() {
 
     modulo8: {
       1: "modulo8-1.html",
+      2: "modulo8-2.html",
+      3: "modulo8-3.html",
+      4: "modulo8-4.html",
+      5: "modulo8-5.html",
+      6: "modulo8-6.html",
+      7: "modulo8-7.html",
+      8: "modulo8-8.html",
+      9: "modulo8-9.html",
+      10: "modulo8-10.html",
     },
 
     modulo9: {
