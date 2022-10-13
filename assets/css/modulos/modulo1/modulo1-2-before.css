@@ -1,0 +1,9 @@
+.sucesion {
+  border: 1px solid var(--theme-color);
+  border-radius: 8px;
+  margin-left: 1px;
+  background-color: #a0512d4e;
+  color: white;
+  font-size: large;
+  font-weight: bold;
+}
