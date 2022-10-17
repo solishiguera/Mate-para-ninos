@@ -39,7 +39,7 @@ svg.fa-play-circle {
 }
 
 .result {
-  width: 70px;
+  width: 70px !important;
   background-color: #cd764d;
   color: white;
   border: solid #8c4827;
@@ -48,6 +48,34 @@ svg.fa-play-circle {
   text-align: center;
 }
 
+span.result { 
+  display: inline-block;
+  width: 50px;
+  padding: 0px 8px;
+  font-weight: bold;
+}
+
 .solved {
   padding: 10px 8px !important;
+}
+
+.circle { 
+  height: 70px;
+  width: 70px;
+  border-radius: 50%;
+  display: inline-block;
+  line-height: 65px !important;
+}
+
+.smooth-edges { 
+  border-radius: 10px;
+}
+
+.input-text { 
+  border: 0;
+  border-radius: 0;
+  background-color: white;
+  color: var(--accent-color);
+  width: 200px !important;
+  border-bottom: 5px solid rgb(169, 34, 34) !important;
 }
