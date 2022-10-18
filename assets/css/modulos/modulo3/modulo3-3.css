@@ -1,0 +1,30 @@
+:root { 
+  --theme-color: #a0512da3;
+}
+img { 
+  max-width: 300px;
+  display: inline-block;
+}
+
+input { 
+  padding: 5px;
+  margin: 10px;
+  max-width: 100px;
+  max-height: 100px;
+  border: 3px solid var(--theme-color);
+  font-size: 30px;
+  font-weight: bold;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.fraction-container { 
+  margin-top: 12.5%;
+}
+
+
+.border { 
+  border-color: #a0512d85 !important;
+  border-radius: 5px;
+  padding: 10px;
+}
