@@ -6,13 +6,24 @@ img {
   display: inline-block;
 }
 
-input { 
+.big-frac { 
   padding: 5px;
   margin: 10px;
   max-width: 100px;
   max-height: 100px;
   border: 3px solid var(--theme-color);
   font-size: 30px;
+  font-weight: bold;
+  border-radius: 5px;
+  text-align: center;
+}
+.small-frac { 
+  padding: 5px;
+  margin: 10px;
+  max-width: 50px;
+  max-height: 40px;
+  border: 2px solid var(--theme-color);
+  font-size: 15px;
   font-weight: bold;
   border-radius: 5px;
   text-align: center;
