@@ -1,0 +1,19 @@
+.img { 
+  margin: auto;
+  max-width: 500px;
+}
+
+button.btn { 
+  background-color: var(--theme-color);
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  padding: 5px 20px;
+}
+
+button.btn:hover { 
+  border-color: var(--theme-color);
+  background-color: #a0512dc2;
+  color: white;
+  padding: 8px 24px;
+}
