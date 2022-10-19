@@ -79,18 +79,42 @@
                 <div class="card">
                   <div class="card-block">
                     <div class="card-horizon">
-                      <p>Contesta correctamente e identifica las fracciones equivalentes en rectas numéricas.
-
+                      <p>Contesta correctamente e identifica las fracciones equivalentes en rectas numéricas.</p>
                         <div class="row">
-                        <!-- Pregunta 1 -->
-                        <div class="col-md-6 border">
-                          <p>1. ¿La fracción 1/4  es equivalente a la fracción 1/3?</p>
-                          <img class="img" src="../../assets/images/course/modulo3/modulo3-4/lt1.png" alt="" srcset="">
-                          <div class="align-content-center text-center p-3"><button class="btn wrong">Si</button> <button class="btn right">No</button></div>
+                          <!-- Pregunta 1 -->
+                          <div class="col-md-6 border">
+                            <p>1. ¿La fracción 1/4  es equivalente a la fracción 1/3?</p>
+                            <img class="img" src="../../assets/images/course/modulo3/modulo3-4/lt1.png" alt="" srcset="">
+                            <div class="align-content-center text-center p-3">
+                              <button id="1" class="btn cool-btn" onclick="isAnswer(id, false)">Si</button> 
+                              <button id="2" class="btn cool-btn" onclick="isAnswer(id, true)">No</button>
+                            </div>
+                          </div>
+                          <!-- Pregunta 1 -->
+
+                          <!-- Pregunta 2 -->
+                          <div class="col-md-6 border">
+                            <p>2. ¿La fracción 1/2 es equivalente a la fracción 6/8?</p>
+                            <img class="img" src="../../assets/images/course/modulo3/modulo3-4/lt2.png" alt="" srcset="">
+                            <div class="align-content-center text-center p-3">
+                              <button id="3" class="btn cool-btn" onclick="isAnswer(id, false)">Si</button> 
+                              <button id="4" class="btn cool-btn" onclick="isAnswer(id, true)">No</button>
+                            </div>
+                          </div>
+                          <!-- Pregunta 2 -->
                         </div>
-                        <!-- Pregunta 1 -->
-                      </div>
-                      </p>
+                        <div class="row">
+                          <!-- Pregunta 1 -->
+                          <div class="col-12 border text-center">
+                            <p>1. ¿La fracción 1/2 es equivalente a la fracción 2/4?</p>
+                            <img class="img" src="../../assets/images/course/modulo3/modulo3-4/lt3.png" alt="" srcset="">
+                            <div class="align-content-center text-center p-3">
+                              <button id="5" class="btn cool-btn" onclick="isAnswer(id, true)">Si</button> 
+                              <button id="6" class="btn cool-btn" onclick="isAnswer(id, false)">No</button>
+                            </div>
+                          </div>
+                          <!-- Pregunta 1 -->
+                        </div>
                     </div>
                   </div>
                 </div>
@@ -220,6 +244,6 @@
     <!-- endbuild -->
 
     <!-- Insert your dependencies here -->
-    <link rel="stylesheet" href="../../assets/js/scripts/modulo3/modulo3-4.js">
+    <script src="../../assets/js/scripts/modulo3/modulo3-4.js"></script>
   </body>
 </html>

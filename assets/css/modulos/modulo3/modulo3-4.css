@@ -3,17 +3,23 @@
   max-width: 500px;
 }
 
-button.btn { 
+.cool-btn { 
   background-color: var(--theme-color);
   color: white;
   font-size: 20px;
   font-weight: bold;
-  padding: 5px 20px;
+  padding: 5px 20px !important;
+  text-decoration: none;
 }
 
-button.btn:hover { 
+.cool-btn:hover { 
   border-color: var(--theme-color);
-  background-color: #a0512dc2;
+  background-color: #a0512dcc;
   color: white;
-  padding: 8px 24px;
+  padding: 8px 24px !important;
+}
+
+.answered { 
+  border: 2px solid #8c4827 !important;
+  color: #8c4827 !important;
 }
